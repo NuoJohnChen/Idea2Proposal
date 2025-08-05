@@ -1,0 +1,16 @@
+pyyaml
+py3langid
+setuptools-scm
+openai==1.1.0
+httpx[socks]==0.25.0
+astunparse
+langchain==0.0.157
+scikit-learn
+pydantic==1.10.7
+typing-extensions==4.5.0
+typing-inspect==0.8.0
+colorlog
+spacy
+colorama==0.4.6
+tiktoken==0.5.1
+semanticscholar

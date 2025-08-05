@@ -1,0 +1,48 @@
+Title:
+Lightweight Image Classification Network Based on Feature Extraction Network SimpleResUNet and Attention
+
+Problem Statement:
+Traditional CNN-based models for image classification face limitations in capturing global contextual information due to their local receptive fields, hindering performance in tasks requiring long-range dependencies. Lightweight networks (e.g., MobileNet, ShuffleNet) reduce computational costs but often sacrifice accuracy, especially in small-sample scenarios. Existing hybrid architectures (e.g., Res-UNet, TransUNet) improve feature extraction but introduce excessive complexity, making them impractical for resource-constrained environments. There is a critical need for a lightweight yet robust model that balances efficiency with high accuracy, particularly for small datasets.
+
+Motivation & Hypothesis:
+We hypothesize that integrating the multi-scale feature fusion of U-Net with the gradient stability of ResNet can enhance feature richness while maintaining computational efficiency. Additionally, replacing traditional normalization and classification layers with adaptive mechanisms (e.g., GroupNorm, Attention) can improve robustness in small-sample settings. Our core idea is that a simplified Residual U-Net (SimpleResUNet) with attention-driven feature selection will outperform existing lightweight models by dynamically emphasizing discriminative features and suppressing noise, even with limited training data.
+
+Proposed Method:
+(1) SimpleResUNet Architecture:
+
+ResNet-U-Net Fusion: Design a U-Net-inspired encoder-decoder with residual blocks, enabling skip connections to fuse low-level details and high-level semantics.
+Lightweight Adaptation: Replace standard convolutions with depthwise separable convolutions and reduce channel dimensions while preserving multi-scale feature hierarchies.
+(2) Feature Scale Normalization:
+
+Adaptive Pooling: Introduce an adaptive average pooling layer to unify feature dimensions across varying input sizes, enabling multi-scale compatibility.
+GroupNorm Integration: Replace BatchNorm with GroupNorm in the Attention classifier to stabilize training with small batch sizes.
+(3) Attention-Based Classification:
+
+Feature-Sequence Attention: Redesign the self-attention mechanism to operate on the feature sequence output by SimpleResUNet, dynamically weighting features based on their discriminative power.
+Gradient Propagation Analysis: Derive gradient formulas for SimpleResUNet to validate its stability and efficiency during backpropagation.
+Step-by-Step Experiment Plan:
+
+Validate Feature Extraction Efficacy:
+
+Synthetic Tasks: Test SimpleResUNet on tasks requiring global-local feature fusion (e.g., reconstructing occluded images, detecting multi-scale patterns).
+Ablation Study: Compare variants (e.g., without residual connections, with standard U-Net) on CIFAR-10 to isolate the impact of architectural choices.
+Benchmark Lightweight Performance:
+
+Efficiency Metrics: Measure FLOPs, parameters, and inference speed against MobileNet, ShuffleNet, and ResNet variants.
+Small-Sample Accuracy: Evaluate on MalImg and MalVis datasets with limited training samples (e.g., 10–100 samples per class).
+Assess Multi-Scale Adaptability:
+
+Variable Input Sizes: Train and test on datasets with diverse resolutions (e.g., 32×32 to 256×256) to verify robustness of adaptive pooling.
+Cross-Dataset Generalization: Pre-train on CIFAR-10 and fine-tune on medical imaging datasets (e.g., ISIC 2018) to test transferability.
+Attention Mechanism Analysis:
+
+Feature Activation Maps: Visualize attention weights to identify which features drive classification decisions.
+Compare Normalization Strategies: Test GroupNorm vs. BatchNorm/LayerNorm in the classifier under varying batch sizes.
+Interpretability and Scalability:
+
+Gradient Propagation Proof: Mathematically demonstrate that SimpleResUNet inherits ResNet’s gradient stability.
+Feature Dimension Study: Sweep feature dimensions (3 to 256) to correlate model performance with theoretical sampling principles (Nyquist-Shannon-inspired analysis).
+Real-World Deployment:
+
+Edge Device Testing: Deploy the model on resource-constrained hardware (e.g., NVIDIA Jetson Nano) to measure real-time inference throughput.
+Robustness Checks: Evaluate performance under noise, adversarial attacks, and dataset shifts to validate practical usability.

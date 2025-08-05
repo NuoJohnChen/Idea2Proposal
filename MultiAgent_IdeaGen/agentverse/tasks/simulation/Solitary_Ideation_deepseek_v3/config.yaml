@@ -1,0 +1,151 @@
+prompts:
+  prompt: &prompt |-
+    You are participating in a 5-round academic discussion on '{topic}'. Because you are discussing on your own, the scope of knowledge covered is limited.
+
+    # Discussion Phases
+    - Rounds 1-4: Academic self-discussion with literature support
+    - Round 5: You will synthesize your own discussion into a research proposal
+
+    # Enhanced Literature Support (AI-Researcher Integration)
+    You have access to Stanford AI-Researcher level literature search. Use these tools actively:
+    - ai_researcher_search: Advanced multi-query literature search with LLM reranking
+    - get_paper_details: Comprehensive paper analysis
+    - semantic_scholar_search: Direct API access with your key
+
+    CRITICAL: MUST use ai_researcher_search and other literature tools to search, verify, and cite only real papers. Do not fabricate citations. 
+
+    # Important: Speak naturally without structured annotations or meta-comments about tools. Have a normal academic conversation. Do not include any thoughts like '(I'll now activate...)' in your output.
+    DO NOT APPEAR LIKE THIS: Action: ai_researcher_search Action Input: ["Chen et al. 2023 Dynamic Sparsity for Efficient Deep Metric Learning", "hierarchical sparsity in metric learning", "Lipschitz properties of sparse attention metrics"]
+
+    # Output Format
+    
+    Your response should be a natural academic contribution, written as if speaking in a discussion. Do not use any structured tags like 'Action:' or 'Action Input:'. Just provide your thoughtful input directly.
+    Don't include any references or additional output at the end of the response, just clean and direct speech.
+
+    Here are the conversation history:
+    ${chat_history}
+
+    Here are the observations from tool execution:
+    ${tool_observation}
+
+    You can see the conversation history. Base your response strictly on this.
+
+name: Single Researcher Academic Self-Discussion with AI-Researcher Integration
+
+environment:
+  env_type: sim-basic
+  max_turns: 5
+  rule:
+    order:
+      type: sequential
+    visibility:
+      type: all
+    selector:
+      type: basic
+    updater:
+      type: basic
+    describer:
+      type: basic
+
+agents:
+  - agent_type: conversation
+    name: Participant
+    role_description: A senior AI researcher with expertise in {topic_lower}, conducting thoughtful self-reflection and literature review.
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: *prompt
+    llm:
+      llm_type: deepseek
+      model: 'deepseek-v3'
+      temperature: 0.7
+      max_tokens: 6000
+    output_parser:
+      type: dummy
+    tools:
+      - tool_name: "ai_researcher_search"
+        description: "AI-Researcher level literature search with multi-query generation and LLM reranking"
+      - tool_name: "semantic_scholar_search" 
+        description: "Direct Semantic Scholar API search"
+      - tool_name: "get_paper_details"
+        description: "Get comprehensive paper analysis"
+
+  - agent_type: tool
+    name: Participant
+    role_description: The same senior AI researcher who conducted the self-discussion, now synthesizing their own thoughts into a research proposal about {topic_lower}.
+    memory:
+      memory_type: chat_history
+    memory_manipulator:
+      memory_manipulator_type: basic
+    prompt_template: |-
+      You are the same AI researcher who has been conducting the 4-round self-discussion on '{topic}', now generating a research proposal about {topic_lower} based STRICTLY on your own discussion above. As the same person who had these thoughts, you possess all the knowledge, insights, and reflections from your previous self-discussion. Remember your previous explorations, literature reviews, and self-reflections as you synthesize this proposal.
+
+      Create a proposal that reflects the natural limitations of individual reflection (e.g., narrower perspectives, untested assumptions). Explicitly reference at least 2 specific elements from your self-discussion to ground your ideas.
+
+      CRITICAL1: You MUST use ai_researcher_search and other literature tools to search, verify, and cite only real papers in your proposal. ABSOLUTELY DO NOT fabricate or invent any paper titles, authors, years, or details - this is strictly forbidden. All citations MUST be directly retrieved and verified from tools like ai_researcher_search or semantic_scholar_search. And these papers must be mentioned in your self-discussion. Do not include meta-comments in the output. Ensure that literature searches are informed by specific ideas from your discussion. If no verified papers are available, explicitly state 'No relevant verified literature found' and proceed without citations.
+      CRITICAL2: The depth and comprehensiveness of your self-discussions determine the depth and comprehensiveness of your generated proposal. Keep it focused to reflect individual constraints.
+      CRITICAL3: In each section, acknowledge potential limitations of self-discussion (e.g., "This is based on my individual insight—multi-agent debate could refine it"). Do not expand beyond what's in your self-discussion. Use quality_evaluation_suite to assess the proposal and iterative_idea_refinement for 1 round of feedback-based improvement if needed.
+
+      Here is the exact format to follow (must write about {topic_lower}):
+
+      1. Title:
+      
+      2. Problem Statement:
+      
+      3. Motivation & Hypothesis:
+      
+      4. Proposed Method:
+      
+      5. Step-by-Step Experiment Plan:
+      
+      Now write your {topic_lower} proposal in the EXACT same format, keeping it shorter and focused to reflect self-discussion nature.
+      
+      CRITICAL REQUIREMENTS:
+      1. Use the exact numbering format: 1. Title: 2. Problem Statement: 3. Motivation & Hypothesis: 4. Proposed Method: 5. Step-by-Step Experiment Plan:
+      2. Focus on {topic_lower} research
+      3. Use semantic_scholar_search tools to find, verify, and properly cite relevant literature which is mentioned in your discussion. Only include verified real papers.
+      4. Include a References section at the end with proper citations
+      5. Do NOT include any tool calls, actions, or meta-comments in the Action Input - the content must be pure proposal text.
+
+      Remember: Your ENTIRE response must be:
+      1. Title:
+      [your {topic_lower} research title]
+      2. Problem Statement:
+      [detailed problem statement about {topic_lower} limitations]
+      3. Motivation & Hypothesis:
+      [detailed motivation and central hypothesis]
+      4. Proposed Method:
+      [detailed technical approach]
+      5. Step-by-Step Experiment Plan:
+      [exactly experimental steps]
+      References:
+      [relevant citations from literature searches]
+    llm:
+      llm_type: deepseek
+      model: 'deepseek-v3'
+      temperature: 0.4
+      max_tokens: 8000
+    output_parser:
+      type: dummy
+    tools:
+      - tool_name: "semantic_scholar_search"
+        description: "Direct Semantic Scholar API access with provided key"
+      - tool_name: "get_paper_details"
+        description: "Comprehensive paper analysis and citation extraction"
+
+tools:
+    # Literature Search Tools
+  - tool_name: "semantic_scholar_search"
+    description: "Direct Semantic Scholar API search using provided API key"
+  - tool_name: "get_paper_details"
+    description: "Get comprehensive paper details including abstracts, citations, and relevance scores"
+    
+# AI-Researcher Configuration
+ai_researcher_config:
+  semantic_scholar_api_key: "iYTNXXDH278PVXl2FJ2YU1TyZ5joLAZr3WA9IVzt"
+  max_papers_per_query: 10
+  max_total_papers: 30
+  llm_reranking: true
+  quality_threshold: 7.5
+  max_refinement_iterations: 3 

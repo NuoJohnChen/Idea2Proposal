@@ -1,0 +1,7 @@
+Overall Quality: 8
+Argumentative Cohesion: 8
+Intellectual Depth: 8
+Execution Credibility: 7
+Scientific Rigor: 8
+Decision: Accept
+Weaknesses: Limited discussion on computational overhead for large-scale models., Potential risks associated with approximations for importance estimation are not thoroughly addressed., Lack of detail on optimization of learnable scalars (α, β)., Feasibility of efficiently computing per-parameter gradient statistics in large models is not fully addressed.

@@ -1,0 +1,6 @@
+Differences (multi - single):
+Overall Quality: -0.11
+Argumentative Cohesion: 0.0
+Intellectual Depth: 0.07
+Execution Credibility: -0.32
+Scientific Rigor: -0.16

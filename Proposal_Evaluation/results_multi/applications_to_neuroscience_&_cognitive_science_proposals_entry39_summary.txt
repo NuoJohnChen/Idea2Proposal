@@ -1,0 +1,7 @@
+Overall Quality: 7
+Argumentative Cohesion: 8
+Intellectual Depth: 9
+Execution Credibility: 6
+Scientific Rigor: 7
+Decision: Accept
+Weaknesses: Feasibility of integrating fMRI/EEG data with computational models is not thoroughly discussed., Potential technical challenges in model fitting and validation are under-addressed., Lack of detailed discussion on pitfalls and limitations of the proposed method.

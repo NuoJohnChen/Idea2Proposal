@@ -1,0 +1,36 @@
+{
+    "Summary": "The proposal aims to integrate computational models of decision-making (RL and DDM) with neural data using a spiking neural network (SNN). It seeks to uncover neural circuit dynamics, account for individual differences, and apply findings to clinical contexts. The method involves hybrid model development, neural data alignment, and individual differences mapping, with a detailed experiment plan covering validation, neural predictions, perturbation experiments, clinical translation, and tool development.",
+    "Strengths": [
+        "Clear and well-articulated problem statement.",
+        "Strong motivation and hypothesis linking computational models to neural data.",
+        "Ambitious and intellectually deep proposal with potential for broad impact.",
+        "Detailed experiment plan covering multiple aspects of validation and application.",
+        "Plans for open-source tool development, promoting reproducibility and accessibility."
+    ],
+    "Weaknesses": [
+        "Feasibility concerns regarding the integration of diverse methodologies (SNN, DCM, MRI-derived connectivity).",
+        "Lack of detailed discussion on potential technical challenges and risks.",
+        "Absence of specific ablation studies or stress tests in the validation plan.",
+        "Overly optimistic execution plan without clear mitigation strategies for potential obstacles."
+    ],
+    "Argumentative_Cohesion": 8,
+    "Intellectual_Depth": 9,
+    "Execution_Credibility": 6,
+    "Scientific_Rigor": 7,
+    "Overall_Quality": 7,
+    "Questions": [
+        "What specific technical challenges do you anticipate in fitting the SNN model to neural data, and how will you address them?",
+        "How will you ensure the robustness of the model when integrating data from different modalities (e.g., fMRI, EEG, single-unit recordings)?",
+        "What are the potential limitations of using publicly available datasets, and how will you mitigate any biases or inconsistencies?",
+        "Can you provide more details on the ablation studies or stress tests planned to validate the model's components?"
+    ],
+    "Limitations": [
+        "Potential difficulties in model fitting and convergence due to the complexity of the SNN.",
+        "Challenges in aligning the model with heterogeneous neural data from different sources and modalities.",
+        "Generalizability of the model to diverse populations and clinical conditions may be limited.",
+        "Dependence on collaboration with other labs for validation (e.g., optogenetic studies) introduces uncertainty."
+    ],
+    "Ethical_Concerns": false,
+    "Confidence": 4,
+    "Decision": "Accept"
+}
