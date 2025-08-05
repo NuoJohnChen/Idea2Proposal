@@ -1,5 +1,7 @@
 # AI Research Proposal Evaluation System
 
+https://ratemyproposal.ai
+
 An intelligent system for evaluating research proposals using advanced AI models with structured assessment criteria.
 
 ## Overview
