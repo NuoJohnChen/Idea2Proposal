@@ -155,7 +155,7 @@ Each evaluation produces a structured JSON response:
 
 ```bash
 git clone <repository-url>
-cd AI-Scientist-research-plan-eval
+cd Proposal_Evaluation
 pip install -r requirements.txt
 ```
 
@@ -164,22 +164,6 @@ pip install -r requirements.txt
 1. Set up your OpenAI API credentials in the respective scripts
 2. Configure model parameters as needed
 3. Prepare input directories for batch processing
-
-## Usage Examples
-
-### Batch Processing
-
-```bash
-# Process all proposals in example directories
-python predict_proposal.py
-```
-
-### Web Interface
-
-```bash
-# Start the web application
-python app.py
-```
 
 ### Individual Evaluation
 
@@ -223,14 +207,6 @@ This project builds upon advanced AI evaluation techniques and research proposal
 <h3 align="center">
     <p>A Framework for AI-Powered Academic Discussion and Research Collaboration</p>
 </h3>
-<p align="center">
-    <a href="LICENSE">
-        <img alt="License: Apache2" src="https://img.shields.io/badge/License-Apache_2.0-green.svg">
-    </a>
-    <a href="https://www.python.org/downloads/release/python-3916/">
-        <img alt="Python Version" src="https://img.shields.io/badge/python-3.9+-blue.svg">
-    </a>
-</p>
 
 **Multi-Agent Collaboration** is designed to facilitate AI-powered academic discussions and research collaboration using Large Language Models (LLMs). This framework enables researchers to simulate realistic academic conversations between AI agents with different expertise levels and generate structured research proposals from collaborative discussions.
 
@@ -270,12 +246,6 @@ This project builds upon advanced AI evaluation techniques and research proposal
 git clone <your-repository-url>
 cd Multi-Agent-Collaboration
 pip install -r requirements.txt
-```
-
-If you want to use local models or additional features:
-
-```bash
-pip install -r requirements_local.txt
 ```
 
 # 🌐 Environment Variables
@@ -445,10 +415,6 @@ The framework automatically synthesizes discussions into structured proposals co
 - **Import Errors**: Install missing dependencies with `pip install semanticscholar`
 - **Memory Issues**: Reduce `max_tokens` or `max_turns` in configuration
 - **Network Issues**: Check internet connectivity for Semantic Scholar API
-
-# 📄 License
-
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 ---
 
