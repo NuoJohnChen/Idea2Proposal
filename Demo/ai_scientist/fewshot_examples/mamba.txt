@@ -1,0 +1,63 @@
+1. Title:
+Mamba: Exploring Linear-Time Sequence Modeling with Selective State Spaces
+2. Problem Statement:
+The Transformer architecture, while dominant, is fundamentally constrained by the quadratic complexity of its atten-
+tion mechanism. This makes scaling to very long sequences computationally prohibitive. Current alternatives, such as
+linear attention or structured state space models (SSMs), achieve linear or near-linear scaling but have not yet matched
+Transformer performance, especially on information-dense and discrete data like natural language. There is a clear
+performance-efficiency gap that needs to be closed.
+3. Motivation & Hypothesis:
+We hypothesize that a key weakness of existing efficient models is their time-invariant nature. Their core recurrence or
+convolution operations are fixed regardless of the input, which prevents them from dynamically adapting to the content
+of the sequence. For example, they cannot easily ”choose” to remember a specific token from the distant past while
+ignoring irrelevant information in between.
+Our central idea is to introduce a selection mechanism into the SSM framework. We believe that by making the
+model’s state-transition parameters a function of the input, the model could learn to selectively propagate or forget
+information along the sequence dimension. This content-aware reasoning could be the missing piece needed to bridge
+the performance gap with Transformers.
+4. Proposed Method:
+We propose to develop a new class of models, which we’ll call Selective State Space Models. The plan is to tackle this
+in three parts:
+(1) Designing the Selection Mechanism: Our primary approach will be to modify the standard SSM formulation (‘A‘,
+‘B‘, ‘C‘ parameters). We will make the ‘A‘, ‘B‘, and ‘C‘ parameters input-dependent by deriving them from the input
+‘x‘ through small linear projections. This should give the model the flexibility to modulate its own dynamics at each
+timestep.
+(2) Overcoming the Computational Hurdle: This input-dependency breaks the efficient convolution-based computa-
+tion used by prior SSMs. A naive recurrent implementation would be far too slow due to memory bottlenecks. To solve
+this, we plan to design a hardware-aware parallel scan algorithm. The idea is to use kernel fusion to perform the ex-
+pensive state expansion and recurrence within the GPU’s fast SRAM, avoiding costly read/writes to main HBM. We’ll
+also need to implement recomputation in the backward pass to keep memory usage viable for training large models.
+(3) A Simplified Architecture (Mamba): We will integrate our new selective SSM layer into a simplified, homogenous
+neural network architecture. Instead of alternating between attention and MLP blocks like in a Transformer, we will try
+stacking a single, unified ”Mamba” block that combines the SSM with gated activations. This could lead to a simpler
+and more elegant design.
+5. Step-by-Step Experiment Plan:
+1. Isolate and Validate the Selection Mechanism:
+First, we need to test if our core hypothesis is sound. We will create synthetic tasks where LTI models are known to fail
+but where selectivity should, in theory, succeed.
+• Selective Copying: Can our model learn to recall specific tokens while ignoring variable-length spans of ”noise”
+tokens?
+• Induction Heads: Can our model solve this task, which is thought to be critical for in-context learning in LLMs?
+We are particularly interested in testing if it can extrapolate to much longer sequences than it was trained on.
+2. Assess Performance on Long-Context Modalities:
+If the synthetic tasks show promise, we’ll move to real-world data where long-range dependencies are key.
+• Genomics & Audio: We will train models on DNA and audio waveform data, with sequence lengths up to one
+million. Our key metric will be whether model performance (e.g., perplexity, BPD) improves with longer context,
+which would be a strong signal that the selection mechanism is working as intended.
+3. Challenge Transformers on Language Modeling:
+This is the ultimate test. We will conduct a series of language modeling experiments on a standard dataset like The Pile.
+• Scaling Laws: We’ll train models at several scales (e.g., ∼100M to ∼1B+ parameters) and plot their performance
+(perplexity) against compute to directly compare their scaling efficiency to a strong Transformer baseline.
+• Downstream Evaluation: We will subject our pretrained models to a suite of zero-shot downstream tasks to see if
+the pretraining gains translate to common sense reasoning abilities.
+4. Quantify Efficiency Gains:
+We need to rigorously prove our computational claims.
+• We will benchmark the raw speed of our selective scan kernel against optimized attention (FlashAttention-2) and
+convolution implementations.
+• We will measure the end-to-end inference throughput (tokens/sec) and compare it against a Transformer of a similar
+size to demonstrate the practical benefits of eliminating the KV cache.
+5. Conduct Ablation Studies:
+To understand what makes the model work, we’ll dissect it.
+• Which parameters (‘A‘, ‘B‘, ‘C‘) are most critical to make selective?
+• How does performance change as we increase the latent state dimension ‘N ‘?
+• How does our simplified Mamba architecture compare to more complex hybrid designs?

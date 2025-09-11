@@ -1,3 +1,6 @@
+[Idea Generation](https://github.com/NuoJohnChen/Idea2Proposal/tree/main/MultiAgent_IdeaGen)   [Proposal Evaluation](https://github.com/NuoJohnChen/Idea2Proposal/tree/main/Proposal_Evaluation)   [Demo Deployment](https://github.com/NuoJohnChen/Idea2Proposal/tree/main/Demo)
+
+
 <h1 align="center"> 🤝 Idea Geneation by Multi-Agent Collaboration 🎓 </h1>
 
 <h3 align="center">
@@ -11,7 +14,6 @@
         <img alt="Python Version" src="https://img.shields.io/badge/python-3.9+-blue.svg">
     </a>
 </p>
-
 **Multi-Agent Collaboration** is designed to facilitate AI-powered academic discussions and research collaboration using Large Language Models (LLMs). This framework enables researchers to simulate realistic academic conversations between AI agents with different expertise levels and generate structured research proposals from collaborative discussions.
 
 ---

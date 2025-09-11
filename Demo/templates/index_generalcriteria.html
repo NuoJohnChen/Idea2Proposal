@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Proposal Evaluator v0.1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .header-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+        }
+        .metric-card {
+            border: 1px solid #e3e6f0;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .metric-score {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #5a5c69;
+        }
+        .metric-description {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-top: 0.5rem;
+        }
+        .criteria-explanation {
+            background: #f8f9fc;
+            border-left: 4px solid #4e73df;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 0 5px 5px 0;
+        }
+        .score-scale {
+            background: #fff;
+            border: 1px solid #e3e6f0;
+            border-radius: 5px;
+            padding: 0.5rem;
+            margin: 0.25rem 0;
+        }
+        .loading-spinner {
+            display: none;
+        }
+        .result-section {
+            display: none;
+        }
+        .feedback-buttons .btn {
+            margin-right: 0.25rem;
+        }
+        .feedback-bar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .proposal-input {
+            min-height: 300px !important;
+            height: 300px !important;
+            border: 2px solid #e3e6f0;
+            border-radius: 10px;
+            padding: 1rem;
+        }
+        .pdf-upload-section {
+            background: #f8f9fc;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .thinking-section {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-top: 1rem;
+            display: none;
+        }
+        .thinking-section.loading {
+            background: #e3f2fd;
+            border: 1px solid #90caf9;
+        }
+        .thinking-content {
+            max-height: 300px;
+            overflow-y: auto;
+            background: #f8f9fa;
+            border-radius: 5px;
+            padding: 1rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            white-space: pre-wrap;
+        }
+        .api-settings-section {
+            background: #f8f9fc;
+            border: 1px solid #e3e6f0;
+            border-radius: 10px;
+            padding: 1.5rem;
+        }
+        .api-settings-section .form-control {
+            border: 1px solid #d1d3e2;
+            border-radius: 5px;
+        }
+        .api-settings-section .form-control:focus {
+            border-color: #4e73df;
+            box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+        }
+        
+        /* Custom file input styling to force English text */
+        .file-input-wrapper {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .file-input-wrapper input[type="file"] {
+            position: absolute;
+            left: -9999px;
+            opacity: 0;
+        }
+        
+        .file-input-wrapper .custom-file-input {
+            display: inline-block;
+            padding: 8px 12px;
+            background: #f8f9fa;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #495057;
+            width: 100%;
+            text-align: center;
+            transition: all 0.2s;
+        }
+        
+        .file-input-wrapper .custom-file-input:hover {
+            background: #e9ecef;
+            border-color: #adb5bd;
+        }
+        
+        .file-input-wrapper .custom-file-input.has-file {
+            background: #d4edda;
+            border-color: #c3e6cb;
+            color: #155724;
+        }
+        .thinking-toggle {
+            background: #ffc107;
+            border: none;
+            color: #212529;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .thinking-toggle:hover {
+            background: #e0a800;
+        }
+        .btn-evaluate {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border: none;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-evaluate:hover {
+            background: linear-gradient(45deg, #5a6fd8, #6a4190);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .decision-accept {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .decision-reject {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .other-fields {
+            background: #f8f9fc;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .field-item {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 5px;
+            border-left: 4px solid #4e73df;
+        }
+        
+        /* Disclaimer styling */
+        .disclaimer {
+            margin-top: 20px;
+            background: #fafafa;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+        }
+        
+        .disclaimer h3 {
+            color: #666;
+            margin-bottom: 8px;
+            font-size: 0.8em;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        
+        .disclaimer-content {
+            color: #777;
+            line-height: 1.4;
+            font-size: 0.75em;
+        }
+        
+        .disclaimer-content p {
+            margin-bottom: 6px;
+        }
+        
+        .disclaimer-content p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1><i class="fas fa-clipboard-check"></i> Research Proposal Evaluator v0.1</h1>
+                    <p class="lead">Automated evaluation of research proposals using AI-powered analysis</p>
+                    <div class="description-section mt-4">
+                        <p class="mb-3">This demo primarily evaluates research proposals written after brainstorming with collaborators, mainly focusing on reflecting the value of ideas rather than writing.</p>
+                        <div class="links-section mt-3">
+                            <span class="me-3">
+                                <strong>Proposal Example:</strong> 
+                                <a href="#" class="text-white" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    {click for example}
+                                </a>
+                            </span>
+                            <span>
+                                <strong>Criterias:</strong> 
+                                <a href="#" class="text-white" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#criteriaModal">
+                                    {click for criteria}
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fas fa-edit"></i> Submit Your Research Proposal</h3>
+                        <p class="card-text">Please provide your research proposal text below and click "Evaluate" to get a comprehensive assessment. Or, give a pdf file and click "Extract text from PDF".</p>
+                        
+                        <!-- API Settings Section -->
+                        <div class="api-settings-section mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5><i class="fas fa-cog"></i> API Settings (Optional)</h5>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" id="toggleApiSettings">
+                                    <i class="fas fa-chevron-down"></i> Show Settings
+                                </button>
+                            </div>
+                            <div id="apiSettingsContent" class="collapse">
+                                <div class="alert alert-info">
+                                    <i class="fas fa-info-circle"></i>
+                                    <strong>Custom API Configuration:</strong> If you provide your own API settings, the system will use your configuration instead of the default one. Leave empty to use the default settings.
+                                </div>
+                                
+                                <!-- Quick Presets -->
+                                <div class="mb-3">
+                                    <label><strong>Quick Presets:</strong></label>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-outline-primary btn-sm" onclick="setApiPreset('openai')">
+                                            OpenAI
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary btn-sm" onclick="setApiPreset('anthropic')">
+                                            Anthropic
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary btn-sm" onclick="setApiPreset('google')">
+                                            Google
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary btn-sm" onclick="clearApiSettings()">
+                                            Clear
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-3">
+                                            <label for="apiKey"><strong>API Key:</strong></label>
+                                            <input type="password" class="form-control" id="apiKey" 
+                                                   placeholder="Your API key (e.g., sk-...)">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-3">
+                                            <label for="apiBase"><strong>API Base URL:</strong></label>
+                                            <input type="url" class="form-control" id="apiBase" 
+                                                   placeholder="https://api.openai.com/v1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-3">
+                                            <label for="modelName"><strong>Model Name:</strong></label>
+                                            <input type="text" class="form-control" id="modelName" 
+                                                   placeholder="e.g., deepseek-v3, gpt-4o-mini">
+                                            <small class="form-text text-muted">
+                                                Specify the exact model name from your API provider
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-3">
+                                            <label for="temperature"><strong>Temperature:</strong></label>
+                                            <input type="number" class="form-control" id="temperature" 
+                                                   min="0" max="2" step="0.1" value="0.1"
+                                                   placeholder="0.1">
+                                            <small class="form-text text-muted">
+                                                Controls randomness (0=deterministic, 2=very random)
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-muted small">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <strong>Security Note:</strong> Your API credentials are only used for this evaluation session and are not stored on our servers.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="proposalText"><strong>Research Proposal Text:</strong></label>
+                            <textarea class="form-control proposal-input" id="proposalText" 
+                                placeholder="Paste your research proposal here...
+
+Example format:
+Title: Your Research Title
+Problem Statement: Description of the problem...
+Motivation & Hypothesis: Your hypothesis...
+Proposed Method: Your approach...
+Step-by-Step Experiment Plan: Your experimental design..."></textarea>
+                        </div>
+                        
+                        <!-- PDF Upload Section -->
+                        <div class="pdf-upload-section">
+                            <h5><i class="fas fa-file-pdf"></i> Upload PDF or Provide URL</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label for="pdfFile"><strong>Upload PDF File:</strong></label>
+                                        <div class="file-input-wrapper">
+                                            <input type="file" class="form-control" id="pdfFile" accept=".pdf">
+                                            <div class="custom-file-input" id="customFileInput">Choose File</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label for="pdfUrl"><strong>Or PDF URL:</strong></label>
+                                        <input type="url" class="form-control" id="pdfUrl" 
+                                               placeholder="https://example.com/proposal.pdf">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="d-inline-flex align-items-center" style="gap: 12px;">
+                                    <button class="btn btn-outline-primary" id="extractPdfBtn">
+                                        <i class="fas fa-download"></i> Extract Text from PDF
+                                    </button>
+                                    <div class="feedback-bar" id="extractFeedbackBar" style="display: none;">
+                                        <span class="text-muted small">Helpful?</span>
+                                        <div class="feedback-buttons">
+                                            <button class="btn btn-sm btn-outline-success" id="thumbsUpExtract"><i class="fas fa-thumbs-up"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger" id="thumbsDownExtract"><i class="fas fa-thumbs-down"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Call for Proposal Section -->
+                        <div class="form-group mb-4">
+                            <label for="callForProposal"><strong>Call for Proposal (Optional):</strong></label>
+                            <p class="text-muted small mb-2">
+                                <i class="fas fa-info-circle"></i> 
+                                If you provide the call for proposal text, our system will additionally evaluate how well your proposal addresses the specific requirements and objectives outlined in the call. This helps ensure your proposal is properly aligned with the expected outcomes.
+                            </p>
+                            <textarea class="form-control" id="callForProposal" rows="4"
+                                placeholder="Paste the call for proposal text here (if available)...
+
+Example:
+This workshop seeks innovative research proposals that address...
+Key requirements:
+- Novel approaches to...
+- Applications in...
+- Evaluation criteria include..."></textarea>
+                            <small class="form-text text-muted">
+                                <i class="fas fa-check-circle text-success"></i> 
+                                When provided, the system will test whether your proposal addresses the call for proposal fully, give you a "Call_Response" score, and provide specific feedback and suggestions for improvement.
+                            </small>
+                        </div>
+                        
+                        <div class="mt-4 d-flex justify-content-between align-items-center flex-wrap">
+                            <div class="mb-2">
+                                <span class="me-2">For local deployment:</span>
+                                <a href="https://github.com/NuoJohnChen/Idea2Proposal" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                                    <i class="fab fa-github"></i> NuoJohnChen/Idea2Proposal
+                                </a>
+                            </div>
+                            <button class="btn btn-evaluate mb-2" id="evaluateBtn">
+                                <i class="fas fa-rocket"></i> Evaluate Proposal
+                            </button>
+                            <div class="mb-2 text-end">
+                                <span class="me-2">The version for Chinese 本子:</span>
+                                <a href="https://github.com/NuoJohnChen/BenziEval" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                                    <i class="fab fa-github"></i> NuoJohnChen/BenziEval
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="loading-spinner text-center mt-4" id="loadingSpinner">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <p class="mt-2">Evaluating your proposal... This may take a few moments.</p>
+                            <button class="btn btn-outline-info mt-3" id="showThinkingBtn" style="display: none;">
+                                <i class="fas fa-brain"></i> Show Review Process
+                            </button>
+                        </div>
+                        
+                        <!-- Thinking Process Section -->
+                        <div class="thinking-section" id="thinkingSection">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="mb-0"><i class="fas fa-brain"></i> AI Thinking Process</h5>
+                                <button class="thinking-toggle" id="thinkingToggle">
+                                    <i class="fas fa-eye"></i> Show/Hide Details
+                                </button>
+                            </div>
+                            <div class="thinking-content" id="thinkingContent">
+                                <!-- Thinking content will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-section" id="resultSection">
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="mb-0"><i class="fas fa-chart-line"></i> Evaluation Results</h2>
+                        <div class="feedback-bar" id="evaluationFeedbackBar" style="display: none;">
+                            <span class="text-muted small">Was this helpful?</span>
+                            <div class="feedback-buttons">
+                                <button class="btn btn-sm btn-outline-success" id="thumbsUpEval"><i class="fas fa-thumbs-up"></i></button>
+                                <button class="btn btn-sm btn-outline-danger" id="thumbsDownEval"><i class="fas fa-thumbs-down"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Metrics -->
+            <div class="row" id="keyMetrics">
+                <!-- Metrics will be populated by JavaScript -->
+            </div>
+
+            <!-- Other Fields -->
+            <div class="other-fields" id="otherFields">
+                <h3><i class="fas fa-list"></i> Additional Review Details</h3>
+                <div id="otherFieldsContent">
+                    <!-- Other fields will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cite Section -->
+    <div class="container mt-5 mb-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <button class="btn btn-outline-secondary" id="citeToggle">
+                            <i class="fas fa-chevron-down"></i> Cite our Paper
+                        </button>
+                        <div id="citeContent" style="display: none;" class="mt-3">
+                            <div class="alert alert-info">
+                                <h6><strong>If this demo is helpful, please kindly cite as:</strong></h6>
+                                <div id="citationText" class="text-start" style="font-family: 'Courier New', monospace; background: #f8f9fa; padding: 1rem; border-radius: 5px; white-space: pre-line;">
+@misc{chen2025brainstormingdriveshighqualityscientific,
+      title={Beyond Brainstorming: What Drives High-Quality Scientific Ideas? Lessons from Multi-Agent Collaboration}, 
+      author={Nuo Chen and Yicheng Tong and Jiaying Wu and Minh Duc Duong and Qian Wang and Qingyun Zou and Bryan Hooi and Bingsheng He},
+      year={2025},
+      eprint={2508.04575},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2508.04575}, 
+}
+                                </div>
+                                <button class="btn btn-sm btn-primary mt-2" id="copyCitation">
+                                    <i class="fas fa-copy"></i> Copy Citation
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Policy Disclaimer -->
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="disclaimer">
+                    <h3>Data Policy & Disclaimer</h3>
+                    <div class="disclaimer-content">
+                        <p>Evaluation results are for reference purposes only and should not be considered as official review outcomes. Queries may be temporarily processed to enhance system performance but will not be permanently stored.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Example Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-file-text"></i> Research Proposal Example</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="example-content" style="font-family: 'Courier New', monospace; background: #f8f9fa; padding: 1rem; border-radius: 5px; white-space: pre-line; max-height: 60vh; overflow-y: auto;">
+1. Title:
+Mamba: Exploring Linear-Time Sequence Modeling with Selective State Spaces
+
+2. Problem Statement:
+The Transformer architecture, while dominant, is fundamentally constrained by the quadratic complexity of its attention mechanism. This makes scaling to very long sequences computationally prohibitive. Current alternatives, such as linear attention or structured state space models (SSMs), achieve linear or near-linear scaling but have not yet matched Transformer performance, especially on information-dense and discrete data like natural language. There is a clear performance-efficiency gap that needs to be closed.
+
+3. Motivation & Hypothesis:
+We hypothesize that a key weakness of existing efficient models is their time-invariant nature. Their core recurrence or convolution operations are fixed regardless of the input, which prevents them from dynamically adapting to the content of the sequence. For example, they cannot easily "choose" to remember a specific token from the distant past while ignoring irrelevant information in between.
+
+Our central idea is to introduce a selection mechanism into the SSM framework. We believe that by making the model's state-transition parameters a function of the input, the model could learn to selectively propagate or forget information along the sequence dimension. This content-aware reasoning could be the missing piece needed to bridge the performance gap with Transformers.
+
+4. Proposed Method:
+We propose to develop a new class of models, which we'll call Selective State Space Models. The plan is to tackle this in three parts:
+
+(1) Designing the Selection Mechanism: Our primary approach will be to modify the standard SSM formulation ('A', 'B', 'C' parameters). We will make the 'A', 'B', and 'C' parameters input-dependent by deriving them from the input 'x' through small linear projections. This should give the model the flexibility to modulate its own dynamics at each timestep.
+
+(2) Overcoming the Computational Hurdle: This input-dependency breaks the efficient convolution-based computation used by prior SSMs. A naive recurrent implementation would be far too slow due to memory bottlenecks. To solve this, we plan to design a hardware-aware parallel scan algorithm. The idea is to use kernel fusion to perform the expensive state expansion and recurrence within the GPU's fast SRAM, avoiding costly read/writes to main HBM. We'll also need to implement recomputation in the backward pass to keep memory usage viable for training large models.
+
+(3) A Simplified Architecture (Mamba): We will integrate our new selective SSM layer into a simplified, homogenous neural network architecture. Instead of alternating between attention and MLP blocks like in a Transformer, we will try stacking a single, unified "Mamba" block that combines the SSM with gated activations. This could lead to a simpler and more elegant design.
+
+5. Step-by-Step Experiment Plan:
+1. Isolate and Validate the Selection Mechanism:
+First, we need to test if our core hypothesis is sound. We will create synthetic tasks where LTI models are known to fail but where selectivity should, in theory, succeed.
+• Selective Copying: Can our model learn to recall specific tokens while ignoring variable-length spans of "noise" tokens?
+• Induction Heads: Can our model solve this task, which is thought to be critical for in-context learning in LLMs? We are particularly interested in testing if it can extrapolate to much longer sequences than it was trained on.
+
+2. Assess Performance on Long-Context Modalities:
+If the synthetic tasks show promise, we'll move to real-world data where long-range dependencies are key.
+• Genomics & Audio: We will train models on DNA and audio waveform data, with sequence lengths up to one million. Our key metric will be whether model performance (e.g., perplexity, BPD) improves with longer context, which would be a strong signal that the selection mechanism is working as intended.
+
+3. Challenge Transformers on Language Modeling:
+This is the ultimate test. We will conduct a series of language modeling experiments on a standard dataset like The Pile.
+• Scaling Laws: We'll train models at several scales (e.g., ∼100M to ∼1B+ parameters) and plot their performance (perplexity) against compute to directly compare their scaling efficiency to a strong Transformer baseline.
+• Downstream Evaluation: We will subject our pretrained models to a suite of zero-shot downstream tasks to see if the pretraining gains translate to common sense reasoning abilities.
+
+4. Quantify Efficiency Gains:
+We need to rigorously prove our computational claims.
+• We will benchmark the raw speed of our selective scan kernel against optimized attention (FlashAttention-2) and convolution implementations.
+• We will measure the end-to-end inference throughput (tokens/sec) and compare it against a Transformer of a similar size to demonstrate the practical benefits of eliminating the KV cache.
+
+5. Conduct Ablation Studies:
+To understand what makes the model work, we'll dissect it.
+• Which parameters ('A', 'B', 'C') are most critical to make selective?
+• How does performance change as we increase the latent state dimension 'N'?
+• How does our simplified Mamba architecture compare to more complex hybrid designs?
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="copyExample()">Copy to Input</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Criteria Modal -->
+    <div class="modal fade" id="criteriaModal" tabindex="-1" aria-labelledby="criteriaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="criteriaModalLabel"><i class="fas fa-star"></i> 8-Criteria Evaluation Framework</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="criteria-content" style="max-height: 70vh; overflow-y: auto;">
+                        <h6><strong>Core Evaluation Dimensions:</strong></h6>
+                        
+                        <div class="metric-section mb-4">
+                            <h6 class="text-primary"><strong>1. Novelty (1-10)</strong></h6>
+                            <p><strong>Definition:</strong> This metric assesses the degree to which the research proposal introduces an original idea that modifies existing paradigms in the field. It evaluates originality (how rare, ingenious, imaginative, or surprising the core insight is) and paradigm relatedness (whether the idea preserves the current paradigm or modifies it in a radical, transformational way). High novelty indicates a proposal that challenges fundamental assumptions or opens new avenues of research, rather than incremental tweaks.</p>
+                            <div class="scoring-details">
+                                <p><strong>Guiding Question:</strong> How original and paradigm-modifying is the core idea? Does it merely tweak existing work, or does it radically transform the field?</p>
+                                <ul class="small">
+                                    <li><strong>1-3:</strong> Low Novelty. Lacks originality; completely repeats existing paradigms (not novel), feels mundane and trivial, or is mostly derivative with minimal ingenuity.</li>
+                                    <li><strong>4-7:</strong> Moderate Novelty. Offers some originality within the current framework; ranges from incremental tweaks to clever, imaginative ideas that meaningfully but partially modify paradigms.</li>
+                                    <li><strong>8-10:</strong> High Novelty. Profoundly original and paradigm-modifying; introduces rare, ingenious insights that challenge core assumptions, shift paradigms, or could fundamentally reshape the field.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="metric-section mb-4">
+                            <h6 class="text-primary"><strong>2. Workability (1-10)</strong></h6>
+                            <p><strong>Definition:</strong> This metric evaluates the feasibility of the proposed research plan, assessing whether it can be easily implemented without violating known constraints (e.g., technical, ethical, or resource limitations). It considers acceptability (social, legal, or political feasibility) and implementability (ease of execution, including awareness of risks and mitigation strategies). High workability indicates a practical, grounded blueprint rather than speculative ideas.</p>
+                            <div class="scoring-details">
+                                <p><strong>Guiding Question:</strong> How feasible and implementable is the plan? Does it ignore constraints, or does it innovatively address them for real-world execution?</p>
+                                <ul class="small">
+                                    <li><strong>1-3:</strong> Low Workability. Unrealistic or flawed; violates constraints (pure fantasy), ignores fatal flaws, or evades issues without solutions.</li>
+                                    <li><strong>4-7:</strong> Moderate Workability. Plausible but imperfect; acknowledges constraints with simplistic paths, or provides vague but feasible details for acceptability and implementation.</li>
+                                    <li><strong>8-10:</strong> High Workability. Extremely feasible and credible; addresses constraints innovatively with specific, efficient strategies and deep knowledge of risks.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="metric-section mb-4">
+                            <h6 class="text-primary"><strong>3. Relevance (1-10)</strong></h6>
+                            <p><strong>Definition:</strong> This metric assesses how well the proposal applies to the stated research problem and its potential effectiveness in solving it. It evaluates applicability (direct fit to the problem) and effectiveness (likelihood of achieving meaningful results or impact). High relevance ensures the proposal addresses a genuine gap in a compelling, targeted manner, forming a cohesive narrative from problem to solution.</p>
+                            <div class="scoring-details">
+                                <p><strong>Guiding Question:</strong> How well does the proposal fit and solve the problem? Is it disconnected, or does it offer transformative impact?</p>
+                                <ul class="small">
+                                    <li><strong>1-3:</strong> Low Relevance. Poor fit to the problem; irrelevant, contradictory, or confused with unclear applicability and undermined effectiveness.</li>
+                                    <li><strong>4-7:</strong> Moderate Relevance. Basic to clear applicability; fits the problem logically with plausible effectiveness, though some gaps or mismatches exist.</li>
+                                    <li><strong>8-10:</strong> High Relevance. Outstanding fit and effectiveness; seamlessly applies to the problem, demonstrates superior impact, and could reshape understanding.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="metric-section mb-4">
+                            <h6 class="text-primary"><strong>4. Specificity (1-10)</strong></h6>
+                            <p><strong>Definition:</strong> This metric evaluates how clearly and thoroughly the proposal is articulated, assessing whether it is worked out in detail. It considers implicational explicitness (clear links between actions and outcomes), completeness (breadth of coverage across who, what, where, when, why, and how), and clarity (grammatical and communicative precision). High specificity distinguishes detailed, rigorous plans from vague or incomplete ones.</p>
+                            <div class="scoring-details">
+                                <p><strong>Guiding Question:</strong> How detailed and clear is the articulation? Is it incoherent, or does it provide a benchmark-level blueprint?</p>
+                                <ul class="small">
+                                    <li><strong>1-3:</strong> Low Specificity. Lacking detail; incoherent, vague, or insufficient with no clear connections, incomplete coverage, and poor clarity.</li>
+                                    <li><strong>4-7:</strong> Moderate Specificity. Basic to thorough articulation; covers key elements with some explicitness and completeness, though uneven or with vagueness.</li>
+                                    <li><strong>8-10:</strong> High Specificity. Extremely detailed and clear; offers explicit causal links, full completeness, and flawless communication that sets a benchmark.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="metric-section mb-4">
+                            <h6 class="text-primary"><strong>5. Integration Depth (1-10)</strong></h6>
+                            <p><strong>Definition:</strong> This metric assesses how well the proposal integrates diverse concepts, methodologies, or data sources into a cohesive and synergistic framework. It evaluates the ability to connect disparate elements, creating a whole that is greater than the sum of its parts. High integration depth indicates a sophisticated, interdisciplinary approach, rather than a siloed or fragmented one.</p>
+                            <div class="scoring-details">
+                                <p><strong>Guiding Question:</strong> How deeply and effectively does the proposal connect different ideas or methods? Is it a collection of separate parts, or a truly integrated system?</p>
+                                <ul class="small">
+                                    <li><strong>1-3:</strong> Low. Siloed approach; elements are disconnected or poorly combined.</li>
+                                    <li><strong>4-7:</strong> Moderate. Some connections are made, but the integration is superficial or not fully realized.</li>
+                                    <li><strong>8-10:</strong> High. Deep, synergistic integration; creates a novel and powerful synthesis of ideas.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="metric-section mb-4">
+                            <h6 class="text-primary"><strong>6. Strategic Vision (1-10)</strong></h6>
+                            <p><strong>Definition:</strong> This metric evaluates the long-term potential and forward-looking perspective of the proposal. It assesses whether the research addresses not just an immediate gap but also anticipates future trends, sets the stage for subsequent work, and has a clear vision for its broader impact on the field or society. High strategic vision indicates a proposal that is not just a single project, but a foundational step in a larger, ambitious research agenda.</p>
+                            <div class="scoring-details">
+                                <p><strong>Guiding Question:</strong> What is the long-term ambition of this proposal? Does it have a clear and compelling vision for the future?</p>
+                                <ul class="small">
+                                    <li><strong>1-3:</strong> Low. Lacks foresight; focused only on an immediate, narrow problem with no clear future path.</li>
+                                    <li><strong>4-7:</strong> Moderate. Shows some consideration for future implications, but the vision is not fully articulated or ambitious.</li>
+                                    <li><strong>8-10:</strong> High. Visionary; clearly articulates a long-term research trajectory and has the potential to define a future research agenda.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="metric-section mb-4">
+                            <h6 class="text-primary"><strong>7. Methodological Rigor (1-10)</strong></h6>
+                            <p><strong>Definition:</strong> This metric assesses the soundness and appropriateness of the proposed research methods. It evaluates the quality of the experimental design, data collection procedures, analytical techniques, and validation strategies. High methodological rigor ensures that the research outcomes will be reliable, valid, and reproducible.</p>
+                            <div class="scoring-details">
+                                <p><strong>Guiding Question:</strong> Are the proposed methods robust, appropriate, and well-defined? Can the results be trusted?</p>
+                                <ul class="small">
+                                    <li><strong>1-3:</strong> Low. Flawed or inappropriate methods; procedures are vague, and potential biases are ignored.</li>
+                                    <li><strong>4-7:</strong> Moderate. Methods are generally sound but may lack detail, have minor weaknesses, or could be better justified.</li>
+                                    <li><strong>8-10:</strong> High. Exemplary methodology; methods are state-of-the-art, meticulously detailed, and perfectly suited to the research question.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="metric-section mb-4">
+                            <h6 class="text-primary"><strong>8. Argumentative Cohesion (1-10)</strong></h6>
+                            <p><strong>Definition:</strong> This metric assesses the logical flow and coherence of the argument presented in the proposal. It evaluates how well different sections connect to form a unified narrative, the consistency of reasoning throughout, and the strength of the logical connections between claims and evidence. High argumentative cohesion indicates a proposal where all parts work together to build a compelling, logically sound case.</p>
+                            <div class="scoring-details">
+                                <p><strong>Guiding Question:</strong> How well does the proposal construct a coherent, logical argument? Are the connections between ideas clear and compelling?</p>
+                                <ul class="small">
+                                    <li><strong>1-3:</strong> Low. Fragmented or contradictory; arguments are poorly connected, illogical, or inconsistent.</li>
+                                    <li><strong>4-7:</strong> Moderate. Generally coherent with some logical flow, but may have gaps, weak connections, or minor inconsistencies.</li>
+                                    <li><strong>8-10:</strong> High. Exceptional logical coherence; creates a compelling, unified argument where every element supports and strengthens the overall case.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="metric-section mb-4">
+                            <h6 class="text-primary"><strong>Overall Quality of Idea (1-10)</strong></h6>
+                            <p><strong>Definition:</strong> This metric synthesizes all eight dimensions to evaluate the proposal's overall quality and potential impact.</p>
+                            <div class="scoring-details">
+                                <p><strong>Guiding Question:</strong> How well does the proposal balance creativity, feasibility, and impact across all dimensions?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function copyExample() {
+            const exampleText = `1. Title:
+Mamba: Exploring Linear-Time Sequence Modeling with Selective State Spaces
+
+2. Problem Statement:
+The Transformer architecture, while dominant, is fundamentally constrained by the quadratic complexity of its attention mechanism. This makes scaling to very long sequences computationally prohibitive. Current alternatives, such as linear attention or structured state space models (SSMs), achieve linear or near-linear scaling but have not yet matched Transformer performance, especially on information-dense and discrete data like natural language. There is a clear performance-efficiency gap that needs to be closed.
+
+3. Motivation & Hypothesis:
+We hypothesize that a key weakness of existing efficient models is their time-invariant nature. Their core recurrence or convolution operations are fixed regardless of the input, which prevents them from dynamically adapting to the content of the sequence. For example, they cannot easily "choose" to remember a specific token from the distant past while ignoring irrelevant information in between.
+
+Our central idea is to introduce a selection mechanism into the SSM framework. We believe that by making the model's state-transition parameters a function of the input, the model could learn to selectively propagate or forget information along the sequence dimension. This content-aware reasoning could be the missing piece needed to bridge the performance gap with Transformers.
+
+4. Proposed Method:
+We propose to develop a new class of models, which we'll call Selective State Space Models. The plan is to tackle this in three parts:
+
+(1) Designing the Selection Mechanism: Our primary approach will be to modify the standard SSM formulation ('A', 'B', 'C' parameters). We will make the 'A', 'B', and 'C' parameters input-dependent by deriving them from the input 'x' through small linear projections. This should give the model the flexibility to modulate its own dynamics at each timestep.
+
+(2) Overcoming the Computational Hurdle: This input-dependency breaks the efficient convolution-based computation used by prior SSMs. A naive recurrent implementation would be far too slow due to memory bottlenecks. To solve this, we plan to design a hardware-aware parallel scan algorithm. The idea is to use kernel fusion to perform the expensive state expansion and recurrence within the GPU's fast SRAM, avoiding costly read/writes to main HBM. We'll also need to implement recomputation in the backward pass to keep memory usage viable for training large models.
+
+(3) A Simplified Architecture (Mamba): We will integrate our new selective SSM layer into a simplified, homogenous neural network architecture. Instead of alternating between attention and MLP blocks like in a Transformer, we will try stacking a single, unified "Mamba" block that combines the SSM with gated activations. This could lead to a simpler and more elegant design.
+
+5. Step-by-Step Experiment Plan:
+1. Isolate and Validate the Selection Mechanism:
+First, we need to test if our core hypothesis is sound. We will create synthetic tasks where LTI models are known to fail but where selectivity should, in theory, succeed.
+• Selective Copying: Can our model learn to recall specific tokens while ignoring variable-length spans of "noise" tokens?
+• Induction Heads: Can our model solve this task, which is thought to be critical for in-context learning in LLMs? We are particularly interested in testing if it can extrapolate to much longer sequences than it was trained on.
+
+2. Assess Performance on Long-Context Modalities:
+If the synthetic tasks show promise, we'll move to real-world data where long-range dependencies are key.
+• Genomics & Audio: We will train models on DNA and audio waveform data, with sequence lengths up to one million. Our key metric will be whether model performance (e.g., perplexity, BPD) improves with longer context, which would be a strong signal that the selection mechanism is working as intended.
+
+3. Challenge Transformers on Language Modeling:
+This is the ultimate test. We will conduct a series of language modeling experiments on a standard dataset like The Pile.
+• Scaling Laws: We'll train models at several scales (e.g., ∼100M to ∼1B+ parameters) and plot their performance (perplexity) against compute to directly compare their scaling efficiency to a strong Transformer baseline.
+• Downstream Evaluation: We will subject our pretrained models to a suite of zero-shot downstream tasks to see if the pretraining gains translate to common sense reasoning abilities.
+
+4. Quantify Efficiency Gains:
+We need to rigorously prove our computational claims.
+• We will benchmark the raw speed of our selective scan kernel against optimized attention (FlashAttention-2) and convolution implementations.
+• We will measure the end-to-end inference throughput (tokens/sec) and compare it against a Transformer of a similar size to demonstrate the practical benefits of eliminating the KV cache.
+
+5. Conduct Ablation Studies:
+To understand what makes the model work, we'll dissect it.
+• Which parameters ('A', 'B', 'C') are most critical to make selective?
+• How does performance change as we increase the latent state dimension 'N'?
+• How does our simplified Mamba architecture compare to more complex hybrid designs?`;
+            
+            document.getElementById('proposalText').value = exampleText;
+            bootstrap.Modal.getInstance(document.getElementById('exampleModal')).hide();
+        }
+
+        // Custom file input functionality
+        document.getElementById('customFileInput').addEventListener('click', function() {
+            document.getElementById('pdfFile').click();
+        });
+        
+        document.getElementById('pdfFile').addEventListener('change', function() {
+            const customInput = document.getElementById('customFileInput');
+            const file = this.files[0];
+            
+            if (file) {
+                customInput.textContent = file.name;
+                customInput.classList.add('has-file');
+            } else {
+                customInput.textContent = 'Choose File';
+                customInput.classList.remove('has-file');
+            }
+        });
+        
+        // Track last IDs for feedback
+        let lastExtractionId = null;
+        let lastEvaluationId = null;
+
+        // PDF extraction functionality
+        document.getElementById('extractPdfBtn').addEventListener('click', function() {
+            const pdfUrl = document.getElementById('pdfUrl').value.trim();
+            const pdfFile = document.getElementById('pdfFile').files[0];
+            
+            if (!pdfUrl && !pdfFile) {
+                alert('Please provide either a PDF URL or upload a PDF file.');
+                return;
+            }
+            
+            this.disabled = true;
+            this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Extracting...';
+            
+            let requestOptions = {};
+            
+            if (pdfFile) {
+                // Handle file upload
+                const formData = new FormData();
+                formData.append('pdf_file', pdfFile);
+                if (pdfUrl) {
+                    formData.append('pdf_url', pdfUrl);
+                }
+                requestOptions = {
+                    method: 'POST',
+                    body: formData
+                };
+            } else {
+                // Handle URL only
+                requestOptions = {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({pdf_url: pdfUrl})
+                };
+            }
+            
+            fetch('/extract_pdf', requestOptions)
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById('proposalText').value = data.text;
+                    lastExtractionId = data.extraction_id || null;
+                    document.getElementById('extractFeedbackBar').style.display = 'inline-flex';
+                    alert('PDF text extracted successfully!');
+                } else {
+                    alert('Error: ' + data.error);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while extracting PDF text.');
+            })
+            .finally(() => {
+                this.disabled = false;
+                this.innerHTML = '<i class="fas fa-download"></i> Extract Text from PDF';
+            });
+        });
+
+        // Show thinking process during evaluation
+        document.getElementById('showThinkingBtn').addEventListener('click', function() {
+            const thinkingSection = document.getElementById('thinkingSection');
+            const thinkingContent = document.getElementById('thinkingContent');
+            
+            if (thinkingSection.style.display === 'none' || thinkingSection.style.display === '') {
+                thinkingSection.style.display = 'block';
+                thinkingSection.classList.add('loading');
+                thinkingContent.style.display = 'block';
+                this.innerHTML = '<i class="fas fa-eye-slash"></i> Hide Review Process';
+                
+                // Show a placeholder message
+                thinkingContent.innerHTML = `
+                    <div class="text-center">
+                        <div class="spinner-border spinner-border-sm text-warning" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p class="mt-2">AI is currently analyzing your proposal...</p>
+                        <p class="small text-muted">The review process involves multiple rounds of reflection and ensemble evaluation.</p>
+                        <div class="mt-3">
+                            <div class="progress" style="height: 20px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                                     role="progressbar" style="width: 0%" id="thinkingProgress">0%</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                // Simulate progress
+                let progress = 0;
+                const progressBar = document.getElementById('thinkingProgress');
+                const progressInterval = setInterval(() => {
+                    progress += Math.random() * 15;
+                    if (progress > 90) progress = 90;
+                    progressBar.style.width = progress + '%';
+                    progressBar.textContent = Math.round(progress) + '%';
+                }, 1000);
+                
+                // Store interval ID to clear later
+                thinkingSection.dataset.progressInterval = progressInterval;
+            } else {
+                thinkingSection.style.display = 'none';
+                thinkingSection.classList.remove('loading');
+                this.innerHTML = '<i class="fas fa-brain"></i> Show Review Process';
+                
+                // Clear progress interval
+                if (thinkingSection.dataset.progressInterval) {
+                    clearInterval(parseInt(thinkingSection.dataset.progressInterval));
+                }
+            }
+        });
+
+        // Thinking toggle functionality
+        document.getElementById('thinkingToggle').addEventListener('click', function() {
+            const content = document.getElementById('thinkingContent');
+            const icon = this.querySelector('i');
+            
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                icon.className = 'fas fa-eye-slash';
+                this.innerHTML = '<i class="fas fa-eye-slash"></i> Hide Details';
+            } else {
+                content.style.display = 'none';
+                icon.className = 'fas fa-eye';
+                this.innerHTML = '<i class="fas fa-eye"></i> Show Details';
+            }
+        });
+
+        // API Settings toggle functionality
+        document.getElementById('toggleApiSettings').addEventListener('click', function() {
+            const content = document.getElementById('apiSettingsContent');
+            const icon = this.querySelector('i');
+            
+            if (content.classList.contains('show')) {
+                content.classList.remove('show');
+                icon.className = 'fas fa-chevron-down';
+                this.innerHTML = '<i class="fas fa-chevron-down"></i> Show Settings';
+            } else {
+                content.classList.add('show');
+                icon.className = 'fas fa-chevron-up';
+                this.innerHTML = '<i class="fas fa-chevron-up"></i> Hide Settings';
+            }
+        });
+
+        // API Preset functions
+        function setApiPreset(provider) {
+            const presets = {
+                'openai': {
+                    apiBase: 'https://api.openai.com/v1',
+                    modelName: 'gpt-4',
+                    temperature: 0.1
+                },
+                'anthropic': {
+                    apiBase: 'https://api.anthropic.com/v1',
+                    modelName: 'claude-3-sonnet-20240229',
+                    temperature: 0.1
+                },
+                'google': {
+                    apiBase: 'https://generativelanguage.googleapis.com/v1beta',
+                    modelName: 'gemini-pro',
+                    temperature: 0.1
+                }
+            };
+            
+            const preset = presets[provider];
+            if (preset) {
+                document.getElementById('apiBase').value = preset.apiBase;
+                document.getElementById('modelName').value = preset.modelName;
+                document.getElementById('temperature').value = preset.temperature;
+                
+                // Focus on API Key field for user to enter their key
+                document.getElementById('apiKey').focus();
+            }
+        }
+
+        function clearApiSettings() {
+            document.getElementById('apiKey').value = '';
+            document.getElementById('apiBase').value = '';
+            document.getElementById('modelName').value = '';
+            document.getElementById('temperature').value = '0.1';
+        }
+
+        document.getElementById('evaluateBtn').addEventListener('click', function() {
+            const proposalText = document.getElementById('proposalText').value.trim();
+            const callForProposal = document.getElementById('callForProposal').value.trim();
+            
+            // Get API settings
+            const apiSettings = {
+                apiKey: document.getElementById('apiKey').value.trim(),
+                apiBase: document.getElementById('apiBase').value.trim(),
+                modelName: document.getElementById('modelName').value.trim(),
+                temperature: parseFloat(document.getElementById('temperature').value) || 0.1
+            };
+            
+            if (!proposalText) {
+                alert('Please enter a research proposal text.');
+                return;
+            }
+
+            // Show loading spinner
+            document.getElementById('loadingSpinner').style.display = 'block';
+            document.getElementById('resultSection').style.display = 'none';
+            document.getElementById('thinkingSection').style.display = 'none';
+            this.disabled = true;
+
+            // Show thinking button after a short delay
+            setTimeout(() => {
+                document.getElementById('showThinkingBtn').style.display = 'inline-block';
+            }, 2000);
+
+            // Make API call
+            fetch('/evaluate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    proposal_text: proposalText,
+                    call_for_proposal: callForProposal,
+                    api_settings: apiSettings
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    displayResults(data.review, data.scoring_criteria, data.thinking_process);
+                    lastEvaluationId = data.evaluation_id || null;
+                    document.getElementById('evaluationFeedbackBar').style.display = 'inline-flex';
+                } else {
+                    alert('Error: ' + data.error);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while evaluating the proposal.');
+            })
+            .finally(() => {
+                // Hide loading spinner and thinking button
+                document.getElementById('loadingSpinner').style.display = 'none';
+                document.getElementById('showThinkingBtn').style.display = 'none';
+                document.getElementById('evaluateBtn').disabled = false;
+            });
+        });
+
+        function getScoreExplanation(score, criteriaName) {
+            const explanations = {
+                'Novelty': {
+                    1: 'Not Novel: Completely repeats existing paradigms without any original or modifying elements.',
+                    2: 'Trivial: Lacks rarity and ingenuity, feeling mundane and non-transformational.',
+                    3: 'Derivative: Mostly paradigm-preserving with minimal originality, resembling common approaches.',
+                    4: 'Minimally Novel: Slightly original, with just enough rarity or ingenuity to qualify as non-derivative, but mostly paradigm-preserving.',
+                    5: 'Solid Originality: Offers meaningful novelty but leans more toward paradigm-preserving improvements.',
+                    6: 'Clever: Presents a non-obvious, imaginative idea that partially modifies paradigms within the current framework.',
+                    7: 'Significant Novelty: Introduces a rare and ingenious approach that meaningfully modifies existing paradigms.',
+                    8: 'Highly Original: The core insight is profoundly novel and paradigm-modifying, offering a surprising new perspective on a key problem.',
+                    9: 'Paradigm-Shifting: The idea is extremely rare and imaginative, challenging core paradigms with transformative potential.',
+                    10: 'Field-Defining: Proposes a highly original and paradigm-modifying idea that could fundamentally reshape the field or create a new subfield.'
+                },
+                'Workability': {
+                    1: 'Pure Fantasy: Violates known constraints entirely, with no feasible path to implementation.',
+                    2: 'Ignores Fatal Flaws: Obvious constraints are overlooked, making acceptability or implementability doubtful.',
+                    3: 'Overly Optimistic: Acknowledges constraints but proposes simplistic or unproven paths to implementation.',
+                    4: 'Minimally Feasible: Just barely implementable, acknowledging key constraints with minimal but adequate mitigation; acceptability is marginal.',
+                    5: 'Feasible but Vague: Macro-level feasibility is present, but acceptability or implementability lacks detail.',
+                    6: 'Plausible: Overall workable, but some constraints or implementation details are not fully explored.',
+                    7: 'Credible: Major feasibility issues are identified, with plausible paths to acceptability and implementation.',
+                    8: 'Highly Credible: Key constraints are addressed with specific, acceptable, and implementable solutions.',
+                    9: 'Expert-Level: Highly workable, identifying and resolving constraints with clever, efficient strategies showing deep knowledge.',
+                    10: 'Bulletproof: Extremely feasible, with all constraints addressed innovatively; acceptability and implementability are exemplary.'
+                },
+                'Relevance': {
+                    1: 'Irrelevant: Does not apply to the stated problem or offer any effective solution.',
+                    2: 'Contradictory: Internal inconsistencies reduce applicability and effectiveness.',
+                    3: 'Disconnected: Feels loosely applicable, with questionable effectiveness in addressing the problem.',
+                    4: 'Minimally Relevant: Slightly applicable to the problem with just enough evidence of potential effectiveness to be considered on-topic.',
+                    5: 'Understandable: Core relevance is graspable, but applicability or effectiveness has gaps.',
+                    6: 'Applicable: Fits the problem basically, with plausible but not deeply convincing effectiveness.',
+                    7: 'Relevant: Clearly applies to the problem with logical expectation of effectiveness.',
+                    8: 'Highly Relevant: Tightly fits the problem and demonstrates clear, superior effectiveness.',
+                    9: 'Outstanding: Seamlessly applicable to the problem, with strong evidence of effectiveness in solving it.',
+                    10: 'Exemplary: Perfectly applicable and highly effective, reshaping understanding of the problem with inevitable impact.'
+                },
+                'Specificity': {
+                    1: 'Incoherent: Completely lacks specificity, with no clear details or explicit connections.',
+                    2: 'Vague: Relies on ambiguous descriptions, lacking clarity and thoroughness.',
+                    3: 'Insufficient: Fails to detail key aspects, reducing explicitness and completeness.',
+                    4: 'Minimally Specific: Just enough detail to convey the main ideas, with minimal explicitness, completeness, and clarity to be understandable.',
+                    5: 'Basic: Core elements are specified, but lacks depth in explicitness, completeness, or clarity.',
+                    6: 'Sufficient: Basically specific, covering key details but with some vagueness in implications or completeness.',
+                    7: 'Rigorous: Thoroughly specified, with good explicitness, completeness, and clarity.',
+                    8: 'Critical: Strong specificity, including detailed breakdowns and clear, complete articulation.',
+                    9: 'Insightful: Highly detailed, with explicit causal links, comprehensive coverage, and clear communication.',
+                    10: 'Gold Standard: Extremely specific, with explicit implications, full completeness, and flawless clarity; sets a benchmark.'
+                },
+                'Integration Depth': {
+                    1: 'No Integration: Completely siloed approach with no meaningful connections.',
+                    2: 'Disconnected: Elements are largely separate with minimal integration.',
+                    3: 'Fragmented: Components are poorly combined or contradictory.',
+                    4: 'Weak Integration: Poor connections, elements feel disconnected.',
+                    5: 'Limited Integration: Few connections between components, mostly separate parts.',
+                    6: 'Basic Integration: Elements are connected but the integration is somewhat superficial.',
+                    7: 'Moderate Integration: Some connections are made, but the integration could be deeper.',
+                    8: 'Strong Integration: Good connections between different components, creating added value.',
+                    9: 'Deep Integration: Successfully combines diverse elements into a coherent, synergistic framework.',
+                    10: 'Exceptional Integration: Creates a novel and powerful synthesis of ideas from multiple disciplines or approaches.'
+                },
+                'Strategic Vision': {
+                    1: 'Backward-Looking: No forward-thinking or strategic perspective.',
+                    2: 'No Vision: Lacks consideration for future implications or broader impact.',
+                    3: 'Narrow Focus: Limited to immediate problem without broader vision.',
+                    4: 'Short-Sighted: Primarily focused on immediate needs with little future perspective.',
+                    5: 'Limited Vision: Focused mainly on immediate problem with some future consideration.',
+                    6: 'Basic Vision: Shows some consideration for future implications.',
+                    7: 'Some Vision: Demonstrates awareness of future potential and broader impact.',
+                    8: 'Forward-Thinking: Shows good consideration for future implications and trends.',
+                    9: 'Strategic: Strong forward-looking perspective with clear vision for broader impact.',
+                    10: 'Visionary: Clearly articulates a long-term research trajectory with potential to define a future research agenda.'
+                },
+                'Methodological Rigor': {
+                    1: 'Inadequate Methods: Methods are fundamentally flawed or inappropriate.',
+                    2: 'Poor Methods: Methods are inadequate or poorly designed.',
+                    3: 'Flawed Methods: Methods are inappropriate or have major weaknesses.',
+                    4: 'Weak Methods: Methods have significant weaknesses or lack appropriate validation.',
+                    5: 'Basic Methods: Methods are generally sound but lack detail or rigor in some areas.',
+                    6: 'Adequate Methods: Methods are suitable but could be more rigorous or detailed.',
+                    7: 'Sound Methods: Generally appropriate methods with minor areas for improvement.',
+                    8: 'Strong Methodology: Well-designed methods with good validation and reproducibility.',
+                    9: 'Outstanding Methods: Highly rigorous and appropriate methods with strong validation strategies.',
+                    10: 'Exemplary Methodology: State-of-the-art methods, meticulously detailed, perfectly suited to the research question.'
+                },
+                'Argumentative Cohesion': {
+                    1: 'Disconnected: No clear logical flow or coherent argument structure.',
+                    2: 'Incoherent: Logical structure is unclear or inconsistent.',
+                    3: 'Fragmented: Arguments are poorly connected or contradictory.',
+                    4: 'Weak Coherence: Poor logical flow with significant gaps or inconsistencies.',
+                    5: 'Limited Coherence: Basic logical structure with some gaps or weak connections.',
+                    6: 'Basic Coherence: Some logical connections but could be stronger.',
+                    7: 'Generally Coherent: Logical flow with minor gaps or inconsistencies.',
+                    8: 'Coherent Argument: Well-structured argument with good logical connections.',
+                    9: 'Outstanding Logic: Strong logical flow with clear connections between all components.',
+                    10: 'Exceptional Coherence: Creates a compelling, unified argument where every element supports and strengthens the overall case.'
+                },
+                'Overall Quality of Idea': {
+                    1: 'No Merit: Fails across dimensions, showing little potential or clarity.',
+                    2: 'Vague and Insubstantial: Insufficient detail or coherence makes it hard to evaluate.',
+                    3: 'Fatally Flawed: Critical issues in key dimensions undermine the whole.',
+                    4: 'Weak and Unconvincing: Lacks in multiple dimensions.',
+                    5: 'Has Potential but Flawed: Core promise exists, but weaknesses in key dimensions hinder it.',
+                    6: 'Competent but Lacks Spark: Sound but may underperform in some dimensions.',
+                    7: 'Solid Contribution: Good overall, representing a meaningful advance via balanced dimensions.',
+                    8: 'Strong Contender: Well-balanced with significant strengths across multiple dimensions.',
+                    9: 'Clear Breakthrough: Outstanding synthesis of high scores across most dimensions for broad impact.',
+                    10: 'Landmark Potential: Exceptional across all dimensions, with visionary novelty, feasible execution, perfect relevance, detailed specificity, deep integration, strategic vision, rigorous methods, and coherent argument.'
+                }
+            };
+            
+            return explanations[criteriaName]?.[score] || 'No specific explanation available for this score.';
+        }
+
+        // Feedback handlers
+        function sendFeedback(feature, action, extra = {}) {
+            fetch('/feedback', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ feature, action, ...extra })
+            }).then(r => r.json()).catch(() => {});
+        }
+
+        const thumbsUpEval = document.getElementById('thumbsUpEval');
+        const thumbsDownEval = document.getElementById('thumbsDownEval');
+        const thumbsUpExtract = document.getElementById('thumbsUpExtract');
+        const thumbsDownExtract = document.getElementById('thumbsDownExtract');
+
+        if (thumbsUpEval) thumbsUpEval.addEventListener('click', function() {
+            sendFeedback('evaluate', 'up', { evaluation_id: lastEvaluationId });
+            this.classList.add('btn-success');
+        });
+        if (thumbsDownEval) thumbsDownEval.addEventListener('click', function() {
+            sendFeedback('evaluate', 'down', { evaluation_id: lastEvaluationId });
+            this.classList.add('btn-danger');
+        });
+        if (thumbsUpExtract) thumbsUpExtract.addEventListener('click', function() {
+            sendFeedback('extract_pdf', 'up', { extraction_id: lastExtractionId });
+            this.classList.add('btn-success');
+        });
+        if (thumbsDownExtract) thumbsDownExtract.addEventListener('click', function() {
+            sendFeedback('extract_pdf', 'down', { extraction_id: lastExtractionId });
+            this.classList.add('btn-danger');
+        });
+
+        function displayResults(review, scoringCriteria, thinkingProcess) {
+            // Display all criteria metrics plus overall quality
+            // Call_Response is only included if it exists in the review (i.e., when call for proposal was provided)
+            const keyMetrics = ['Overall_Quality', 'Novelty', 'Workability', 'Relevance', 'Specificity', 'Integration_Depth', 'Strategic_Vision', 'Methodological_Rigor', 'Argumentative_Cohesion'];
+            
+            // Add Call_Response only if it exists in the review
+            if (review['Call_Response'] !== undefined) {
+                keyMetrics.push('Call_Response');
+            }
+            const keyMetricsContainer = document.getElementById('keyMetrics');
+            keyMetricsContainer.innerHTML = '';
+
+            keyMetrics.forEach(metric => {
+                if (review[metric] !== undefined) {
+                    const score = review[metric];
+                    const criteria = scoringCriteria[metric];
+                    
+                    const metricCard = document.createElement('div');
+                    
+                    // Special handling for Call_Response - make it full width
+                    if (metric === 'Call_Response') {
+                        metricCard.className = 'col-12 mb-4';
+                    } else {
+                        metricCard.className = 'col-md-6 col-lg-4 mb-4';
+                    }
+                    
+                    // Special handling for Call_Response with feedback
+                    let feedbackSection = '';
+                    if (metric === 'Call_Response' && review['Call_Response_Feedback']) {
+                        feedbackSection = `
+                            <div class="call-response-feedback mt-3">
+                                <div class="alert alert-info">
+                                    <h6><i class="fas fa-lightbulb"></i> Call for Proposal Feedback:</h6>
+                                    <div class="mt-2">${review['Call_Response_Feedback']}</div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                    
+                    metricCard.innerHTML = `
+                        <div class="metric-card">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">${criteria.name}</h5>
+                                <span class="metric-score">${score}/10</span>
+                            </div>
+                            <div class="metric-description">
+                                ${criteria.description}
+                            </div>
+                            <div class="criteria-explanation mt-2">
+                                <strong>Score ${score} Explanation:</strong>
+                                <div class="mt-1">
+                                    ${getScoreExplanation(score, criteria.name)}
+                                </div>
+                            </div>
+                            ${feedbackSection}
+                        </div>
+                    `;
+                    keyMetricsContainer.appendChild(metricCard);
+                }
+            });
+
+            // Display other fields
+            const otherFieldsContainer = document.getElementById('otherFieldsContent');
+            otherFieldsContainer.innerHTML = '';
+
+            Object.keys(review).forEach(key => {
+                if (!keyMetrics.includes(key) && !key.endsWith('_criteria') && key !== 'Call_Response_Feedback') {
+                    const fieldDiv = document.createElement('div');
+                    fieldDiv.className = 'field-item';
+                    
+                    let content = review[key];
+                    if (Array.isArray(content)) {
+                        content = content.map(item => `<li>${item}</li>`).join('');
+                        content = `<ul>${content}</ul>`;
+                    } else if (key === 'Decision') {
+                        const decisionClass = content === 'Accept' ? 'decision-accept' : 'decision-reject';
+                        content = `<span class="${decisionClass}">${content}</span>`;
+                    }
+                    
+                    fieldDiv.innerHTML = `
+                        <strong>${key.replace(/_/g, ' ')}:</strong>
+                        <div class="mt-2">${content}</div>
+                    `;
+                    otherFieldsContainer.appendChild(fieldDiv);
+                }
+            });
+
+            // Display thinking process
+            if (thinkingProcess && thinkingProcess.length > 0) {
+                const thinkingContent = document.getElementById('thinkingContent');
+                const thinkingSection = document.getElementById('thinkingSection');
+                
+                // Clear progress interval if exists
+                if (thinkingSection.dataset.progressInterval) {
+                    clearInterval(parseInt(thinkingSection.dataset.progressInterval));
+                }
+                
+                // Remove loading class
+                thinkingSection.classList.remove('loading');
+                
+                let thinkingText = '';
+                let roundCount = 0;
+                
+                thinkingProcess.forEach((msg, index) => {
+                    if (msg.role === 'assistant' && msg.content) {
+                        roundCount++;
+                        thinkingText += `=== Round ${roundCount} ===\n`;
+                        
+                        // Extract THOUGHT and REVIEW JSON parts
+                        const content = msg.content;
+                        const thoughtMatch = content.match(/THOUGHT:\s*([\s\S]*?)(?=REVIEW JSON:|$)/i);
+                        const jsonMatch = content.match(/REVIEW JSON:\s*```json\s*([\s\S]*?)\s*```/i);
+                        
+                        if (thoughtMatch) {
+                            thinkingText += `Thought: ${thoughtMatch[1].trim()}\n\n`;
+                        }
+                        
+                        if (jsonMatch) {
+                            try {
+                                const reviewData = JSON.parse(jsonMatch[1]);
+                                // Only show key scores
+                                const scores = ['Novelty', 'Workability', 'Relevance', 'Specificity', 'Integration_Depth', 'Strategic_Vision', 'Methodological_Rigor', 'Argumentative_Cohesion', 'Overall_Quality'];
+                                thinkingText += `Scores: `;
+                                scores.forEach(score => {
+                                    if (reviewData[score] !== undefined) {
+                                        thinkingText += `${score}: ${reviewData[score]}/10, `;
+                                    }
+                                });
+                                thinkingText = thinkingText.slice(0, -2); // Remove trailing comma and space
+                                thinkingText += `\n\n`;
+                            } catch (e) {
+                                thinkingText += `[JSON parsing error]\n\n`;
+                            }
+                        } else {
+                            thinkingText += `[No review data found]\n\n`;
+                        }
+                    }
+                });
+                
+                thinkingContent.textContent = thinkingText;
+                thinkingSection.style.display = 'block';
+            }
+
+            // Show results section
+            document.getElementById('resultSection').style.display = 'block';
+            document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Cite functionality
+        document.getElementById('citeToggle').addEventListener('click', function() {
+            const citeContent = document.getElementById('citeContent');
+            const icon = this.querySelector('i');
+            
+            if (citeContent.style.display === 'none' || citeContent.style.display === '') {
+                citeContent.style.display = 'block';
+                icon.className = 'fas fa-chevron-up';
+                this.innerHTML = '<i class="fas fa-chevron-up"></i> Hide Citation';
+            } else {
+                citeContent.style.display = 'none';
+                icon.className = 'fas fa-chevron-down';
+                this.innerHTML = '<i class="fas fa-chevron-down"></i> Cite our Paper';
+            }
+        });
+
+        // Copy citation to clipboard
+        document.getElementById('copyCitation').addEventListener('click', function() {
+            const citationText = document.getElementById('citationText').textContent;
+            navigator.clipboard.writeText(citationText).then(function() {
+                const originalText = this.innerHTML;
+                this.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                setTimeout(() => {
+                    this.innerHTML = originalText;
+                }, 2000);
+            }.bind(this));
+        });
+    </script>
+</body>
+</html> 
