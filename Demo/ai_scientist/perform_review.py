@@ -44,10 +44,16 @@ In <JSON>, provide the review in JSON format with the following fields in the or
 - "Summary": A summary of the proposal content and its contributions.
 - "Strengths": A list of strengths of the proposal.
 - "Weaknesses": A list of weaknesses of the proposal.
-- "Argumentative_Cohesion": A rating from 1 to 10 evaluating the logical integrity and persuasiveness of the narrative thread.
-- "Intellectual_Depth": A rating from 1 to 10 evaluating the significance and originality of the core insight.
-- "Execution_Credibility": A rating from 1 to 10 evaluating the feasibility and groundedness of the proposed execution plan.
-- "Scientific_Rigor": A rating from 1 to 10 evaluating the objectivity and integrity of the validation plan.
+- "Novelty": A rating from 1 to 10 evaluating the originality and paradigm-modifying potential of the core idea.
+- "Workability": A rating from 1 to 10 evaluating the feasibility and implementability of the proposed plan.
+- "Relevance": A rating from 1 to 10 evaluating how well the proposal applies to and solves the stated problem.
+- "Specificity": A rating from 1 to 10 evaluating the clarity, completeness, and detail of the proposal articulation.
+- "Integration_Depth": A rating from 1 to 10 evaluating how well diverse concepts and methods are integrated into a cohesive framework.
+- "Strategic_Vision": A rating from 1 to 10 evaluating the long-term potential and forward-looking perspective of the proposal.
+- "Methodological_Rigor": A rating from 1 to 10 evaluating the soundness and appropriateness of the proposed research methods.
+- "Argumentative_Cohesion": A rating from 1 to 10 evaluating the logical flow and coherence of the argument presented.
+- "Call_Response": A rating from 1 to 10 evaluating how well the proposal addresses and responds to the specific requirements outlined in the call for proposal (MANDATORY if a call for proposal was provided - DO NOT SKIP).
+- "Call_Response_Feedback": A detailed analysis of how well the proposal addresses the call for proposal, including specific suggestions for improvement (MANDATORY if a call for proposal was provided - DO NOT SKIP).
 - "Overall_Quality": A rating from 1 to 10 evaluating the overall quality and potential impact of the research idea.
 - "Questions": A set of clarifying questions to be answered by the proposal authors.
 - "Limitations": A set of limitations and potential risks of the proposed work.
@@ -72,7 +78,7 @@ The proposal should typically include:
 - Proposed Method
 - Step-by-Step Experiment Plan
 
-**Four Holistic Evaluation Metrics:**
+**Core Evaluation Dimensions:**
 
 **1. Novelty (1-10)**
 Definition: This metric assesses the degree to which the research proposal introduces an original idea that modifies existing paradigms in the field. It evaluates originality (how rare, ingenious, imaginative, or surprising the core insight is) and paradigm relatedness (whether the idea preserves the current paradigm or modifies it in a radical, transformational way). High novelty indicates a proposal that challenges fundamental assumptions or opens new avenues of research, rather than incremental tweaks.
@@ -134,20 +140,103 @@ Scoring Rubric:
 - 2: Vague: Relies on ambiguous descriptions, lacking clarity and thoroughness.
 - 1: Incoherent: Completely lacks specificity, with no clear details or explicit connections.
 
-**Overall Quality of Idea (1-10)**
-Definition: This metric synthesizes the four dimensions (novelty, workability, relevance, and specificity) to evaluate the proposal's overall quality and potential impact. It assesses whether the idea is creative (high novelty), of high quality (strong workability, relevance, and specificity), and capable of making a significant, lasting contribution.
+**5. Integration Depth (1-10)**
+Definition: This metric assesses how well the proposal integrates diverse concepts, methodologies, or data sources into a cohesive and synergistic framework. It evaluates the ability to connect disparate elements, creating a whole that is greater than the sum of its parts. High integration depth indicates a sophisticated, interdisciplinary approach, rather than a siloed or fragmented one.
 
 Scoring Rubric:
-- 10: Landmark Potential: Exceptional across all dimensions, with visionary novelty, feasible execution, perfect relevance, and detailed specificity.
-- 9: Clear Breakthrough: Outstanding synthesis of high novelty, workability, relevance, and specificity for broad impact.
-- 8: Strong Contender: Well-balanced with significant strengths in novelty, feasibility, relevance, and detail.
+- 10: Exceptional Integration: Creates a novel and powerful synthesis of ideas from multiple disciplines or approaches.
+- 9: Deep Integration: Successfully combines diverse elements into a coherent, synergistic framework.
+- 8: Strong Integration: Good connections between different components, creating added value.
+- 7: Moderate Integration: Some connections are made, but the integration could be deeper.
+- 6: Basic Integration: Elements are connected but the integration is somewhat superficial.
+- 5: Limited Integration: Few connections between components, mostly separate parts.
+- 4: Weak Integration: Poor connections, elements feel disconnected.
+- 3: Fragmented: Components are poorly combined or contradictory.
+- 2: Disconnected: Elements are largely separate with minimal integration.
+- 1: No Integration: Completely siloed approach with no meaningful connections.
+
+**6. Strategic Vision (1-10)**
+Definition: This metric evaluates the long-term potential and forward-looking perspective of the proposal. It assesses whether the research addresses not just an immediate gap but also anticipates future trends, sets the stage for subsequent work, and has a clear vision for its broader impact on the field or society. High strategic vision indicates a proposal that is not just a single project, but a foundational step in a larger, ambitious research agenda.
+
+Scoring Rubric:
+- 10: Visionary: Clearly articulates a long-term research trajectory with potential to define a future research agenda.
+- 9: Strategic: Strong forward-looking perspective with clear vision for broader impact.
+- 8: Forward-Thinking: Shows good consideration for future implications and trends.
+- 7: Some Vision: Demonstrates awareness of future potential and broader impact.
+- 6: Basic Vision: Shows some consideration for future implications.
+- 5: Limited Vision: Focused mainly on immediate problem with some future consideration.
+- 4: Short-Sighted: Primarily focused on immediate needs with little future perspective.
+- 3: Narrow Focus: Limited to immediate problem without broader vision.
+- 2: No Vision: Lacks consideration for future implications or broader impact.
+- 1: Backward-Looking: No forward-thinking or strategic perspective.
+
+**7. Methodological Rigor (1-10)**
+Definition: This metric assesses the soundness and appropriateness of the proposed research methods. It evaluates the quality of the experimental design, data collection procedures, analytical techniques, and validation strategies. High methodological rigor ensures that the research outcomes will be reliable, valid, and reproducible.
+
+Scoring Rubric:
+- 10: Exemplary Methodology: State-of-the-art methods, meticulously detailed, perfectly suited to the research question.
+- 9: Outstanding Methods: Highly rigorous and appropriate methods with strong validation strategies.
+- 8: Strong Methodology: Well-designed methods with good validation and reproducibility.
+- 7: Sound Methods: Generally appropriate methods with minor areas for improvement.
+- 6: Adequate Methods: Methods are suitable but could be more rigorous or detailed.
+- 5: Basic Methods: Methods are generally sound but lack detail or rigor in some areas.
+- 4: Weak Methods: Methods have significant weaknesses or lack appropriate validation.
+- 3: Flawed Methods: Methods are inappropriate or have major weaknesses.
+- 2: Poor Methods: Methods are inadequate or poorly designed.
+- 1: Inadequate Methods: Methods are fundamentally flawed or inappropriate.
+
+**8. Argumentative Cohesion (1-10)**
+Definition: This metric assesses the logical flow and coherence of the argument presented in the proposal. It evaluates how well different sections connect to form a unified narrative, the consistency of reasoning throughout, and the strength of the logical connections between claims and evidence. High argumentative cohesion indicates a proposal where all parts work together to build a compelling, logically sound case.
+
+Scoring Rubric:
+- 10: Exceptional Coherence: Creates a compelling, unified argument where every element supports and strengthens the overall case.
+- 9: Outstanding Logic: Strong logical flow with clear connections between all components.
+- 8: Coherent Argument: Well-structured argument with good logical connections.
+- 7: Generally Coherent: Logical flow with minor gaps or inconsistencies.
+- 6: Basic Coherence: Some logical connections but could be stronger.
+- 5: Limited Coherence: Basic logical structure with some gaps or weak connections.
+- 4: Weak Coherence: Poor logical flow with significant gaps or inconsistencies.
+- 3: Fragmented: Arguments are poorly connected or contradictory.
+- 2: Incoherent: Logical structure is unclear or inconsistent.
+- 1: Disconnected: No clear logical flow or coherent argument structure.
+
+**9. Call for Proposal Response (1-10)**
+Definition: This metric evaluates how well the proposal addresses and responds to the specific requirements, themes, and objectives outlined in the call for proposal. It assesses alignment with the call's focus areas, adherence to specified guidelines, and the degree to which the proposal directly tackles the challenges or opportunities highlighted in the call. High call response indicates a proposal that is precisely tailored to the call's requirements and demonstrates clear understanding of the expected outcomes.
+
+**CRITICAL INSTRUCTION**: If a call for proposal was provided above, you MUST include both "Call_Response" and "Call_Response_Feedback" fields in your JSON response. These fields are MANDATORY when a call for proposal is given. Do not skip these fields under any circumstances.
+
+When evaluating Call_Response, you must also provide detailed feedback in the "Call_Response_Feedback" field, including:
+- Specific analysis of how well the proposal addresses each requirement mentioned in the call
+- Concrete suggestions for improvement if the proposal doesn't fully address the call requirements
+- Identification of any missed opportunities or overlooked aspects from the call
+- Recommendations for better alignment with the call's objectives
+
+Scoring Rubric:
+- 10: Perfect Alignment: Exceeds all call requirements with exceptional understanding and innovative approaches that directly address every specified objective.
+- 9: Outstanding Response: Comprehensively addresses all call requirements with clear evidence of deep understanding and strong alignment.
+- 8: Strong Response: Well-aligned with call requirements, addressing most specified themes and objectives effectively.
+- 7: Good Response: Generally addresses call requirements with clear understanding of the main objectives.
+- 6: Adequate Response: Addresses core call requirements but may miss some specific themes or objectives.
+- 5: Basic Response: Partially addresses call requirements but lacks depth in understanding or alignment.
+- 4: Weak Response: Limited alignment with call requirements, missing key themes or objectives.
+- 3: Poor Response: Minimal understanding of call requirements, addressing only peripheral aspects.
+- 2: Misaligned: Largely ignores call requirements or addresses them inappropriately.
+- 1: No Response: Completely fails to address or understand the call for proposal requirements.
+
+**Overall Quality of Idea (1-10)**
+Definition: This metric synthesizes all eight dimensions to evaluate the proposal's overall quality and potential impact. It assesses how well the proposal balances creativity, feasibility, and impact across all dimensions.
+
+Scoring Rubric:
+- 10: Landmark Potential: Exceptional across all dimensions, with visionary novelty, feasible execution, perfect relevance, detailed specificity, deep integration, strategic vision, rigorous methods, and coherent argument.
+- 9: Clear Breakthrough: Outstanding synthesis of high scores across most dimensions for broad impact.
+- 8: Strong Contender: Well-balanced with significant strengths across multiple dimensions.
 - 7: Solid Contribution: Good overall, representing a meaningful advance via balanced dimensions.
-- 6: Competent but Lacks Spark: Sound but may underperform in novelty or specificity.
-- 5: Has Potential but Flawed: Core promise exists, but weaknesses in workability or relevance hinder it.
-- 4: Weak and Unconvincing: Lacks in multiple dimensions, such as low novelty or poor specificity.
-- 3: Fatally Flawed: Critical issues in feasibility or relevance undermine the whole.
-- 2: Vague and Insubstantial: Insufficient specificity or relevance makes it hard to evaluate.
-- 1: No Merit: Fails across dimensions, showing little novelty, workability, or clarity.
+- 6: Competent but Lacks Spark: Sound but may underperform in some dimensions.
+- 5: Has Potential but Flawed: Core promise exists, but weaknesses in key dimensions hinder it.
+- 4: Weak and Unconvincing: Lacks in multiple dimensions.
+- 3: Fatally Flawed: Critical issues in key dimensions undermine the whole.
+- 2: Vague and Insubstantial: Insufficient detail or coherence makes it hard to evaluate.
+- 1: No Merit: Fails across dimensions, showing little potential or clarity.
 
 **Confidence Score (1-5):**
 - 5: Absolutely certain about your assessment. Very familiar with the related work and checked details carefully.
@@ -158,6 +247,31 @@ Scoring Rubric:
 """
     + template_instructions
 )
+
+
+def remove_call_response_from_form(form_text):
+    """Remove Call_Response related content from the evaluation form when no call for proposal is provided"""
+    import re
+    
+    # Remove the Call_Response JSON field description
+    form_text = re.sub(
+        r'- "Call_Response": A rating from 1 to 10 evaluating how well the proposal addresses and responds to the specific requirements outlined in the call for proposal \(ONLY include this field if a call for proposal was provided\)\.\n',
+        '', form_text
+    )
+    
+    # Remove the Call_Response_Feedback JSON field description
+    form_text = re.sub(
+        r'- "Call_Response_Feedback": A detailed analysis of how well the proposal addresses the call for proposal, including specific suggestions for improvement \(ONLY include this field if a call for proposal was provided\)\.\n',
+        '', form_text
+    )
+    
+    # Remove the entire Call for Proposal Response section (from **9. to the end of scoring rubric)
+    form_text = re.sub(
+        r'\*\*9\. Call for Proposal Response \(1-10\)\*\*\n.*?(?=\*\*Overall Quality of Idea \(1-10\)\*\*|\*\*Confidence Score \(1-5\):\*\*)',
+        '', form_text, flags=re.DOTALL
+    )
+    
+    return form_text
 
 
 def perform_review(
@@ -172,16 +286,41 @@ def perform_review(
     return_msg_history=False,
     reviewer_system_prompt=reviewer_system_prompt_neg,
     review_instruction_form=proposal_evaluation_form,
+    call_for_proposal="",
 ):
+    # Dynamically build the evaluation form based on whether call for proposal is provided
+    if call_for_proposal.strip():
+        # Use the full form with Call_Response
+        evaluation_form = review_instruction_form
+    else:
+        # Remove Call_Response related content from the form
+        evaluation_form = remove_call_response_from_form(review_instruction_form)
+    
     if num_fs_examples > 0:
         print("num_fs_examples",num_fs_examples)
         fs_prompt = get_review_fewshot_examples(num_fs_examples)
-        base_prompt = review_instruction_form + fs_prompt
+        base_prompt = evaluation_form + fs_prompt
     else:
-        base_prompt = review_instruction_form
+        base_prompt = evaluation_form
+
+    # Add call for proposal information if provided
+    call_info = ""
+    if call_for_proposal.strip():
+        call_info = f"""
+
+**Call for Proposal Context:**
+The following is the call for proposal that this research proposal is responding to:
+
+{call_for_proposal}
+
+Please consider how well the research proposal addresses the specific requirements, themes, and objectives outlined in this call for proposal when making your evaluation, particularly for the "Call_Response" dimension.
+
+**REMINDER**: Since a call for proposal was provided above, you MUST include both "Call_Response" and "Call_Response_Feedback" fields in your JSON response. These are required fields that cannot be omitted.
+"""
 
     base_prompt += f"""
 Here is the research proposal you are asked to review:
+{call_info}
 ```
 {text}
 ```"""
@@ -205,7 +344,27 @@ Here is the research proposal you are asked to review:
             except Exception as e:
                 print(f"Ensemble review {idx} failed: {e}")
         parsed_reviews = [r for r in parsed_reviews if r is not None]
+        
+        print(f"=== Ensemble Debug ===")
+        print(f"Number of parsed reviews: {len(parsed_reviews)}")
+        for i, r in enumerate(parsed_reviews):
+            print(f"Review {i+1} keys: {list(r.keys()) if isinstance(r, dict) else 'Not a dict'}")
+            if isinstance(r, dict):
+                for key in ['Novelty', 'Workability', 'Relevance', 'Specificity', 'Integration_Depth', 'Strategic_Vision', 'Methodological_Rigor', 'Argumentative_Cohesion', 'Overall_Quality', 'Confidence']:
+                    if key in r:
+                        print(f"  {key}: {r[key]} (type: {type(r[key])})")
+        print("=== End Ensemble Debug ===")
+        
         review = get_meta_review(model, client, temperature, parsed_reviews)
+
+        print(f"=== Meta Review Debug ===")
+        print(f"Meta review type: {type(review)}")
+        if isinstance(review, dict):
+            print(f"Meta review keys: {list(review.keys())}")
+            for key in ['Novelty', 'Workability', 'Relevance', 'Specificity', 'Integration_Depth', 'Strategic_Vision', 'Methodological_Rigor', 'Argumentative_Cohesion', 'Overall_Quality', 'Confidence']:
+                if key in review:
+                    print(f"  {key}: {review[key]} (type: {type(review[key])})")
+        print("=== End Meta Review Debug ===")
 
         # take first valid in case meta-reviewer fails
         if review is None:
@@ -217,21 +376,46 @@ Here is the research proposal you are asked to review:
                 ("Workability", (1, 10)),
                 ("Relevance", (1, 10)),
                 ("Specificity", (1, 10)),
+                ("Integration_Depth", (1, 10)),
+                ("Strategic_Vision", (1, 10)),
+                ("Methodological_Rigor", (1, 10)),
+                ("Argumentative_Cohesion", (1, 10)),
                 ("Overall_Quality", (1, 10)),
                 ("Confidence", (1, 5)),
             ]:
                 scores = []
                 for r in parsed_reviews:
-                    if score in r and limits[1] >= r[score] >= limits[0]:
-                        scores.append(r[score])
-                try:
-                    review[score] = int(round(np.mean(scores)))
-                except Exception as e:
-                    review[score] = 6
+                    if score in r:
+                        score_value = r[score]
+                        print(f"Found {score}: {score_value} (type: {type(score_value)})")
+                        # Check if it's a valid number
+                        try:
+                            score_num = float(score_value)
+                            if limits[1] >= score_num >= limits[0]:
+                                scores.append(score_num)
+                                print(f"  -> Valid score: {score_num}")
+                            else:
+                                print(f"  -> Score out of range: {score_num} (should be {limits[0]}-{limits[1]})")
+                        except (ValueError, TypeError):
+                            print(f"  -> Invalid score type: {score_value}")
+                    else:
+                        print(f"Score {score} not found in review")
+                
+                # Only calculate mean if we have valid scores
+                if len(scores) > 0:
+                    try:
+                        review[score] = int(round(np.mean(scores)))
+                        print(f"Final {score}: {review[score]}")
+                    except Exception as e:
+                        print(f"Error calculating mean for {score}: {e}")
+                        # Don't set a default value, let it be missing
+                else:
+                    print(f"Warning: No valid scores found for {score}")
+                    # Don't set a default value, let it be missing
 
-            
-            # print("", type(msg_histories[0]))
-            # print("", msg_histories[0].keys())
+            # Add debug information
+            # print("msg_histories type:", type(msg_histories[0]))
+            # print("msg_histories content:", msg_histories[0].keys())
             
             msg_history = msg_histories[0][:-1]
             msg_history += [
@@ -249,46 +433,66 @@ Here is the research proposal you are asked to review:
                 }
             ]
         except Exception as e:
+            print(f"Error in main try block: {e}")
             # Replace numerical scores with the average of the ensemble.
             for score, limits in [
                 ("Novelty", (1, 10)),
                 ("Workability", (1, 10)),
                 ("Relevance", (1, 10)),
                 ("Specificity", (1, 10)),
+                ("Integration_Depth", (1, 10)),
+                ("Strategic_Vision", (1, 10)),
+                ("Methodological_Rigor", (1, 10)),
+                ("Argumentative_Cohesion", (1, 10)),
                 ("Overall_Quality", (1, 10)),
                 ("Confidence", (1, 5)),
             ]:
                 scores = []
                 for r in parsed_reviews:
-                    if score in r and limits[1] >= r[score] >= limits[0]:
-                        scores.append(r[score])
-                try:
-                    review[score] = int(round(np.mean(scores)))
-                except Exception as e:
-                    review[score] = 6
-
+                    if score in r:
+                        score_value = r[score]
+                        print(f"Found {score}: {score_value} (type: {type(score_value)})")
+                        # Check if it's a valid number
+                        try:
+                            score_num = float(score_value)
+                            if limits[1] >= score_num >= limits[0]:
+                                scores.append(score_num)
+                                print(f"  -> Valid score: {score_num}")
+                            else:
+                                print(f"  -> Score out of range: {score_num} (should be {limits[0]}-{limits[1]})")
+                        except (ValueError, TypeError):
+                            print(f"  -> Invalid score type: {score_value}")
+                    else:
+                        print(f"Score {score} not found in review")
                 
-                msg_history_dict = msg_histories[0]
+                # Only calculate mean if we have valid scores
+                if len(scores) > 0:
+                    try:
+                        review[score] = int(round(np.mean(scores)))
+                        print(f"Final {score}: {review[score]}")
+                    except Exception as e:
+                        print(f"Error calculating mean for {score}: {e}")
+                        # Don't set a default value, let it be missing
+                else:
+                    print(f"Warning: No valid scores found for {score}")
+                    # Don't set a default value, let it be missing
 
-                
-                msg_history_items = list(msg_history_dict.items())[:-1]
+                # Process message history
+                msg_history = msg_histories[0][:-1]
+                msg_history += [
+                    {
+                        "role": "assistant",
+                        "content": f"""
+    THOUGHT:
+    I will start by aggregating the opinions of {num_reviews_ensemble} reviewers that I previously obtained.
 
-                
-                msg_history = dict(msg_history_items)
-
-                
-                msg_history.update({
-                    "role": "assistant",
-                    "content": f"""
-                THOUGHT:
-                I will start by aggregating the opinions of {num_reviews_ensemble} reviewers that I previously obtained.
-
-                REVIEW JSON:
-                ```json
-                {json.dumps(review)}
-                ```
-                """,
-                })
+    REVIEW JSON:
+    ```json
+    {json.dumps(review)}
+    ```
+    """,
+                    }
+                ]
     else:
         llm_review, msg_history = get_response_from_llm(
             base_prompt,
