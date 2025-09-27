@@ -43,7 +43,9 @@ AI-Scientist-research-plan-eval/
 └── README.md              						# This file
 ```
 
- Web Application (`app.py`)
+## Web Application Deployment
+
+### Development Mode
 
 Deploy a web interface for individual proposal evaluation:
 
@@ -52,9 +54,143 @@ python app.py
 ```
 
 **Access:**
-
 - Local: `http://localhost:4090`
 - HTTPS: `https://localhost:4090` (with SSL)
+
+### Production Mode with Gunicorn
+
+For production deployment, use Gunicorn WSGI server:
+
+#### Quick Start
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Create logs directory
+mkdir -p logs
+
+# Start with Gunicorn
+gunicorn --config gunicorn.conf.py wsgi:app
+```
+
+#### Using the Startup Script
+
+For easier deployment, use the provided startup script:
+
+```bash
+# Make script executable (first time only)
+chmod +x start_gunicorn.sh
+
+# Start the application
+./start_gunicorn.sh
+```
+
+The startup script will:
+- ✅ Check all dependencies
+- 📁 Create necessary directories
+- 🔧 Install gunicorn if missing
+- 🚀 Start the server with optimal settings
+
+#### Environment Setup
+
+Before starting the server, set up your API credentials:
+
+```bash
+# Run the environment setup script
+./setup_env.sh
+```
+
+This will guide you through setting up:
+- **DeepSeek API** (recommended default)
+- **OpenAI API** (alternative)
+- **Custom APIs** (vLLM, Ollama, etc.)
+
+Or set environment variables manually:
+
+```bash
+# For DeepSeek (recommended)
+export DEEPSEEK_API_KEY='your_deepseek_api_key'
+export DEEPSEEK_BASE_URL='https://api.deepseek.com/v1'
+
+# For OpenAI
+export OPENAI_API_KEY='your_openai_api_key'
+export OPENAI_BASE_URL='https://api.openai.com/v1'
+export OPENAI_MODEL_NAME='gpt-4o-mini'
+```
+
+#### Testing Gunicorn Configuration
+
+Before deploying, you can test your gunicorn setup:
+
+```bash
+# Test gunicorn configuration
+python test_gunicorn.py
+```
+
+This will verify:
+- ✅ App imports correctly
+- ✅ WSGI configuration is valid
+- ✅ Gunicorn can start with your config
+
+#### Advanced Gunicorn Options
+
+```bash
+# Basic gunicorn command
+gunicorn -w 4 -b 0.0.0.0:4090 wsgi:app
+
+# With custom configuration file
+gunicorn --config gunicorn.conf.py wsgi:app
+
+# With SSL support
+gunicorn --config gunicorn.conf.py --certfile=path/to/cert.pem --keyfile=path/to/key.pem wsgi:app
+
+# With systemd service (recommended for production)
+sudo systemctl start idea2proposal
+sudo systemctl enable idea2proposal
+```
+
+#### Gunicorn Configuration
+
+The `gunicorn.conf.py` file includes optimized settings for production:
+
+- **Workers**: Automatically set to `CPU_COUNT * 2 + 1`
+- **Timeout**: 300 seconds for long-running AI evaluations
+- **Logging**: Structured logging to `logs/` directory
+- **Memory Management**: Automatic worker recycling to prevent memory leaks
+- **Security**: Production-ready security settings
+
+#### Systemd Service (Optional)
+
+Create `/etc/systemd/system/idea2proposal.service`:
+
+```ini
+[Unit]
+Description=AI Research Proposal Evaluation System
+After=network.target
+
+[Service]
+Type=notify
+User=www-data
+Group=www-data
+WorkingDirectory=/path/to/Demo
+Environment=PATH=/path/to/venv/bin
+ExecStart=/path/to/venv/bin/gunicorn --config gunicorn.conf.py wsgi:app
+ExecReload=/bin/kill -s HUP $MAINPID
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Then enable and start the service:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable idea2proposal
+sudo systemctl start idea2proposal
+```
 
 ## Local Model Deployment
 
@@ -192,12 +328,12 @@ Each evaluation produces a structured JSON response:
 }
 ```
 
-## Installation and Setup
+## 🚀 Quick Start
 
 ### Prerequisites
 
 - Python 3.9+
-- OpenAI API access
+- API access (DeepSeek, OpenAI, or custom API)
 - Required Python packages (see requirements.txt)
 
 ### Installation
@@ -208,11 +344,106 @@ cd Demo
 pip install -r requirements.txt
 ```
 
-### Configuration
+### 1. Set up API Keys
 
-1. Set up your OpenAI API credentials in the respective scripts
-2. Configure model parameters as needed
-3. Prepare input directories for batch processing
+**Method 1: Use setup script (recommended)**
+```bash
+chmod +x setup_env.sh
+./setup_env.sh
+```
+
+**Method 2: Set environment variables manually**
+```bash
+# DeepSeek API
+export DEEPSEEK_API_KEY='your_deepseek_api_key_here'
+export DEEPSEEK_BASE_URL='https://api.deepseek.com/v1'
+
+# OpenAI API
+export OPENAI_API_KEY='your_openai_api_key_here'
+export OPENAI_BASE_URL='https://api.openai.com/v1'
+export OPENAI_MODEL_NAME='gpt-4o-mini'
+
+# Custom API (vLLM for self-deployment)
+export OPENAI_BASE_URL='http://localhost:8000/v1'
+export OPENAI_MODEL_NAME='your_model_name'
+export OPENAI_API_KEY=''
+```
+
+### 2. Start the Service
+
+```bash
+# Test configuration
+python test_gunicorn.py
+
+# Start the service
+./start_gunicorn.sh
+```
+
+### 3. Access the Application
+
+Open your browser and visit: `http://localhost:4090`
+
+## 🔑 API Key Setup
+
+### DeepSeek API
+1. Visit: https://platform.deepseek.com/api_keys
+2. Register/Login to your account
+3. Create a new API key
+4. Copy the key and set environment variables
+
+### OpenAI API
+1. Visit: https://platform.openai.com/api-keys
+2. Register/Login to your account
+3. Create a new API key
+4. Copy the key and set environment variables
+
+## 🛠️ Troubleshooting
+
+### Common Issues
+
+**Issue 1: `name 'client' is not defined`**
+- Solution: Set environment variables or use web interface API settings
+
+**Issue 2: `API key not configured`**
+- Solution: Run `./setup_env.sh` or set environment variables manually
+
+**Issue 3: Port already in use**
+```bash
+# Find process using the port
+lsof -i :4090
+# Kill the process
+kill -9 <PID>
+```
+
+**Issue 4: Permission denied**
+```bash
+chmod +x *.sh
+```
+
+## 📝 Environment Variables
+
+| Variable | Description | Default Value |
+|----------|-------------|---------------|
+| `DEEPSEEK_API_KEY` | DeepSeek API key | None |
+| `DEEPSEEK_BASE_URL` | DeepSeek API URL | https://api.deepseek.com/v1 |
+| `OPENAI_API_KEY` | OpenAI API key | None |
+| `OPENAI_BASE_URL` | OpenAI API URL | https://api.openai.com/v1 |
+| `OPENAI_MODEL_NAME` | OpenAI model name | gpt-4o-mini |
+
+## 🎯 Usage Workflow
+
+1. **Set up API keys** → Run `./setup_env.sh` or configure in web interface
+2. **Test configuration** → Run `python test_gunicorn.py`
+3. **Start the service** → Run `./start_gunicorn.sh`
+4. **Access the application** → Open `http://localhost:4090`
+5. **Evaluate proposals** → Enter research proposal text in the web interface
+
+## 💡 Tips
+
+- Supports multiple API providers (DeepSeek, OpenAI, vLLM, Ollama, etc.)
+- Can switch between different API settings in the web interface
+- All evaluation results are saved in the `logs/` directory
+- Supports PDF file upload and URL input
 
 ## Acknowledgments
 

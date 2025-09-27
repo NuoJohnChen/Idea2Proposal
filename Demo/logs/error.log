@@ -1,0 +1,1914 @@
+[2025-09-27 20:08:58 +0800] [1553446] [INFO] Starting gunicorn 23.0.0
+[2025-09-27 20:08:58 +0800] [1553446] [INFO] Listening at: http://0.0.0.0:4090 (1553446)
+[2025-09-27 20:08:58 +0800] [1553446] [INFO] Using worker: sync
+[2025-09-27 20:08:58 +0800] [1553469] [INFO] Booting worker with pid: 1553469
+[2025-09-27 20:08:58 +0800] [1553470] [INFO] Booting worker with pid: 1553470
+[2025-09-27 20:08:58 +0800] [1553471] [INFO] Booting worker with pid: 1553471
+[2025-09-27 20:08:58 +0800] [1553472] [INFO] Booting worker with pid: 1553472
+[2025-09-27 20:08:58 +0800] [1553473] [INFO] Booting worker with pid: 1553473
+[2025-09-27 20:08:59 +0800] [1553476] [INFO] Booting worker with pid: 1553476
+[2025-09-27 20:08:59 +0800] [1553477] [INFO] Booting worker with pid: 1553477
+[2025-09-27 20:08:59 +0800] [1553478] [INFO] Booting worker with pid: 1553478
+[2025-09-27 20:08:59 +0800] [1553479] [INFO] Booting worker with pid: 1553479
+[2025-09-27 20:08:59 +0800] [1553480] [INFO] Booting worker with pid: 1553480
+[2025-09-27 20:08:59 +0800] [1553481] [INFO] Booting worker with pid: 1553481
+[2025-09-27 20:08:59 +0800] [1553482] [INFO] Booting worker with pid: 1553482
+[2025-09-27 20:08:59 +0800] [1553483] [INFO] Booting worker with pid: 1553483
+[2025-09-27 20:08:59 +0800] [1553488] [INFO] Booting worker with pid: 1553488
+[2025-09-27 20:08:59 +0800] [1553489] [INFO] Booting worker with pid: 1553489
+[2025-09-27 20:08:59 +0800] [1553490] [INFO] Booting worker with pid: 1553490
+[2025-09-27 20:08:59 +0800] [1553496] [INFO] Booting worker with pid: 1553496
+[2025-09-27 20:08:59 +0800] [1553497] [INFO] Booting worker with pid: 1553497
+[2025-09-27 20:08:59 +0800] [1553498] [INFO] Booting worker with pid: 1553498
+[2025-09-27 20:08:59 +0800] [1553499] [INFO] Booting worker with pid: 1553499
+[2025-09-27 20:08:59 +0800] [1553500] [INFO] Booting worker with pid: 1553500
+[2025-09-27 20:08:59 +0800] [1553501] [INFO] Booting worker with pid: 1553501
+[2025-09-27 20:08:59 +0800] [1553502] [INFO] Booting worker with pid: 1553502
+[2025-09-27 20:08:59 +0800] [1553503] [INFO] Booting worker with pid: 1553503
+[2025-09-27 20:09:00 +0800] [1553504] [INFO] Booting worker with pid: 1553504
+[2025-09-27 20:09:00 +0800] [1553505] [INFO] Booting worker with pid: 1553505
+[2025-09-27 20:09:00 +0800] [1553506] [INFO] Booting worker with pid: 1553506
+[2025-09-27 20:09:00 +0800] [1553507] [INFO] Booting worker with pid: 1553507
+[2025-09-27 20:09:00 +0800] [1553508] [INFO] Booting worker with pid: 1553508
+[2025-09-27 20:09:00 +0800] [1553509] [INFO] Booting worker with pid: 1553509
+[2025-09-27 20:09:00 +0800] [1553510] [INFO] Booting worker with pid: 1553510
+[2025-09-27 20:09:00 +0800] [1553511] [INFO] Booting worker with pid: 1553511
+[2025-09-27 20:09:00 +0800] [1553512] [INFO] Booting worker with pid: 1553512
+[2025-09-27 20:09:00 +0800] [1553513] [INFO] Booting worker with pid: 1553513
+[2025-09-27 20:09:00 +0800] [1553517] [INFO] Booting worker with pid: 1553517
+[2025-09-27 20:09:00 +0800] [1553518] [INFO] Booting worker with pid: 1553518
+[2025-09-27 20:09:00 +0800] [1553519] [INFO] Booting worker with pid: 1553519
+[2025-09-27 20:09:00 +0800] [1553520] [INFO] Booting worker with pid: 1553520
+[2025-09-27 20:09:00 +0800] [1553522] [INFO] Booting worker with pid: 1553522
+[2025-09-27 20:09:00 +0800] [1553523] [INFO] Booting worker with pid: 1553523
+[2025-09-27 20:09:00 +0800] [1553524] [INFO] Booting worker with pid: 1553524
+[2025-09-27 20:09:00 +0800] [1553525] [INFO] Booting worker with pid: 1553525
+[2025-09-27 20:09:01 +0800] [1553530] [INFO] Booting worker with pid: 1553530
+[2025-09-27 20:09:01 +0800] [1553531] [INFO] Booting worker with pid: 1553531
+[2025-09-27 20:09:01 +0800] [1553541] [INFO] Booting worker with pid: 1553541
+[2025-09-27 20:09:01 +0800] [1553584] [INFO] Booting worker with pid: 1553584
+[2025-09-27 20:09:01 +0800] [1553585] [INFO] Booting worker with pid: 1553585
+[2025-09-27 20:09:01 +0800] [1553586] [INFO] Booting worker with pid: 1553586
+[2025-09-27 20:09:01 +0800] [1553587] [INFO] Booting worker with pid: 1553587
+[2025-09-27 20:09:01 +0800] [1553594] [INFO] Booting worker with pid: 1553594
+[2025-09-27 20:09:01 +0800] [1553600] [INFO] Booting worker with pid: 1553600
+[2025-09-27 20:09:01 +0800] [1553602] [INFO] Booting worker with pid: 1553602
+[2025-09-27 20:09:01 +0800] [1553604] [INFO] Booting worker with pid: 1553604
+[2025-09-27 20:09:01 +0800] [1553605] [INFO] Booting worker with pid: 1553605
+[2025-09-27 20:09:01 +0800] [1553631] [INFO] Booting worker with pid: 1553631
+[2025-09-27 20:09:01 +0800] [1553632] [INFO] Booting worker with pid: 1553632
+[2025-09-27 20:09:01 +0800] [1553633] [INFO] Booting worker with pid: 1553633
+[2025-09-27 20:09:01 +0800] [1553634] [INFO] Booting worker with pid: 1553634
+[2025-09-27 20:09:02 +0800] [1553635] [INFO] Booting worker with pid: 1553635
+[2025-09-27 20:09:02 +0800] [1553636] [INFO] Booting worker with pid: 1553636
+[2025-09-27 20:09:02 +0800] [1553637] [INFO] Booting worker with pid: 1553637
+[2025-09-27 20:09:02 +0800] [1553638] [INFO] Booting worker with pid: 1553638
+[2025-09-27 20:09:02 +0800] [1553639] [INFO] Booting worker with pid: 1553639
+[2025-09-27 20:09:02 +0800] [1553640] [INFO] Booting worker with pid: 1553640
+[2025-09-27 20:09:02 +0800] [1553651] [INFO] Booting worker with pid: 1553651
+[2025-09-27 20:09:02 +0800] [1553702] [INFO] Booting worker with pid: 1553702
+[2025-09-27 20:09:02 +0800] [1553736] [INFO] Booting worker with pid: 1553736
+[2025-09-27 20:09:02 +0800] [1553737] [INFO] Booting worker with pid: 1553737
+[2025-09-27 20:09:02 +0800] [1553738] [INFO] Booting worker with pid: 1553738
+[2025-09-27 20:09:02 +0800] [1553739] [INFO] Booting worker with pid: 1553739
+[2025-09-27 20:09:02 +0800] [1553740] [INFO] Booting worker with pid: 1553740
+[2025-09-27 20:09:02 +0800] [1553741] [INFO] Booting worker with pid: 1553741
+[2025-09-27 20:09:02 +0800] [1553742] [INFO] Booting worker with pid: 1553742
+[2025-09-27 20:09:02 +0800] [1553743] [INFO] Booting worker with pid: 1553743
+[2025-09-27 20:09:02 +0800] [1553744] [INFO] Booting worker with pid: 1553744
+[2025-09-27 20:09:02 +0800] [1553745] [INFO] Booting worker with pid: 1553745
+[2025-09-27 20:09:02 +0800] [1553746] [INFO] Booting worker with pid: 1553746
+[2025-09-27 20:09:02 +0800] [1553747] [INFO] Booting worker with pid: 1553747
+[2025-09-27 20:09:02 +0800] [1553748] [INFO] Booting worker with pid: 1553748
+[2025-09-27 20:09:03 +0800] [1553749] [INFO] Booting worker with pid: 1553749
+[2025-09-27 20:09:03 +0800] [1553750] [INFO] Booting worker with pid: 1553750
+[2025-09-27 20:09:03 +0800] [1553751] [INFO] Booting worker with pid: 1553751
+[2025-09-27 20:09:03 +0800] [1553756] [INFO] Booting worker with pid: 1553756
+[2025-09-27 20:09:03 +0800] [1553757] [INFO] Booting worker with pid: 1553757
+[2025-09-27 20:09:03 +0800] [1553758] [INFO] Booting worker with pid: 1553758
+[2025-09-27 20:09:03 +0800] [1553759] [INFO] Booting worker with pid: 1553759
+[2025-09-27 20:09:03 +0800] [1553760] [INFO] Booting worker with pid: 1553760
+[2025-09-27 20:09:03 +0800] [1553761] [INFO] Booting worker with pid: 1553761
+[2025-09-27 20:09:03 +0800] [1553762] [INFO] Booting worker with pid: 1553762
+[2025-09-27 20:09:03 +0800] [1553763] [INFO] Booting worker with pid: 1553763
+[2025-09-27 20:09:03 +0800] [1553764] [INFO] Booting worker with pid: 1553764
+[2025-09-27 20:09:03 +0800] [1553765] [INFO] Booting worker with pid: 1553765
+[2025-09-27 20:09:03 +0800] [1553766] [INFO] Booting worker with pid: 1553766
+[2025-09-27 20:09:03 +0800] [1553767] [INFO] Booting worker with pid: 1553767
+[2025-09-27 20:09:03 +0800] [1553768] [INFO] Booting worker with pid: 1553768
+[2025-09-27 20:09:04 +0800] [1553769] [INFO] Booting worker with pid: 1553769
+[2025-09-27 20:09:04 +0800] [1553770] [INFO] Booting worker with pid: 1553770
+[2025-09-27 20:09:04 +0800] [1553771] [INFO] Booting worker with pid: 1553771
+[2025-09-27 20:09:04 +0800] [1553772] [INFO] Booting worker with pid: 1553772
+[2025-09-27 20:09:04 +0800] [1553774] [INFO] Booting worker with pid: 1553774
+[2025-09-27 20:09:04 +0800] [1553775] [INFO] Booting worker with pid: 1553775
+[2025-09-27 20:09:04 +0800] [1553776] [INFO] Booting worker with pid: 1553776
+[2025-09-27 20:09:04 +0800] [1553777] [INFO] Booting worker with pid: 1553777
+[2025-09-27 20:09:04 +0800] [1553778] [INFO] Booting worker with pid: 1553778
+[2025-09-27 20:09:04 +0800] [1553779] [INFO] Booting worker with pid: 1553779
+[2025-09-27 20:09:04 +0800] [1553781] [INFO] Booting worker with pid: 1553781
+[2025-09-27 20:09:04 +0800] [1553784] [INFO] Booting worker with pid: 1553784
+[2025-09-27 20:09:04 +0800] [1553786] [INFO] Booting worker with pid: 1553786
+[2025-09-27 20:09:04 +0800] [1553789] [INFO] Booting worker with pid: 1553789
+[2025-09-27 20:09:04 +0800] [1553793] [INFO] Booting worker with pid: 1553793
+[2025-09-27 20:09:04 +0800] [1553794] [INFO] Booting worker with pid: 1553794
+[2025-09-27 20:09:04 +0800] [1553795] [INFO] Booting worker with pid: 1553795
+[2025-09-27 20:09:04 +0800] [1553796] [INFO] Booting worker with pid: 1553796
+[2025-09-27 20:09:04 +0800] [1553797] [INFO] Booting worker with pid: 1553797
+[2025-09-27 20:09:04 +0800] [1553816] [INFO] Booting worker with pid: 1553816
+[2025-09-27 20:09:05 +0800] [1553817] [INFO] Booting worker with pid: 1553817
+[2025-09-27 20:09:05 +0800] [1553818] [INFO] Booting worker with pid: 1553818
+[2025-09-27 20:09:05 +0800] [1553819] [INFO] Booting worker with pid: 1553819
+[2025-09-27 20:09:05 +0800] [1553820] [INFO] Booting worker with pid: 1553820
+[2025-09-27 20:09:05 +0800] [1553821] [INFO] Booting worker with pid: 1553821
+[2025-09-27 20:09:05 +0800] [1553822] [INFO] Booting worker with pid: 1553822
+[2025-09-27 20:09:05 +0800] [1553823] [INFO] Booting worker with pid: 1553823
+[2025-09-27 20:09:05 +0800] [1553824] [INFO] Booting worker with pid: 1553824
+[2025-09-27 20:09:05 +0800] [1553825] [INFO] Booting worker with pid: 1553825
+[2025-09-27 20:09:05 +0800] [1553829] [INFO] Booting worker with pid: 1553829
+[2025-09-27 20:09:05 +0800] [1553830] [INFO] Booting worker with pid: 1553830
+[2025-09-27 20:09:05 +0800] [1553831] [INFO] Booting worker with pid: 1553831
+[2025-09-27 20:09:05 +0800] [1553833] [INFO] Booting worker with pid: 1553833
+[2025-09-27 20:09:05 +0800] [1553834] [INFO] Booting worker with pid: 1553834
+[2025-09-27 20:43:16 +0800] [1553446] [INFO] Handling signal: int
+[2025-09-27 20:43:16 +0800] [1553473] [INFO] Worker exiting (pid: 1553473)
+[2025-09-27 20:43:16 +0800] [1553471] [INFO] Worker exiting (pid: 1553471)
+[2025-09-27 20:43:16 +0800] [1553481] [INFO] Worker exiting (pid: 1553481)
+[2025-09-27 20:43:16 +0800] [1553497] [INFO] Worker exiting (pid: 1553497)
+[2025-09-27 20:43:16 +0800] [1553477] [INFO] Worker exiting (pid: 1553477)
+[2025-09-27 20:43:16 +0800] [1553470] [INFO] Worker exiting (pid: 1553470)
+[2025-09-27 20:43:16 +0800] [1553518] [INFO] Worker exiting (pid: 1553518)
+[2025-09-27 20:43:16 +0800] [1553509] [INFO] Worker exiting (pid: 1553509)
+[2025-09-27 20:43:16 +0800] [1553499] [INFO] Worker exiting (pid: 1553499)
+[2025-09-27 20:43:16 +0800] [1553507] [INFO] Worker exiting (pid: 1553507)
+[2025-09-27 20:43:16 +0800] [1553502] [INFO] Worker exiting (pid: 1553502)
+[2025-09-27 20:43:16 +0800] [1553476] [INFO] Worker exiting (pid: 1553476)
+[2025-09-27 20:43:16 +0800] [1553489] [INFO] Worker exiting (pid: 1553489)
+[2025-09-27 20:43:16 +0800] [1553519] [INFO] Worker exiting (pid: 1553519)
+[2025-09-27 20:43:16 +0800] [1553472] [INFO] Worker exiting (pid: 1553472)
+[2025-09-27 20:43:16 +0800] [1553522] [INFO] Worker exiting (pid: 1553522)
+[2025-09-27 20:43:16 +0800] [1553517] [INFO] Worker exiting (pid: 1553517)
+[2025-09-27 20:43:16 +0800] [1553469] [INFO] Worker exiting (pid: 1553469)
+[2025-09-27 20:43:16 +0800] [1553483] [INFO] Worker exiting (pid: 1553483)
+[2025-09-27 20:43:16 +0800] [1553478] [INFO] Worker exiting (pid: 1553478)
+[2025-09-27 20:43:16 +0800] [1553511] [INFO] Worker exiting (pid: 1553511)
+[2025-09-27 20:43:16 +0800] [1553482] [INFO] Worker exiting (pid: 1553482)
+[2025-09-27 20:43:16 +0800] [1553498] [INFO] Worker exiting (pid: 1553498)
+[2025-09-27 20:43:16 +0800] [1553600] [INFO] Worker exiting (pid: 1553600)
+[2025-09-27 20:43:16 +0800] [1553586] [INFO] Worker exiting (pid: 1553586)
+[2025-09-27 20:43:16 +0800] [1553488] [INFO] Worker exiting (pid: 1553488)
+[2025-09-27 20:43:16 +0800] [1553496] [INFO] Worker exiting (pid: 1553496)
+[2025-09-27 20:43:16 +0800] [1553631] [INFO] Worker exiting (pid: 1553631)
+[2025-09-27 20:43:16 +0800] [1553594] [INFO] Worker exiting (pid: 1553594)
+[2025-09-27 20:43:16 +0800] [1553520] [INFO] Worker exiting (pid: 1553520)
+[2025-09-27 20:43:16 +0800] [1553501] [INFO] Worker exiting (pid: 1553501)
+[2025-09-27 20:43:16 +0800] [1553505] [INFO] Worker exiting (pid: 1553505)
+[2025-09-27 20:43:16 +0800] [1553500] [INFO] Worker exiting (pid: 1553500)
+[2025-09-27 20:43:16 +0800] [1553508] [INFO] Worker exiting (pid: 1553508)
+[2025-09-27 20:43:16 +0800] [1553490] [INFO] Worker exiting (pid: 1553490)
+[2025-09-27 20:43:16 +0800] [1553585] [INFO] Worker exiting (pid: 1553585)
+[2025-09-27 20:43:16 +0800] [1553510] [INFO] Worker exiting (pid: 1553510)
+[2025-09-27 20:43:16 +0800] [1553504] [INFO] Worker exiting (pid: 1553504)
+[2025-09-27 20:43:16 +0800] [1553541] [INFO] Worker exiting (pid: 1553541)
+[2025-09-27 20:43:16 +0800] [1553512] [INFO] Worker exiting (pid: 1553512)
+[2025-09-27 20:43:16 +0800] [1553513] [INFO] Worker exiting (pid: 1553513)
+[2025-09-27 20:43:16 +0800] [1553523] [INFO] Worker exiting (pid: 1553523)
+[2025-09-27 20:43:16 +0800] [1553524] [INFO] Worker exiting (pid: 1553524)
+[2025-09-27 20:43:16 +0800] [1553587] [INFO] Worker exiting (pid: 1553587)
+[2025-09-27 20:43:16 +0800] [1553525] [INFO] Worker exiting (pid: 1553525)
+[2025-09-27 20:43:16 +0800] [1553605] [INFO] Worker exiting (pid: 1553605)
+[2025-09-27 20:43:16 +0800] [1553506] [INFO] Worker exiting (pid: 1553506)
+[2025-09-27 20:43:16 +0800] [1553738] [INFO] Worker exiting (pid: 1553738)
+[2025-09-27 20:43:16 +0800] [1553748] [INFO] Worker exiting (pid: 1553748)
+[2025-09-27 20:43:16 +0800] [1553742] [INFO] Worker exiting (pid: 1553742)
+[2025-09-27 20:43:16 +0800] [1553584] [INFO] Worker exiting (pid: 1553584)
+[2025-09-27 20:43:16 +0800] [1553503] [INFO] Worker exiting (pid: 1553503)
+[2025-09-27 20:43:16 +0800] [1553635] [INFO] Worker exiting (pid: 1553635)
+[2025-09-27 20:43:16 +0800] [1553604] [INFO] Worker exiting (pid: 1553604)
+[2025-09-27 20:43:16 +0800] [1553739] [INFO] Worker exiting (pid: 1553739)
+[2025-09-27 20:43:16 +0800] [1553750] [INFO] Worker exiting (pid: 1553750)
+[2025-09-27 20:43:16 +0800] [1553531] [INFO] Worker exiting (pid: 1553531)
+[2025-09-27 20:43:16 +0800] [1553746] [INFO] Worker exiting (pid: 1553746)
+[2025-09-27 20:43:16 +0800] [1553740] [INFO] Worker exiting (pid: 1553740)
+[2025-09-27 20:43:16 +0800] [1553633] [INFO] Worker exiting (pid: 1553633)
+[2025-09-27 20:43:16 +0800] [1553737] [INFO] Worker exiting (pid: 1553737)
+[2025-09-27 20:43:16 +0800] [1553702] [INFO] Worker exiting (pid: 1553702)
+[2025-09-27 20:43:16 +0800] [1553751] [INFO] Worker exiting (pid: 1553751)
+[2025-09-27 20:43:16 +0800] [1553745] [INFO] Worker exiting (pid: 1553745)
+[2025-09-27 20:43:16 +0800] [1553634] [INFO] Worker exiting (pid: 1553634)
+[2025-09-27 20:43:16 +0800] [1553638] [INFO] Worker exiting (pid: 1553638)
+[2025-09-27 20:43:16 +0800] [1553764] [INFO] Worker exiting (pid: 1553764)
+[2025-09-27 20:43:16 +0800] [1553779] [INFO] Worker exiting (pid: 1553779)
+[2025-09-27 20:43:16 +0800] [1553778] [INFO] Worker exiting (pid: 1553778)
+[2025-09-27 20:43:16 +0800] [1553756] [INFO] Worker exiting (pid: 1553756)
+[2025-09-27 20:43:16 +0800] [1553763] [INFO] Worker exiting (pid: 1553763)
+[2025-09-27 20:43:16 +0800] [1553762] [INFO] Worker exiting (pid: 1553762)
+[2025-09-27 20:43:16 +0800] [1553781] [INFO] Worker exiting (pid: 1553781)
+[2025-09-27 20:43:16 +0800] [1553777] [INFO] Worker exiting (pid: 1553777)
+[2025-09-27 20:43:16 +0800] [1553758] [INFO] Worker exiting (pid: 1553758)
+[2025-09-27 20:43:16 +0800] [1553741] [INFO] Worker exiting (pid: 1553741)
+[2025-09-27 20:43:16 +0800] [1553759] [INFO] Worker exiting (pid: 1553759)
+[2025-09-27 20:43:16 +0800] [1553767] [INFO] Worker exiting (pid: 1553767)
+[2025-09-27 20:43:16 +0800] [1553819] [INFO] Worker exiting (pid: 1553819)
+[2025-09-27 20:43:16 +0800] [1553765] [INFO] Worker exiting (pid: 1553765)
+[2025-09-27 20:43:16 +0800] [1553816] [INFO] Worker exiting (pid: 1553816)
+[2025-09-27 20:43:16 +0800] [1553651] [INFO] Worker exiting (pid: 1553651)
+[2025-09-27 20:43:16 +0800] [1553757] [INFO] Worker exiting (pid: 1553757)
+[2025-09-27 20:43:16 +0800] [1553736] [INFO] Worker exiting (pid: 1553736)
+[2025-09-27 20:43:16 +0800] [1553530] [INFO] Worker exiting (pid: 1553530)
+[2025-09-27 20:43:16 +0800] [1553772] [INFO] Worker exiting (pid: 1553772)
+[2025-09-27 20:43:16 +0800] [1553747] [INFO] Worker exiting (pid: 1553747)
+[2025-09-27 20:43:16 +0800] [1553761] [INFO] Worker exiting (pid: 1553761)
+[2025-09-27 20:43:16 +0800] [1553636] [INFO] Worker exiting (pid: 1553636)
+[2025-09-27 20:43:16 +0800] [1553797] [INFO] Worker exiting (pid: 1553797)
+[2025-09-27 20:43:16 +0800] [1553769] [INFO] Worker exiting (pid: 1553769)
+[2025-09-27 20:43:16 +0800] [1553817] [INFO] Worker exiting (pid: 1553817)
+[2025-09-27 20:43:16 +0800] [1553820] [INFO] Worker exiting (pid: 1553820)
+[2025-09-27 20:43:16 +0800] [1553795] [INFO] Worker exiting (pid: 1553795)
+[2025-09-27 20:43:16 +0800] [1553796] [INFO] Worker exiting (pid: 1553796)
+[2025-09-27 20:43:16 +0800] [1553760] [INFO] Worker exiting (pid: 1553760)
+[2025-09-27 20:43:16 +0800] [1553770] [INFO] Worker exiting (pid: 1553770)
+[2025-09-27 20:43:16 +0800] [1553794] [INFO] Worker exiting (pid: 1553794)
+[2025-09-27 20:43:16 +0800] [1553602] [INFO] Worker exiting (pid: 1553602)
+[2025-09-27 20:43:16 +0800] [1553830] [INFO] Worker exiting (pid: 1553830)
+[2025-09-27 20:43:16 +0800] [1553825] [INFO] Worker exiting (pid: 1553825)
+[2025-09-27 20:43:16 +0800] [1553821] [INFO] Worker exiting (pid: 1553821)
+[2025-09-27 20:43:16 +0800] [1553823] [INFO] Worker exiting (pid: 1553823)
+[2025-09-27 20:43:16 +0800] [1553640] [INFO] Worker exiting (pid: 1553640)
+[2025-09-27 20:43:16 +0800] [1553789] [INFO] Worker exiting (pid: 1553789)
+[2025-09-27 20:43:16 +0800] [1553786] [INFO] Worker exiting (pid: 1553786)
+[2025-09-27 20:43:16 +0800] [1553829] [INFO] Worker exiting (pid: 1553829)
+[2025-09-27 20:43:16 +0800] [1553771] [INFO] Worker exiting (pid: 1553771)
+[2025-09-27 20:43:16 +0800] [1553793] [INFO] Worker exiting (pid: 1553793)
+[2025-09-27 20:43:16 +0800] [1553768] [INFO] Worker exiting (pid: 1553768)
+[2025-09-27 20:43:16 +0800] [1553766] [INFO] Worker exiting (pid: 1553766)
+[2025-09-27 20:43:16 +0800] [1553833] [INFO] Worker exiting (pid: 1553833)
+[2025-09-27 20:43:16 +0800] [1553775] [INFO] Worker exiting (pid: 1553775)
+[2025-09-27 20:43:16 +0800] [1553637] [INFO] Worker exiting (pid: 1553637)
+[2025-09-27 20:43:16 +0800] [1553744] [INFO] Worker exiting (pid: 1553744)
+[2025-09-27 20:43:16 +0800] [1553822] [INFO] Worker exiting (pid: 1553822)
+[2025-09-27 20:43:16 +0800] [1553824] [INFO] Worker exiting (pid: 1553824)
+[2025-09-27 20:43:16 +0800] [1553776] [INFO] Worker exiting (pid: 1553776)
+[2025-09-27 20:43:16 +0800] [1553774] [INFO] Worker exiting (pid: 1553774)
+[2025-09-27 20:43:16 +0800] [1553834] [INFO] Worker exiting (pid: 1553834)
+[2025-09-27 20:43:16 +0800] [1553784] [INFO] Worker exiting (pid: 1553784)
+[2025-09-27 20:43:16 +0800] [1553831] [INFO] Worker exiting (pid: 1553831)
+[2025-09-27 20:43:16 +0800] [1553639] [INFO] Worker exiting (pid: 1553639)
+[2025-09-27 20:43:16 +0800] [1553749] [INFO] Worker exiting (pid: 1553749)
+[2025-09-27 20:43:16 +0800] [1553632] [INFO] Worker exiting (pid: 1553632)
+[2025-09-27 20:43:16 +0800] [1553818] [INFO] Worker exiting (pid: 1553818)
+[2025-09-27 20:43:16 +0800] [1553743] [INFO] Worker exiting (pid: 1553743)
+[2025-09-27 20:43:16 +0800] [1553479] [INFO] Worker exiting (pid: 1553479)
+[2025-09-27 20:43:16 +0800] [1553480] [INFO] Worker exiting (pid: 1553480)
+[2025-09-27 20:43:16 +0800] [1553446] [ERROR] Worker (pid:1553471) was sent SIGINT!
+[2025-09-27 20:43:17 +0800] [1553446] [ERROR] Worker (pid:1553523) was sent SIGINT!
+[2025-09-27 20:43:17 +0800] [1553446] [ERROR] Worker (pid:1553586) was sent SIGINT!
+[2025-09-27 20:43:17 +0800] [1553446] [ERROR] Worker (pid:1553531) was sent SIGINT!
+[2025-09-27 20:43:17 +0800] [1553446] [ERROR] Worker (pid:1553541) was sent SIGINT!
+[2025-09-27 20:43:17 +0800] [1553446] [ERROR] Worker (pid:1553584) was sent SIGINT!
+[2025-09-27 20:43:17 +0800] [1553446] [ERROR] Unhandled exception in main loop
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1031, in handleError
+    traceback.print_stack(frame, file=sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 206, in print_stack
+    print_list(extract_stack(f, limit=limit), file=file)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 227, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 369, in extract
+    fnames.add(filename)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1022, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 120, in print_exception
+    for line in te.format(chain=chain):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/exceptiongroup/_formatting.py", line 247, in format
+    yield from _ctx.emit(exc.stack.format())
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 440, in format
+    row.append('  File "{}", line {}, in {}\n'.format(
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1031, in handleError
+    traceback.print_stack(frame, file=sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 206, in print_stack
+    print_list(extract_stack(f, limit=limit), file=file)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 227, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 376, in extract
+    result.append(FrameSummary(
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1022, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 119, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/exceptiongroup/_formatting.py", line 179, in __init__
+    context = PatchedTracebackException(
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/exceptiongroup/_formatting.py", line 141, in __init__
+    frame.line
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1022, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 120, in print_exception
+    for line in te.format(chain=chain):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/exceptiongroup/_formatting.py", line 247, in format
+    yield from _ctx.emit(exc.stack.format())
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/exceptiongroup/_formatting.py", line 65, in emit
+    yield textwrap.indent(text, indent_str, lambda line: True)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/textwrap.py", line 488, in indent
+    return ''.join(prefixed_lines())
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/textwrap.py", line 485, in prefixed_lines
+    def prefixed_lines():
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1022, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 121, in print_exception
+    print(line, file=file, end="")
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1031, in handleError
+    traceback.print_stack(frame, file=sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 206, in print_stack
+    print_list(extract_stack(f, limit=limit), file=file)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 227, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 383, in extract
+    f.line
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 306, in line
+    self._line = linecache.getline(self.filename, self.lineno)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/linecache.py", line 30, in getline
+    lines = getlines(filename, module_globals)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/linecache.py", line 46, in getlines
+    return updatecache(filename, module_globals)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/linecache.py", line 136, in updatecache
+    with tokenize.open(fullname) as fp:
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/tokenize.py", line 396, in open
+    encoding, lines = detect_encoding(buffer.readline)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/tokenize.py", line 365, in detect_encoding
+    first = read_or_stop()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/tokenize.py", line 323, in read_or_stop
+    return readline()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1031, in handleError
+    traceback.print_stack(frame, file=sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 206, in print_stack
+    print_list(extract_stack(f, limit=limit), file=file)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 227, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 369, in extract
+    fnames.add(filename)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1022, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 119, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/exceptiongroup/_formatting.py", line 179, in __init__
+    context = PatchedTracebackException(
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/exceptiongroup/_formatting.py", line 96, in __init__
+    self.stack = traceback.StackSummary.extract(
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 383, in extract
+    f.line
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 306, in line
+    self._line = linecache.getline(self.filename, self.lineno)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 966, in handle
+    self.acquire()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 917, in acquire
+    self.lock.acquire()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1022, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 120, in print_exception
+    for line in te.format(chain=chain):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/exceptiongroup/_formatting.py", line 243, in format
+    yield from _ctx.emit(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/exceptiongroup/_formatting.py", line 62, in emit
+    yield textwrap.indent(text_gen, indent_str, lambda line: True)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/textwrap.py", line 488, in indent
+    return ''.join(prefixed_lines())
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/textwrap.py", line 487, in prefixed_lines
+    yield (prefix + line if predicate(line) else line)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/exceptiongroup/_formatting.py", line 62, in <lambda>
+    yield textwrap.indent(text_gen, indent_str, lambda line: True)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1022, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 119, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/exceptiongroup/_formatting.py", line 152, in __init__
+    te, e = queue.pop()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1031, in handleError
+    traceback.print_stack(frame, file=sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 206, in print_stack
+    print_list(extract_stack(f, limit=limit), file=file)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 227, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 383, in extract
+    f.line
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 306, in line
+    self._line = linecache.getline(self.filename, self.lineno)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/linecache.py", line 30, in getline
+    lines = getlines(filename, module_globals)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/linecache.py", line 46, in getlines
+    return updatecache(filename, module_globals)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/linecache.py", line 136, in updatecache
+    with tokenize.open(fullname) as fp:
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/tokenize.py", line 396, in open
+    encoding, lines = detect_encoding(buffer.readline)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/tokenize.py", line 365, in detect_encoding
+    first = read_or_stop()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/tokenize.py", line 323, in read_or_stop
+    return readline()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 544, in reap_workers
+    sig_name = signal.Signals(status).name
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/enum.py", line 385, in __call__
+    return cls.__new__(cls, value)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/enum.py", line 682, in __new__
+    if type(value) is cls:
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1031, in handleError
+    traceback.print_stack(frame, file=sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 206, in print_stack
+    print_list(extract_stack(f, limit=limit), file=file)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 227, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 383, in extract
+    f.line
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 306, in line
+    self._line = linecache.getline(self.filename, self.lineno)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/linecache.py", line 30, in getline
+    lines = getlines(filename, module_globals)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/linecache.py", line 46, in getlines
+    return updatecache(filename, module_globals)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/linecache.py", line 136, in updatecache
+    with tokenize.open(fullname) as fp:
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/tokenize.py", line 394, in open
+    buffer = _builtin_open(filename, 'rb')
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1022, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 119, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/exceptiongroup/_formatting.py", line 179, in __init__
+    context = PatchedTracebackException(
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/exceptiongroup/_formatting.py", line 96, in __init__
+    self.stack = traceback.StackSummary.extract(
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 379, in extract
+    linecache.checkcache(filename)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/linecache.py", line 72, in checkcache
+    stat = os.stat(fullname)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1031, in handleError
+    traceback.print_stack(frame, file=sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 206, in print_stack
+    print_list(extract_stack(f, limit=limit), file=file)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 227, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 369, in extract
+    fnames.add(filename)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1022, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 119, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/exceptiongroup/_formatting.py", line 179, in __init__
+    context = PatchedTracebackException(
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/exceptiongroup/_formatting.py", line 96, in __init__
+    self.stack = traceback.StackSummary.extract(
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 379, in extract
+    linecache.checkcache(filename)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/linecache.py", line 72, in checkcache
+    stat = os.stat(fullname)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1022, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 120, in print_exception
+    for line in te.format(chain=chain):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/exceptiongroup/_formatting.py", line 247, in format
+    yield from _ctx.emit(exc.stack.format())
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 440, in format
+    row.append('  File "{}", line {}, in {}\n'.format(
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1022, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 121, in print_exception
+    print(line, file=file, end="")
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stderr>'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stderr>'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1100, in emit
+    msg = self.format(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 943, in format
+    return fmt.format(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 680, in format
+    record.asctime = self.formatTime(record, self.datefmt)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 617, in formatTime
+    s = time.strftime(datefmt, ct)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 515, in reap_workers
+    wpid, status = os.waitpid(-1, os.WNOHANG)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 515, in reap_workers
+    wpid, status = os.waitpid(-1, os.WNOHANG)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stderr>'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1022, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 121, in print_exception
+    print(line, file=file, end="")
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stderr>'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/shared/hdd/nuochen/Idea2Proposal/Demo/logs/error.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stderr>'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 223, in run
+    handler()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 260, in handle_int
+    self.stop(False)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 395, in stop
+    time.sleep(0.1)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 515, in reap_workers
+    wpid, status = os.waitpid(-1, os.WNOHANG)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 544, in reap_workers
+    sig_name = signal.Signals(status).name
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/enum.py", line 359, in __call__
+    def __call__(cls, value, names=None, *, module=None, qualname=None, type=None, start=1):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 544, in reap_workers
+    sig_name = signal.Signals(status).name
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/enum.py", line 385, in __call__
+    return cls.__new__(cls, value)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/enum.py", line 678, in __new__
+    def __new__(cls, value):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 544, in reap_workers
+    sig_name = signal.Signals(status).name
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/types.py", line 177, in __get__
+    if instance is None:
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 544, in reap_workers
+    sig_name = signal.Signals(status).name
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/types.py", line 183, in __get__
+    return self.fget(instance)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/enum.py", line 796, in name
+    @DynamicClassAttribute
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 239, in handle_chld
+    def handle_chld(self, sig, frame):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 270, in error
+    def error(self, msg, *args, **kwargs):
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1022, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 119, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/exceptiongroup/_formatting.py", line 96, in __init__
+    self.stack = traceback.StackSummary.extract(
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 383, in extract
+    f.line
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/traceback.py", line 306, in line
+    self._line = linecache.getline(self.filename, self.lineno)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/linecache.py", line 30, in getline
+    lines = getlines(filename, module_globals)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/linecache.py", line 46, in getlines
+    return updatecache(filename, module_globals)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/linecache.py", line 136, in updatecache
+    with tokenize.open(fullname) as fp:
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/tokenize.py", line 396, in open
+    encoding, lines = detect_encoding(buffer.readline)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/tokenize.py", line 365, in detect_encoding
+    first = read_or_stop()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/tokenize.py", line 323, in read_or_stop
+    return readline()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 515, in reap_workers
+    wpid, status = os.waitpid(-1, os.WNOHANG)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 241, in handle_chld
+    self.reap_workers()
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/arbiter.py", line 553, in reap_workers
+    self.log.error(msg)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/site-packages/gunicorn/glogging.py", line 271, in error
+    self.error_log.error(msg, *args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1506, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/home/nuochen/miniconda3/envs/arxivdata/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stderr>'>
+[2025-09-27 20:55:41 +0800] [1611703] [INFO] Starting gunicorn 23.0.0
+[2025-09-27 20:55:41 +0800] [1611703] [INFO] Listening at: http://0.0.0.0:4090 (1611703)
+[2025-09-27 20:55:41 +0800] [1611703] [INFO] Using worker: sync
+[2025-09-27 20:55:41 +0800] [1611734] [INFO] Booting worker with pid: 1611734
+[2025-09-27 20:55:41 +0800] [1611735] [INFO] Booting worker with pid: 1611735
+[2025-09-27 20:55:41 +0800] [1611736] [INFO] Booting worker with pid: 1611736
+[2025-09-27 20:55:41 +0800] [1611737] [INFO] Booting worker with pid: 1611737
+[2025-09-27 20:55:42 +0800] [1611738] [INFO] Booting worker with pid: 1611738
+[2025-09-27 20:55:42 +0800] [1611739] [INFO] Booting worker with pid: 1611739
+[2025-09-27 20:55:42 +0800] [1611740] [INFO] Booting worker with pid: 1611740
+[2025-09-27 20:55:42 +0800] [1611748] [INFO] Booting worker with pid: 1611748
+[2025-09-27 20:55:42 +0800] [1611749] [INFO] Booting worker with pid: 1611749
+[2025-09-27 20:55:42 +0800] [1611750] [INFO] Booting worker with pid: 1611750
+[2025-09-27 20:55:42 +0800] [1611751] [INFO] Booting worker with pid: 1611751
+[2025-09-27 20:55:42 +0800] [1611752] [INFO] Booting worker with pid: 1611752
+[2025-09-27 20:55:42 +0800] [1611753] [INFO] Booting worker with pid: 1611753
+[2025-09-27 20:55:42 +0800] [1611754] [INFO] Booting worker with pid: 1611754
+[2025-09-27 20:55:42 +0800] [1611755] [INFO] Booting worker with pid: 1611755
+[2025-09-27 20:55:42 +0800] [1611759] [INFO] Booting worker with pid: 1611759
+[2025-09-27 20:55:42 +0800] [1611760] [INFO] Booting worker with pid: 1611760
+[2025-09-27 20:55:42 +0800] [1611761] [INFO] Booting worker with pid: 1611761
+[2025-09-27 20:55:42 +0800] [1611762] [INFO] Booting worker with pid: 1611762
+[2025-09-27 20:55:43 +0800] [1611763] [INFO] Booting worker with pid: 1611763
+[2025-09-27 20:55:43 +0800] [1611764] [INFO] Booting worker with pid: 1611764
+[2025-09-27 20:55:43 +0800] [1611765] [INFO] Booting worker with pid: 1611765
+[2025-09-27 20:55:43 +0800] [1611766] [INFO] Booting worker with pid: 1611766
+[2025-09-27 20:55:43 +0800] [1611767] [INFO] Booting worker with pid: 1611767
+[2025-09-27 20:55:43 +0800] [1611775] [INFO] Booting worker with pid: 1611775
+[2025-09-27 20:55:43 +0800] [1611776] [INFO] Booting worker with pid: 1611776
+[2025-09-27 20:55:43 +0800] [1611778] [INFO] Booting worker with pid: 1611778
+[2025-09-27 20:55:43 +0800] [1611779] [INFO] Booting worker with pid: 1611779
+[2025-09-27 20:55:43 +0800] [1611780] [INFO] Booting worker with pid: 1611780
+[2025-09-27 20:55:43 +0800] [1611781] [INFO] Booting worker with pid: 1611781
+[2025-09-27 20:55:43 +0800] [1611782] [INFO] Booting worker with pid: 1611782
+[2025-09-27 20:55:43 +0800] [1611783] [INFO] Booting worker with pid: 1611783
+[2025-09-27 20:55:43 +0800] [1611784] [INFO] Booting worker with pid: 1611784
+[2025-09-27 20:55:43 +0800] [1611785] [INFO] Booting worker with pid: 1611785
+[2025-09-27 20:55:43 +0800] [1611790] [INFO] Booting worker with pid: 1611790
+[2025-09-27 20:55:43 +0800] [1611797] [INFO] Booting worker with pid: 1611797
+[2025-09-27 20:55:44 +0800] [1611806] [INFO] Booting worker with pid: 1611806
+[2025-09-27 20:55:44 +0800] [1611807] [INFO] Booting worker with pid: 1611807
+[2025-09-27 20:55:44 +0800] [1611808] [INFO] Booting worker with pid: 1611808
+[2025-09-27 20:55:44 +0800] [1611816] [INFO] Booting worker with pid: 1611816
+[2025-09-27 20:55:44 +0800] [1611817] [INFO] Booting worker with pid: 1611817
+[2025-09-27 20:55:44 +0800] [1611818] [INFO] Booting worker with pid: 1611818
+[2025-09-27 20:55:44 +0800] [1611819] [INFO] Booting worker with pid: 1611819
+[2025-09-27 20:55:44 +0800] [1611820] [INFO] Booting worker with pid: 1611820
+[2025-09-27 20:55:44 +0800] [1611821] [INFO] Booting worker with pid: 1611821
+[2025-09-27 20:55:44 +0800] [1611826] [INFO] Booting worker with pid: 1611826
+[2025-09-27 20:55:44 +0800] [1611827] [INFO] Booting worker with pid: 1611827
+[2025-09-27 20:55:44 +0800] [1611833] [INFO] Booting worker with pid: 1611833
+[2025-09-27 20:55:44 +0800] [1611834] [INFO] Booting worker with pid: 1611834
+[2025-09-27 20:55:44 +0800] [1611835] [INFO] Booting worker with pid: 1611835
+[2025-09-27 20:55:44 +0800] [1611836] [INFO] Booting worker with pid: 1611836
+[2025-09-27 20:55:44 +0800] [1611837] [INFO] Booting worker with pid: 1611837
+[2025-09-27 20:55:45 +0800] [1611843] [INFO] Booting worker with pid: 1611843
+[2025-09-27 20:55:45 +0800] [1611844] [INFO] Booting worker with pid: 1611844
+[2025-09-27 20:55:45 +0800] [1611849] [INFO] Booting worker with pid: 1611849
+[2025-09-27 20:55:45 +0800] [1611857] [INFO] Booting worker with pid: 1611857
+[2025-09-27 20:55:45 +0800] [1611858] [INFO] Booting worker with pid: 1611858
+[2025-09-27 20:55:45 +0800] [1611859] [INFO] Booting worker with pid: 1611859
+[2025-09-27 20:55:45 +0800] [1611860] [INFO] Booting worker with pid: 1611860
+[2025-09-27 20:55:45 +0800] [1611861] [INFO] Booting worker with pid: 1611861
+[2025-09-27 20:55:45 +0800] [1611862] [INFO] Booting worker with pid: 1611862
+[2025-09-27 20:55:45 +0800] [1611863] [INFO] Booting worker with pid: 1611863
+[2025-09-27 20:55:45 +0800] [1611864] [INFO] Booting worker with pid: 1611864
+[2025-09-27 20:55:45 +0800] [1611868] [INFO] Booting worker with pid: 1611868
+[2025-09-27 20:55:45 +0800] [1611869] [INFO] Booting worker with pid: 1611869
+[2025-09-27 20:55:45 +0800] [1611870] [INFO] Booting worker with pid: 1611870
+[2025-09-27 20:55:45 +0800] [1611871] [INFO] Booting worker with pid: 1611871
+[2025-09-27 20:55:45 +0800] [1611872] [INFO] Booting worker with pid: 1611872
+[2025-09-27 20:55:45 +0800] [1611873] [INFO] Booting worker with pid: 1611873
+[2025-09-27 20:55:45 +0800] [1611874] [INFO] Booting worker with pid: 1611874
+[2025-09-27 20:55:46 +0800] [1611881] [INFO] Booting worker with pid: 1611881
+[2025-09-27 20:55:46 +0800] [1611882] [INFO] Booting worker with pid: 1611882
+[2025-09-27 20:55:46 +0800] [1611883] [INFO] Booting worker with pid: 1611883
+[2025-09-27 20:55:46 +0800] [1611884] [INFO] Booting worker with pid: 1611884
+[2025-09-27 20:55:46 +0800] [1611887] [INFO] Booting worker with pid: 1611887
+[2025-09-27 20:55:46 +0800] [1611894] [INFO] Booting worker with pid: 1611894
+[2025-09-27 20:55:46 +0800] [1611895] [INFO] Booting worker with pid: 1611895
+[2025-09-27 20:55:46 +0800] [1611896] [INFO] Booting worker with pid: 1611896
+[2025-09-27 20:55:46 +0800] [1611897] [INFO] Booting worker with pid: 1611897
+[2025-09-27 20:55:46 +0800] [1611898] [INFO] Booting worker with pid: 1611898
+[2025-09-27 20:55:46 +0800] [1611899] [INFO] Booting worker with pid: 1611899
+[2025-09-27 20:55:46 +0800] [1611900] [INFO] Booting worker with pid: 1611900
+[2025-09-27 20:55:46 +0800] [1611901] [INFO] Booting worker with pid: 1611901
+[2025-09-27 20:55:46 +0800] [1611902] [INFO] Booting worker with pid: 1611902
+[2025-09-27 20:55:46 +0800] [1611903] [INFO] Booting worker with pid: 1611903
+[2025-09-27 20:55:46 +0800] [1611908] [INFO] Booting worker with pid: 1611908
+[2025-09-27 20:55:46 +0800] [1611909] [INFO] Booting worker with pid: 1611909
+[2025-09-27 20:55:46 +0800] [1611911] [INFO] Booting worker with pid: 1611911
+[2025-09-27 20:55:46 +0800] [1611915] [INFO] Booting worker with pid: 1611915
+[2025-09-27 20:55:46 +0800] [1611957] [INFO] Booting worker with pid: 1611957
+[2025-09-27 20:55:46 +0800] [1611997] [INFO] Booting worker with pid: 1611997
+[2025-09-27 20:55:46 +0800] [1612003] [INFO] Booting worker with pid: 1612003
+[2025-09-27 20:55:46 +0800] [1612008] [INFO] Booting worker with pid: 1612008
+[2025-09-27 20:55:46 +0800] [1612009] [INFO] Booting worker with pid: 1612009
+[2025-09-27 20:55:46 +0800] [1612010] [INFO] Booting worker with pid: 1612010
+[2025-09-27 20:55:46 +0800] [1612011] [INFO] Booting worker with pid: 1612011
+[2025-09-27 20:55:47 +0800] [1612012] [INFO] Booting worker with pid: 1612012
+[2025-09-27 20:55:47 +0800] [1612013] [INFO] Booting worker with pid: 1612013
+[2025-09-27 20:55:47 +0800] [1612014] [INFO] Booting worker with pid: 1612014
+[2025-09-27 20:55:47 +0800] [1612015] [INFO] Booting worker with pid: 1612015
+[2025-09-27 20:55:47 +0800] [1612023] [INFO] Booting worker with pid: 1612023
+[2025-09-27 20:55:47 +0800] [1612024] [INFO] Booting worker with pid: 1612024
+[2025-09-27 20:55:47 +0800] [1612025] [INFO] Booting worker with pid: 1612025
+[2025-09-27 20:55:47 +0800] [1612026] [INFO] Booting worker with pid: 1612026
+[2025-09-27 20:55:47 +0800] [1612027] [INFO] Booting worker with pid: 1612027
+[2025-09-27 20:55:47 +0800] [1612028] [INFO] Booting worker with pid: 1612028
+[2025-09-27 20:55:47 +0800] [1612029] [INFO] Booting worker with pid: 1612029
+[2025-09-27 20:55:47 +0800] [1612030] [INFO] Booting worker with pid: 1612030
+[2025-09-27 20:55:47 +0800] [1612031] [INFO] Booting worker with pid: 1612031
+[2025-09-27 20:55:47 +0800] [1612037] [INFO] Booting worker with pid: 1612037
+[2025-09-27 20:55:47 +0800] [1612076] [INFO] Booting worker with pid: 1612076
+[2025-09-27 20:55:47 +0800] [1612111] [INFO] Booting worker with pid: 1612111
+[2025-09-27 20:55:48 +0800] [1612212] [INFO] Booting worker with pid: 1612212
+[2025-09-27 20:55:48 +0800] [1612219] [INFO] Booting worker with pid: 1612219
+[2025-09-27 20:55:48 +0800] [1612220] [INFO] Booting worker with pid: 1612220
+[2025-09-27 20:55:48 +0800] [1612228] [INFO] Booting worker with pid: 1612228
+[2025-09-27 20:55:48 +0800] [1612229] [INFO] Booting worker with pid: 1612229
+[2025-09-27 20:55:48 +0800] [1612230] [INFO] Booting worker with pid: 1612230
+[2025-09-27 20:55:48 +0800] [1612231] [INFO] Booting worker with pid: 1612231
+[2025-09-27 20:55:48 +0800] [1612232] [INFO] Booting worker with pid: 1612232
+[2025-09-27 20:55:48 +0800] [1612233] [INFO] Booting worker with pid: 1612233
+[2025-09-27 20:55:48 +0800] [1612234] [INFO] Booting worker with pid: 1612234
+[2025-09-27 20:55:48 +0800] [1612235] [INFO] Booting worker with pid: 1612235
+[2025-09-27 20:55:48 +0800] [1612236] [INFO] Booting worker with pid: 1612236
+[2025-09-27 20:55:48 +0800] [1612237] [INFO] Booting worker with pid: 1612237
+[2025-09-27 20:55:48 +0800] [1612238] [INFO] Booting worker with pid: 1612238
+[2025-09-27 20:55:48 +0800] [1612239] [INFO] Booting worker with pid: 1612239
+[2025-09-27 20:55:48 +0800] [1612240] [INFO] Booting worker with pid: 1612240
+[2025-09-27 20:55:48 +0800] [1612241] [INFO] Booting worker with pid: 1612241
+[2025-09-27 21:00:19 +0800] [1611703] [INFO] Handling signal: int
+[2025-09-27 21:00:19 +0800] [1611738] [INFO] Worker exiting (pid: 1611738)
+[2025-09-27 21:00:19 +0800] [1611735] [INFO] Worker exiting (pid: 1611735)
+[2025-09-27 21:00:19 +0800] [1611740] [INFO] Worker exiting (pid: 1611740)
+[2025-09-27 21:00:19 +0800] [1611761] [INFO] Worker exiting (pid: 1611761)
+[2025-09-27 21:00:19 +0800] [1611765] [INFO] Worker exiting (pid: 1611765)
+[2025-09-27 21:00:19 +0800] [1611778] [INFO] Worker exiting (pid: 1611778)
+[2025-09-27 21:00:19 +0800] [1611736] [INFO] Worker exiting (pid: 1611736)
+[2025-09-27 21:00:19 +0800] [1611760] [INFO] Worker exiting (pid: 1611760)
+[2025-09-27 21:00:19 +0800] [1611739] [INFO] Worker exiting (pid: 1611739)
+[2025-09-27 21:00:19 +0800] [1611734] [INFO] Worker exiting (pid: 1611734)
+[2025-09-27 21:00:19 +0800] [1611748] [INFO] Worker exiting (pid: 1611748)
+[2025-09-27 21:00:19 +0800] [1611816] [INFO] Worker exiting (pid: 1611816)
+[2025-09-27 21:00:19 +0800] [1611759] [INFO] Worker exiting (pid: 1611759)
+[2025-09-27 21:00:19 +0800] [1611753] [INFO] Worker exiting (pid: 1611753)
+[2025-09-27 21:00:19 +0800] [1611751] [INFO] Worker exiting (pid: 1611751)
+[2025-09-27 21:00:19 +0800] [1611752] [INFO] Worker exiting (pid: 1611752)
+[2025-09-27 21:00:19 +0800] [1611775] [INFO] Worker exiting (pid: 1611775)
+[2025-09-27 21:00:19 +0800] [1611762] [INFO] Worker exiting (pid: 1611762)
+[2025-09-27 21:00:19 +0800] [1611737] [INFO] Worker exiting (pid: 1611737)
+[2025-09-27 21:00:19 +0800] [1611754] [INFO] Worker exiting (pid: 1611754)
+[2025-09-27 21:00:19 +0800] [1611755] [INFO] Worker exiting (pid: 1611755)
+[2025-09-27 21:00:19 +0800] [1611790] [INFO] Worker exiting (pid: 1611790)
+[2025-09-27 21:00:19 +0800] [1611779] [INFO] Worker exiting (pid: 1611779)
+[2025-09-27 21:00:19 +0800] [1611781] [INFO] Worker exiting (pid: 1611781)
+[2025-09-27 21:00:19 +0800] [1611764] [INFO] Worker exiting (pid: 1611764)
+[2025-09-27 21:00:19 +0800] [1611783] [INFO] Worker exiting (pid: 1611783)
+[2025-09-27 21:00:19 +0800] [1611785] [INFO] Worker exiting (pid: 1611785)
+[2025-09-27 21:00:19 +0800] [1611750] [INFO] Worker exiting (pid: 1611750)
+[2025-09-27 21:00:19 +0800] [1611776] [INFO] Worker exiting (pid: 1611776)
+[2025-09-27 21:00:19 +0800] [1611780] [INFO] Worker exiting (pid: 1611780)
+[2025-09-27 21:00:19 +0800] [1611784] [INFO] Worker exiting (pid: 1611784)
+[2025-09-27 21:00:19 +0800] [1611766] [INFO] Worker exiting (pid: 1611766)
+[2025-09-27 21:00:19 +0800] [1611806] [INFO] Worker exiting (pid: 1611806)
+[2025-09-27 21:00:19 +0800] [1611749] [INFO] Worker exiting (pid: 1611749)
+[2025-09-27 21:00:19 +0800] [1611817] [INFO] Worker exiting (pid: 1611817)
+[2025-09-27 21:00:19 +0800] [1611767] [INFO] Worker exiting (pid: 1611767)
+[2025-09-27 21:00:19 +0800] [1611782] [INFO] Worker exiting (pid: 1611782)
+[2025-09-27 21:00:19 +0800] [1611860] [INFO] Worker exiting (pid: 1611860)
+[2025-09-27 21:00:19 +0800] [1611818] [INFO] Worker exiting (pid: 1611818)
+[2025-09-27 21:00:19 +0800] [1611858] [INFO] Worker exiting (pid: 1611858)
+[2025-09-27 21:00:19 +0800] [1611819] [INFO] Worker exiting (pid: 1611819)
+[2025-09-27 21:00:19 +0800] [1611899] [INFO] Worker exiting (pid: 1611899)
+[2025-09-27 21:00:19 +0800] [1611834] [INFO] Worker exiting (pid: 1611834)
+[2025-09-27 21:00:19 +0800] [1611873] [INFO] Worker exiting (pid: 1611873)
+[2025-09-27 21:00:19 +0800] [1611900] [INFO] Worker exiting (pid: 1611900)
+[2025-09-27 21:00:19 +0800] [1611820] [INFO] Worker exiting (pid: 1611820)
+[2025-09-27 21:00:19 +0800] [1611836] [INFO] Worker exiting (pid: 1611836)
+[2025-09-27 21:00:19 +0800] [1611861] [INFO] Worker exiting (pid: 1611861)
+[2025-09-27 21:00:19 +0800] [1611826] [INFO] Worker exiting (pid: 1611826)
+[2025-09-27 21:00:19 +0800] [1611884] [INFO] Worker exiting (pid: 1611884)
+[2025-09-27 21:00:19 +0800] [1611863] [INFO] Worker exiting (pid: 1611863)
+[2025-09-27 21:00:19 +0800] [1611874] [INFO] Worker exiting (pid: 1611874)
+[2025-09-27 21:00:19 +0800] [1611869] [INFO] Worker exiting (pid: 1611869)
+[2025-09-27 21:00:19 +0800] [1611887] [INFO] Worker exiting (pid: 1611887)
+[2025-09-27 21:00:19 +0800] [1611894] [INFO] Worker exiting (pid: 1611894)
+[2025-09-27 21:00:19 +0800] [1611957] [INFO] Worker exiting (pid: 1611957)
+[2025-09-27 21:00:19 +0800] [1611997] [INFO] Worker exiting (pid: 1611997)
+[2025-09-27 21:00:19 +0800] [1611897] [INFO] Worker exiting (pid: 1611897)
+[2025-09-27 21:00:19 +0800] [1612030] [INFO] Worker exiting (pid: 1612030)
+[2025-09-27 21:00:19 +0800] [1612023] [INFO] Worker exiting (pid: 1612023)
+[2025-09-27 21:00:19 +0800] [1612015] [INFO] Worker exiting (pid: 1612015)
+[2025-09-27 21:00:19 +0800] [1612025] [INFO] Worker exiting (pid: 1612025)
+[2025-09-27 21:00:19 +0800] [1612013] [INFO] Worker exiting (pid: 1612013)
+[2025-09-27 21:00:19 +0800] [1611703] [ERROR] Worker (pid:1612030) was sent SIGINT!
+[2025-09-27 21:00:19 +0800] [1611763] [INFO] Worker exiting (pid: 1611763)
+[2025-09-27 21:00:19 +0800] [1611797] [INFO] Worker exiting (pid: 1611797)
+[2025-09-27 21:00:19 +0800] [1611857] [INFO] Worker exiting (pid: 1611857)
+[2025-09-27 21:00:19 +0800] [1611872] [INFO] Worker exiting (pid: 1611872)
+[2025-09-27 21:00:19 +0800] [1611870] [INFO] Worker exiting (pid: 1611870)
+[2025-09-27 21:00:19 +0800] [1611883] [INFO] Worker exiting (pid: 1611883)
+[2025-09-27 21:00:19 +0800] [1612232] [INFO] Worker exiting (pid: 1612232)
+[2025-09-27 21:00:19 +0800] [1612241] [INFO] Worker exiting (pid: 1612241)
+[2025-09-27 21:00:19 +0800] [1612014] [INFO] Worker exiting (pid: 1612014)
+[2025-09-27 21:00:19 +0800] [1612231] [INFO] Worker exiting (pid: 1612231)
+[2025-09-27 21:00:19 +0800] [1612028] [INFO] Worker exiting (pid: 1612028)
+[2025-09-27 21:00:19 +0800] [1611821] [INFO] Worker exiting (pid: 1611821)
+[2025-09-27 21:00:19 +0800] [1612011] [INFO] Worker exiting (pid: 1612011)
+[2025-09-27 21:00:19 +0800] [1611909] [INFO] Worker exiting (pid: 1611909)
+[2025-09-27 21:00:19 +0800] [1611868] [INFO] Worker exiting (pid: 1611868)
+[2025-09-27 21:00:19 +0800] [1612008] [INFO] Worker exiting (pid: 1612008)
+[2025-09-27 21:00:19 +0800] [1611835] [INFO] Worker exiting (pid: 1611835)
+[2025-09-27 21:00:19 +0800] [1612003] [INFO] Worker exiting (pid: 1612003)
+[2025-09-27 21:00:19 +0800] [1611862] [INFO] Worker exiting (pid: 1611862)
+[2025-09-27 21:00:19 +0800] [1612010] [INFO] Worker exiting (pid: 1612010)
+[2025-09-27 21:00:19 +0800] [1612234] [INFO] Worker exiting (pid: 1612234)
+[2025-09-27 21:00:19 +0800] [1611833] [INFO] Worker exiting (pid: 1611833)
+[2025-09-27 21:00:19 +0800] [1611807] [INFO] Worker exiting (pid: 1611807)
+[2025-09-27 21:00:19 +0800] [1612237] [INFO] Worker exiting (pid: 1612237)
+[2025-09-27 21:00:19 +0800] [1612229] [INFO] Worker exiting (pid: 1612229)
+[2025-09-27 21:00:19 +0800] [1611915] [INFO] Worker exiting (pid: 1611915)
+[2025-09-27 21:00:19 +0800] [1611881] [INFO] Worker exiting (pid: 1611881)
+[2025-09-27 21:00:19 +0800] [1612076] [INFO] Worker exiting (pid: 1612076)
+[2025-09-27 21:00:19 +0800] [1611903] [INFO] Worker exiting (pid: 1611903)
+[2025-09-27 21:00:19 +0800] [1611859] [INFO] Worker exiting (pid: 1611859)
+[2025-09-27 21:00:19 +0800] [1611843] [INFO] Worker exiting (pid: 1611843)
+[2025-09-27 21:00:19 +0800] [1611911] [INFO] Worker exiting (pid: 1611911)
+[2025-09-27 21:00:19 +0800] [1611837] [INFO] Worker exiting (pid: 1611837)
+[2025-09-27 21:00:19 +0800] [1611827] [INFO] Worker exiting (pid: 1611827)
+[2025-09-27 21:00:19 +0800] [1612024] [INFO] Worker exiting (pid: 1612024)
+[2025-09-27 21:00:19 +0800] [1612037] [INFO] Worker exiting (pid: 1612037)
+[2025-09-27 21:00:19 +0800] [1611896] [INFO] Worker exiting (pid: 1611896)
+[2025-09-27 21:00:19 +0800] [1611902] [INFO] Worker exiting (pid: 1611902)
+[2025-09-27 21:00:19 +0800] [1611871] [INFO] Worker exiting (pid: 1611871)
+[2025-09-27 21:00:19 +0800] [1612238] [INFO] Worker exiting (pid: 1612238)
+[2025-09-27 21:00:19 +0800] [1612233] [INFO] Worker exiting (pid: 1612233)
+[2025-09-27 21:00:19 +0800] [1612230] [INFO] Worker exiting (pid: 1612230)
+[2025-09-27 21:00:19 +0800] [1611864] [INFO] Worker exiting (pid: 1611864)
+[2025-09-27 21:00:19 +0800] [1611908] [INFO] Worker exiting (pid: 1611908)
+[2025-09-27 21:00:19 +0800] [1612031] [INFO] Worker exiting (pid: 1612031)
+[2025-09-27 21:00:19 +0800] [1612009] [INFO] Worker exiting (pid: 1612009)
+[2025-09-27 21:00:19 +0800] [1611895] [INFO] Worker exiting (pid: 1611895)
+[2025-09-27 21:00:19 +0800] [1611844] [INFO] Worker exiting (pid: 1611844)
+[2025-09-27 21:00:19 +0800] [1612219] [INFO] Worker exiting (pid: 1612219)
+[2025-09-27 21:00:19 +0800] [1612012] [INFO] Worker exiting (pid: 1612012)
+[2025-09-27 21:00:19 +0800] [1612220] [INFO] Worker exiting (pid: 1612220)
+[2025-09-27 21:00:19 +0800] [1612111] [INFO] Worker exiting (pid: 1612111)
+[2025-09-27 21:00:19 +0800] [1612027] [INFO] Worker exiting (pid: 1612027)
+[2025-09-27 21:00:19 +0800] [1611849] [INFO] Worker exiting (pid: 1611849)
+[2025-09-27 21:00:19 +0800] [1611901] [INFO] Worker exiting (pid: 1611901)
+[2025-09-27 21:00:19 +0800] [1611898] [INFO] Worker exiting (pid: 1611898)
+[2025-09-27 21:00:19 +0800] [1612029] [INFO] Worker exiting (pid: 1612029)
+[2025-09-27 21:00:19 +0800] [1612228] [INFO] Worker exiting (pid: 1612228)
+[2025-09-27 21:00:19 +0800] [1611882] [INFO] Worker exiting (pid: 1611882)
+[2025-09-27 21:00:19 +0800] [1612212] [INFO] Worker exiting (pid: 1612212)
+[2025-09-27 21:00:19 +0800] [1612026] [INFO] Worker exiting (pid: 1612026)
+[2025-09-27 21:00:19 +0800] [1611808] [INFO] Worker exiting (pid: 1611808)
+[2025-09-27 21:00:19 +0800] [1612235] [INFO] Worker exiting (pid: 1612235)
+[2025-09-27 21:00:19 +0800] [1612239] [INFO] Worker exiting (pid: 1612239)
+[2025-09-27 21:00:19 +0800] [1612236] [INFO] Worker exiting (pid: 1612236)
+[2025-09-27 21:00:19 +0800] [1612240] [INFO] Worker exiting (pid: 1612240)
+[2025-09-27 21:00:49 +0800] [1611703] [INFO] Shutting down: Master
+[2025-09-27 21:01:31 +0800] [1620057] [INFO] Starting gunicorn 23.0.0
+[2025-09-27 21:01:31 +0800] [1620057] [INFO] Listening at: http://0.0.0.0:4090 (1620057)
+[2025-09-27 21:01:31 +0800] [1620057] [INFO] Using worker: sync
+[2025-09-27 21:01:31 +0800] [1620087] [INFO] Booting worker with pid: 1620087
+[2025-09-27 21:01:31 +0800] [1620088] [INFO] Booting worker with pid: 1620088
+[2025-09-27 21:01:31 +0800] [1620096] [INFO] Booting worker with pid: 1620096
+[2025-09-27 21:01:31 +0800] [1620099] [INFO] Booting worker with pid: 1620099
+[2025-09-27 21:01:31 +0800] [1620100] [INFO] Booting worker with pid: 1620100
+[2025-09-27 21:01:31 +0800] [1620103] [INFO] Booting worker with pid: 1620103
+[2025-09-27 21:01:31 +0800] [1620104] [INFO] Booting worker with pid: 1620104
+[2025-09-27 21:01:32 +0800] [1620123] [INFO] Booting worker with pid: 1620123
+[2025-09-27 21:01:32 +0800] [1620124] [INFO] Booting worker with pid: 1620124
+[2025-09-27 21:01:32 +0800] [1620125] [INFO] Booting worker with pid: 1620125
+[2025-09-27 21:01:32 +0800] [1620126] [INFO] Booting worker with pid: 1620126
+[2025-09-27 21:01:32 +0800] [1620127] [INFO] Booting worker with pid: 1620127
+[2025-09-27 21:01:32 +0800] [1620128] [INFO] Booting worker with pid: 1620128
+[2025-09-27 21:01:32 +0800] [1620129] [INFO] Booting worker with pid: 1620129
+[2025-09-27 21:01:32 +0800] [1620135] [INFO] Booting worker with pid: 1620135
+[2025-09-27 21:01:32 +0800] [1620136] [INFO] Booting worker with pid: 1620136
+[2025-09-27 21:01:32 +0800] [1620137] [INFO] Booting worker with pid: 1620137
+[2025-09-27 21:01:32 +0800] [1620138] [INFO] Booting worker with pid: 1620138
+[2025-09-27 21:01:32 +0800] [1620139] [INFO] Booting worker with pid: 1620139
+[2025-09-27 21:01:32 +0800] [1620141] [INFO] Booting worker with pid: 1620141
+[2025-09-27 21:01:32 +0800] [1620142] [INFO] Booting worker with pid: 1620142
+[2025-09-27 21:01:32 +0800] [1620150] [INFO] Booting worker with pid: 1620150
+[2025-09-27 21:01:32 +0800] [1620151] [INFO] Booting worker with pid: 1620151
+[2025-09-27 21:01:32 +0800] [1620152] [INFO] Booting worker with pid: 1620152
+[2025-09-27 21:01:32 +0800] [1620153] [INFO] Booting worker with pid: 1620153
+[2025-09-27 21:01:32 +0800] [1620154] [INFO] Booting worker with pid: 1620154
+[2025-09-27 21:01:32 +0800] [1620155] [INFO] Booting worker with pid: 1620155
+[2025-09-27 21:01:33 +0800] [1620156] [INFO] Booting worker with pid: 1620156
+[2025-09-27 21:01:33 +0800] [1620157] [INFO] Booting worker with pid: 1620157
+[2025-09-27 21:01:33 +0800] [1620158] [INFO] Booting worker with pid: 1620158
+[2025-09-27 21:01:33 +0800] [1620159] [INFO] Booting worker with pid: 1620159
+[2025-09-27 21:01:33 +0800] [1620160] [INFO] Booting worker with pid: 1620160
+[2025-09-27 21:01:33 +0800] [1620161] [INFO] Booting worker with pid: 1620161
+[2025-09-27 21:01:33 +0800] [1620162] [INFO] Booting worker with pid: 1620162
+[2025-09-27 21:01:33 +0800] [1620163] [INFO] Booting worker with pid: 1620163
+[2025-09-27 21:01:33 +0800] [1620164] [INFO] Booting worker with pid: 1620164
+[2025-09-27 21:01:33 +0800] [1620165] [INFO] Booting worker with pid: 1620165
+[2025-09-27 21:01:33 +0800] [1620166] [INFO] Booting worker with pid: 1620166
+[2025-09-27 21:01:33 +0800] [1620167] [INFO] Booting worker with pid: 1620167
+[2025-09-27 21:01:33 +0800] [1620168] [INFO] Booting worker with pid: 1620168
+[2025-09-27 21:01:33 +0800] [1620169] [INFO] Booting worker with pid: 1620169
+[2025-09-27 21:01:33 +0800] [1620177] [INFO] Booting worker with pid: 1620177
+[2025-09-27 21:01:33 +0800] [1620178] [INFO] Booting worker with pid: 1620178
+[2025-09-27 21:01:33 +0800] [1620179] [INFO] Booting worker with pid: 1620179
+[2025-09-27 21:01:33 +0800] [1620180] [INFO] Booting worker with pid: 1620180
+[2025-09-27 21:01:33 +0800] [1620191] [INFO] Booting worker with pid: 1620191
+[2025-09-27 21:01:34 +0800] [1620192] [INFO] Booting worker with pid: 1620192
+[2025-09-27 21:01:34 +0800] [1620193] [INFO] Booting worker with pid: 1620193
+[2025-09-27 21:01:34 +0800] [1620194] [INFO] Booting worker with pid: 1620194
+[2025-09-27 21:01:34 +0800] [1620199] [INFO] Booting worker with pid: 1620199
+[2025-09-27 21:01:34 +0800] [1620203] [INFO] Booting worker with pid: 1620203
+[2025-09-27 21:01:34 +0800] [1620207] [INFO] Booting worker with pid: 1620207
+[2025-09-27 21:01:34 +0800] [1620236] [INFO] Booting worker with pid: 1620236
+[2025-09-27 21:01:34 +0800] [1620244] [INFO] Booting worker with pid: 1620244
+[2025-09-27 21:01:34 +0800] [1620267] [INFO] Booting worker with pid: 1620267
+[2025-09-27 21:01:34 +0800] [1620268] [INFO] Booting worker with pid: 1620268
+[2025-09-27 21:01:34 +0800] [1620269] [INFO] Booting worker with pid: 1620269
+[2025-09-27 21:01:34 +0800] [1620274] [INFO] Booting worker with pid: 1620274
+[2025-09-27 21:01:34 +0800] [1620277] [INFO] Booting worker with pid: 1620277
+[2025-09-27 21:01:34 +0800] [1620288] [INFO] Booting worker with pid: 1620288
+[2025-09-27 21:01:34 +0800] [1620289] [INFO] Booting worker with pid: 1620289
+[2025-09-27 21:01:34 +0800] [1620290] [INFO] Booting worker with pid: 1620290
+[2025-09-27 21:01:34 +0800] [1620291] [INFO] Booting worker with pid: 1620291
+[2025-09-27 21:01:34 +0800] [1620292] [INFO] Booting worker with pid: 1620292
+[2025-09-27 21:01:35 +0800] [1620298] [INFO] Booting worker with pid: 1620298
+[2025-09-27 21:01:35 +0800] [1620299] [INFO] Booting worker with pid: 1620299
+[2025-09-27 21:01:35 +0800] [1620300] [INFO] Booting worker with pid: 1620300
+[2025-09-27 21:01:35 +0800] [1620301] [INFO] Booting worker with pid: 1620301
+[2025-09-27 21:01:35 +0800] [1620302] [INFO] Booting worker with pid: 1620302
+[2025-09-27 21:01:35 +0800] [1620304] [INFO] Booting worker with pid: 1620304
+[2025-09-27 21:01:35 +0800] [1620339] [INFO] Booting worker with pid: 1620339
+[2025-09-27 21:01:35 +0800] [1620350] [INFO] Booting worker with pid: 1620350
+[2025-09-27 21:01:35 +0800] [1620371] [INFO] Booting worker with pid: 1620371
+[2025-09-27 21:01:35 +0800] [1620404] [INFO] Booting worker with pid: 1620404
+[2025-09-27 21:01:35 +0800] [1620413] [INFO] Booting worker with pid: 1620413
+[2025-09-27 21:01:35 +0800] [1620414] [INFO] Booting worker with pid: 1620414
+[2025-09-27 21:01:35 +0800] [1620415] [INFO] Booting worker with pid: 1620415
+[2025-09-27 21:01:35 +0800] [1620416] [INFO] Booting worker with pid: 1620416
+[2025-09-27 21:01:35 +0800] [1620427] [INFO] Booting worker with pid: 1620427
+[2025-09-27 21:01:35 +0800] [1620428] [INFO] Booting worker with pid: 1620428
+[2025-09-27 21:01:35 +0800] [1620429] [INFO] Booting worker with pid: 1620429
+[2025-09-27 21:01:35 +0800] [1620430] [INFO] Booting worker with pid: 1620430
+[2025-09-27 21:01:35 +0800] [1620431] [INFO] Booting worker with pid: 1620431
+[2025-09-27 21:01:35 +0800] [1620432] [INFO] Booting worker with pid: 1620432
+[2025-09-27 21:01:36 +0800] [1620433] [INFO] Booting worker with pid: 1620433
+[2025-09-27 21:01:36 +0800] [1620434] [INFO] Booting worker with pid: 1620434
+[2025-09-27 21:01:36 +0800] [1620435] [INFO] Booting worker with pid: 1620435
+[2025-09-27 21:01:36 +0800] [1620436] [INFO] Booting worker with pid: 1620436
+[2025-09-27 21:01:36 +0800] [1620437] [INFO] Booting worker with pid: 1620437
+[2025-09-27 21:01:36 +0800] [1620438] [INFO] Booting worker with pid: 1620438
+[2025-09-27 21:01:36 +0800] [1620446] [INFO] Booting worker with pid: 1620446
+[2025-09-27 21:01:36 +0800] [1620450] [INFO] Booting worker with pid: 1620450
+[2025-09-27 21:01:36 +0800] [1620451] [INFO] Booting worker with pid: 1620451
+[2025-09-27 21:01:36 +0800] [1620452] [INFO] Booting worker with pid: 1620452
+[2025-09-27 21:01:36 +0800] [1620453] [INFO] Booting worker with pid: 1620453
+[2025-09-27 21:01:36 +0800] [1620454] [INFO] Booting worker with pid: 1620454
+[2025-09-27 21:01:36 +0800] [1620455] [INFO] Booting worker with pid: 1620455
+[2025-09-27 21:01:36 +0800] [1620456] [INFO] Booting worker with pid: 1620456
+[2025-09-27 21:01:36 +0800] [1620457] [INFO] Booting worker with pid: 1620457
+[2025-09-27 21:01:36 +0800] [1620465] [INFO] Booting worker with pid: 1620465
+[2025-09-27 21:01:36 +0800] [1620466] [INFO] Booting worker with pid: 1620466
+[2025-09-27 21:01:36 +0800] [1620468] [INFO] Booting worker with pid: 1620468
+[2025-09-27 21:01:36 +0800] [1620469] [INFO] Booting worker with pid: 1620469
+[2025-09-27 21:01:37 +0800] [1620470] [INFO] Booting worker with pid: 1620470
+[2025-09-27 21:01:37 +0800] [1620471] [INFO] Booting worker with pid: 1620471
+[2025-09-27 21:01:37 +0800] [1620472] [INFO] Booting worker with pid: 1620472
+[2025-09-27 21:01:37 +0800] [1620473] [INFO] Booting worker with pid: 1620473
+[2025-09-27 21:01:37 +0800] [1620475] [INFO] Booting worker with pid: 1620475
+[2025-09-27 21:01:37 +0800] [1620476] [INFO] Booting worker with pid: 1620476
+[2025-09-27 21:01:37 +0800] [1620477] [INFO] Booting worker with pid: 1620477
+[2025-09-27 21:01:37 +0800] [1620478] [INFO] Booting worker with pid: 1620478
+[2025-09-27 21:01:37 +0800] [1620479] [INFO] Booting worker with pid: 1620479
+[2025-09-27 21:01:37 +0800] [1620480] [INFO] Booting worker with pid: 1620480
+[2025-09-27 21:01:37 +0800] [1620488] [INFO] Booting worker with pid: 1620488
+[2025-09-27 21:01:37 +0800] [1620489] [INFO] Booting worker with pid: 1620489
+[2025-09-27 21:01:37 +0800] [1620490] [INFO] Booting worker with pid: 1620490
+[2025-09-27 21:01:37 +0800] [1620491] [INFO] Booting worker with pid: 1620491
+[2025-09-27 21:01:37 +0800] [1620492] [INFO] Booting worker with pid: 1620492
+[2025-09-27 21:01:38 +0800] [1620493] [INFO] Booting worker with pid: 1620493
+[2025-09-27 21:01:38 +0800] [1620494] [INFO] Booting worker with pid: 1620494
+[2025-09-27 21:01:38 +0800] [1620495] [INFO] Booting worker with pid: 1620495
+[2025-09-27 21:01:38 +0800] [1620496] [INFO] Booting worker with pid: 1620496
+[2025-09-27 21:01:38 +0800] [1620497] [INFO] Booting worker with pid: 1620497
+[2025-09-27 21:01:38 +0800] [1620498] [INFO] Booting worker with pid: 1620498
+[2025-09-27 21:01:38 +0800] [1620499] [INFO] Booting worker with pid: 1620499
+[2025-09-27 21:01:38 +0800] [1620500] [INFO] Booting worker with pid: 1620500
+[2025-09-27 21:01:38 +0800] [1620501] [INFO] Booting worker with pid: 1620501
+[2025-09-27 21:01:38 +0800] [1620502] [INFO] Booting worker with pid: 1620502
+[2025-09-27 21:01:38 +0800] [1620506] [INFO] Booting worker with pid: 1620506
+[2025-09-27 21:01:57 +0800] [1620057] [INFO] Handling signal: int
+[2025-09-27 21:01:57 +0800] [1620455] [INFO] Worker exiting (pid: 1620455)
+[2025-09-27 21:01:57 +0800] [1620493] [INFO] Worker exiting (pid: 1620493)
+[2025-09-27 21:01:57 +0800] [1620495] [INFO] Worker exiting (pid: 1620495)
+[2025-09-27 21:01:57 +0800] [1620502] [INFO] Worker exiting (pid: 1620502)
+[2025-09-27 21:01:57 +0800] [1620488] [INFO] Worker exiting (pid: 1620488)
+[2025-09-27 21:01:57 +0800] [1620506] [INFO] Worker exiting (pid: 1620506)
+[2025-09-27 21:01:57 +0800] [1620492] [INFO] Worker exiting (pid: 1620492)
+[2025-09-27 21:01:57 +0800] [1620428] [INFO] Worker exiting (pid: 1620428)
+[2025-09-27 21:01:57 +0800] [1620469] [INFO] Worker exiting (pid: 1620469)
+[2025-09-27 21:01:57 +0800] [1620497] [INFO] Worker exiting (pid: 1620497)
+[2025-09-27 21:01:57 +0800] [1620436] [INFO] Worker exiting (pid: 1620436)
+[2025-09-27 21:01:57 +0800] [1620477] [INFO] Worker exiting (pid: 1620477)
+[2025-09-27 21:01:57 +0800] [1620466] [INFO] Worker exiting (pid: 1620466)
+[2025-09-27 21:01:57 +0800] [1620456] [INFO] Worker exiting (pid: 1620456)
+[2025-09-27 21:01:57 +0800] [1620491] [INFO] Worker exiting (pid: 1620491)
+[2025-09-27 21:01:57 +0800] [1620470] [INFO] Worker exiting (pid: 1620470)
+[2025-09-27 21:01:57 +0800] [1620457] [INFO] Worker exiting (pid: 1620457)
+[2025-09-27 21:01:57 +0800] [1620446] [INFO] Worker exiting (pid: 1620446)
+[2025-09-27 21:01:57 +0800] [1620453] [INFO] Worker exiting (pid: 1620453)
+[2025-09-27 21:01:57 +0800] [1620454] [INFO] Worker exiting (pid: 1620454)
+[2025-09-27 21:01:57 +0800] [1620429] [INFO] Worker exiting (pid: 1620429)
+[2025-09-27 21:01:57 +0800] [1620501] [INFO] Worker exiting (pid: 1620501)
+[2025-09-27 21:01:57 +0800] [1620499] [INFO] Worker exiting (pid: 1620499)
+[2025-09-27 21:01:57 +0800] [1620500] [INFO] Worker exiting (pid: 1620500)
+[2025-09-27 21:01:57 +0800] [1620434] [INFO] Worker exiting (pid: 1620434)
+[2025-09-27 21:01:57 +0800] [1620478] [INFO] Worker exiting (pid: 1620478)
+[2025-09-27 21:01:57 +0800] [1620452] [INFO] Worker exiting (pid: 1620452)
+[2025-09-27 21:01:57 +0800] [1620475] [INFO] Worker exiting (pid: 1620475)
+[2025-09-27 21:01:57 +0800] [1620496] [INFO] Worker exiting (pid: 1620496)
+[2025-09-27 21:01:57 +0800] [1620290] [INFO] Worker exiting (pid: 1620290)
+[2025-09-27 21:01:57 +0800] [1620473] [INFO] Worker exiting (pid: 1620473)
+[2025-09-27 21:01:57 +0800] [1620468] [INFO] Worker exiting (pid: 1620468)
+[2025-09-27 21:01:57 +0800] [1620498] [INFO] Worker exiting (pid: 1620498)
+[2025-09-27 21:01:57 +0800] [1620437] [INFO] Worker exiting (pid: 1620437)
+[2025-09-27 21:01:57 +0800] [1620494] [INFO] Worker exiting (pid: 1620494)
+[2025-09-27 21:01:57 +0800] [1620489] [INFO] Worker exiting (pid: 1620489)
+[2025-09-27 21:01:57 +0800] [1620480] [INFO] Worker exiting (pid: 1620480)
+[2025-09-27 21:01:57 +0800] [1620472] [INFO] Worker exiting (pid: 1620472)
+[2025-09-27 21:01:57 +0800] [1620289] [INFO] Worker exiting (pid: 1620289)
+[2025-09-27 21:01:57 +0800] [1620291] [INFO] Worker exiting (pid: 1620291)
+[2025-09-27 21:01:57 +0800] [1620433] [INFO] Worker exiting (pid: 1620433)
+[2025-09-27 21:01:57 +0800] [1620427] [INFO] Worker exiting (pid: 1620427)
+[2025-09-27 21:01:57 +0800] [1620490] [INFO] Worker exiting (pid: 1620490)
+[2025-09-27 21:01:57 +0800] [1620479] [INFO] Worker exiting (pid: 1620479)
+[2025-09-27 21:01:57 +0800] [1620451] [INFO] Worker exiting (pid: 1620451)
+[2025-09-27 21:01:57 +0800] [1620465] [INFO] Worker exiting (pid: 1620465)
+[2025-09-27 21:01:57 +0800] [1620163] [INFO] Worker exiting (pid: 1620163)
+[2025-09-27 21:01:57 +0800] [1620299] [INFO] Worker exiting (pid: 1620299)
+[2025-09-27 21:01:57 +0800] [1620192] [INFO] Worker exiting (pid: 1620192)
+[2025-09-27 21:01:57 +0800] [1620371] [INFO] Worker exiting (pid: 1620371)
+[2025-09-27 21:01:57 +0800] [1620476] [INFO] Worker exiting (pid: 1620476)
+[2025-09-27 21:01:57 +0800] [1620177] [INFO] Worker exiting (pid: 1620177)
+[2025-09-27 21:01:57 +0800] [1620350] [INFO] Worker exiting (pid: 1620350)
+[2025-09-27 21:01:57 +0800] [1620292] [INFO] Worker exiting (pid: 1620292)
+[2025-09-27 21:01:57 +0800] [1620435] [INFO] Worker exiting (pid: 1620435)
+[2025-09-27 21:01:57 +0800] [1620430] [INFO] Worker exiting (pid: 1620430)
+[2025-09-27 21:01:57 +0800] [1620199] [INFO] Worker exiting (pid: 1620199)
+[2025-09-27 21:01:57 +0800] [1620274] [INFO] Worker exiting (pid: 1620274)
+[2025-09-27 21:01:57 +0800] [1620438] [INFO] Worker exiting (pid: 1620438)
+[2025-09-27 21:01:57 +0800] [1620104] [INFO] Worker exiting (pid: 1620104)
+[2025-09-27 21:01:57 +0800] [1620159] [INFO] Worker exiting (pid: 1620159)
+[2025-09-27 21:01:57 +0800] [1620450] [INFO] Worker exiting (pid: 1620450)
+[2025-09-27 21:01:57 +0800] [1620169] [INFO] Worker exiting (pid: 1620169)
+[2025-09-27 21:01:57 +0800] [1620268] [INFO] Worker exiting (pid: 1620268)
+[2025-09-27 21:01:57 +0800] [1620304] [INFO] Worker exiting (pid: 1620304)
+[2025-09-27 21:01:57 +0800] [1620164] [INFO] Worker exiting (pid: 1620164)
+[2025-09-27 21:01:57 +0800] [1620166] [INFO] Worker exiting (pid: 1620166)
+[2025-09-27 21:01:57 +0800] [1620168] [INFO] Worker exiting (pid: 1620168)
+[2025-09-27 21:01:57 +0800] [1620179] [INFO] Worker exiting (pid: 1620179)
+[2025-09-27 21:01:57 +0800] [1620194] [INFO] Worker exiting (pid: 1620194)
+[2025-09-27 21:01:57 +0800] [1620123] [INFO] Worker exiting (pid: 1620123)
+[2025-09-27 21:01:57 +0800] [1620414] [INFO] Worker exiting (pid: 1620414)
+[2025-09-27 21:01:57 +0800] [1620301] [INFO] Worker exiting (pid: 1620301)
+[2025-09-27 21:01:57 +0800] [1620471] [INFO] Worker exiting (pid: 1620471)
+[2025-09-27 21:01:57 +0800] [1620142] [INFO] Worker exiting (pid: 1620142)
+[2025-09-27 21:01:57 +0800] [1620203] [INFO] Worker exiting (pid: 1620203)
+[2025-09-27 21:01:57 +0800] [1620135] [INFO] Worker exiting (pid: 1620135)
+[2025-09-27 21:01:57 +0800] [1620162] [INFO] Worker exiting (pid: 1620162)
+[2025-09-27 21:01:57 +0800] [1620416] [INFO] Worker exiting (pid: 1620416)
+[2025-09-27 21:01:57 +0800] [1620160] [INFO] Worker exiting (pid: 1620160)
+[2025-09-27 21:01:57 +0800] [1620161] [INFO] Worker exiting (pid: 1620161)
+[2025-09-27 21:01:57 +0800] [1620138] [INFO] Worker exiting (pid: 1620138)
+[2025-09-27 21:01:57 +0800] [1620191] [INFO] Worker exiting (pid: 1620191)
+[2025-09-27 21:01:57 +0800] [1620404] [INFO] Worker exiting (pid: 1620404)
+[2025-09-27 21:01:57 +0800] [1620415] [INFO] Worker exiting (pid: 1620415)
+[2025-09-27 21:01:57 +0800] [1620339] [INFO] Worker exiting (pid: 1620339)
+[2025-09-27 21:01:57 +0800] [1620300] [INFO] Worker exiting (pid: 1620300)
+[2025-09-27 21:01:57 +0800] [1620193] [INFO] Worker exiting (pid: 1620193)
+[2025-09-27 21:01:57 +0800] [1620158] [INFO] Worker exiting (pid: 1620158)
+[2025-09-27 21:01:57 +0800] [1620288] [INFO] Worker exiting (pid: 1620288)
+[2025-09-27 21:01:57 +0800] [1620141] [INFO] Worker exiting (pid: 1620141)
+[2025-09-27 21:01:57 +0800] [1620126] [INFO] Worker exiting (pid: 1620126)
+[2025-09-27 21:01:57 +0800] [1620244] [INFO] Worker exiting (pid: 1620244)
+[2025-09-27 21:01:57 +0800] [1620124] [INFO] Worker exiting (pid: 1620124)
+[2025-09-27 21:01:57 +0800] [1620103] [INFO] Worker exiting (pid: 1620103)
+[2025-09-27 21:01:57 +0800] [1620180] [INFO] Worker exiting (pid: 1620180)
+[2025-09-27 21:01:57 +0800] [1620236] [INFO] Worker exiting (pid: 1620236)
+[2025-09-27 21:01:57 +0800] [1620128] [INFO] Worker exiting (pid: 1620128)
+[2025-09-27 21:01:57 +0800] [1620165] [INFO] Worker exiting (pid: 1620165)
+[2025-09-27 21:01:57 +0800] [1620157] [INFO] Worker exiting (pid: 1620157)
+[2025-09-27 21:01:57 +0800] [1620156] [INFO] Worker exiting (pid: 1620156)
+[2025-09-27 21:01:57 +0800] [1620277] [INFO] Worker exiting (pid: 1620277)
+[2025-09-27 21:01:57 +0800] [1620125] [INFO] Worker exiting (pid: 1620125)
+[2025-09-27 21:01:57 +0800] [1620431] [INFO] Worker exiting (pid: 1620431)
+[2025-09-27 21:01:57 +0800] [1620413] [INFO] Worker exiting (pid: 1620413)
+[2025-09-27 21:01:57 +0800] [1620269] [INFO] Worker exiting (pid: 1620269)
+[2025-09-27 21:01:57 +0800] [1620167] [INFO] Worker exiting (pid: 1620167)
+[2025-09-27 21:01:57 +0800] [1620136] [INFO] Worker exiting (pid: 1620136)
+[2025-09-27 21:01:57 +0800] [1620298] [INFO] Worker exiting (pid: 1620298)
+[2025-09-27 21:01:57 +0800] [1620207] [INFO] Worker exiting (pid: 1620207)
+[2025-09-27 21:01:57 +0800] [1620137] [INFO] Worker exiting (pid: 1620137)
+[2025-09-27 21:01:57 +0800] [1620178] [INFO] Worker exiting (pid: 1620178)
+[2025-09-27 21:01:57 +0800] [1620099] [INFO] Worker exiting (pid: 1620099)
+[2025-09-27 21:01:57 +0800] [1620432] [INFO] Worker exiting (pid: 1620432)
+[2025-09-27 21:01:57 +0800] [1620152] [INFO] Worker exiting (pid: 1620152)
+[2025-09-27 21:01:57 +0800] [1620155] [INFO] Worker exiting (pid: 1620155)
+[2025-09-27 21:01:57 +0800] [1620127] [INFO] Worker exiting (pid: 1620127)
+[2025-09-27 21:01:57 +0800] [1620154] [INFO] Worker exiting (pid: 1620154)
+[2025-09-27 21:01:57 +0800] [1620153] [INFO] Worker exiting (pid: 1620153)
+[2025-09-27 21:01:57 +0800] [1620088] [INFO] Worker exiting (pid: 1620088)
+[2025-09-27 21:01:57 +0800] [1620267] [INFO] Worker exiting (pid: 1620267)
+[2025-09-27 21:01:57 +0800] [1620087] [INFO] Worker exiting (pid: 1620087)
+[2025-09-27 21:01:57 +0800] [1620139] [INFO] Worker exiting (pid: 1620139)
+[2025-09-27 21:01:57 +0800] [1620302] [INFO] Worker exiting (pid: 1620302)
+[2025-09-27 21:01:57 +0800] [1620129] [INFO] Worker exiting (pid: 1620129)
+[2025-09-27 21:01:57 +0800] [1620096] [INFO] Worker exiting (pid: 1620096)
+[2025-09-27 21:01:57 +0800] [1620150] [INFO] Worker exiting (pid: 1620150)
+[2025-09-27 21:01:57 +0800] [1620100] [INFO] Worker exiting (pid: 1620100)
+[2025-09-27 21:01:57 +0800] [1620151] [INFO] Worker exiting (pid: 1620151)
+[2025-09-27 21:01:57 +0800] [1620057] [ERROR] Worker (pid:1620436) was sent SIGINT!
+[2025-09-27 21:01:58 +0800] [1620057] [ERROR] Worker (pid:1620139) was sent SIGINT!
+[2025-09-27 21:01:58 +0800] [1620057] [ERROR] Worker (pid:1620162) was sent SIGINT!
+[2025-09-27 21:01:58 +0800] [1620057] [ERROR] Worker (pid:1620152) was sent SIGINT!
+[2025-09-27 21:02:27 +0800] [1620057] [INFO] Shutting down: Master

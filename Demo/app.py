@@ -14,6 +14,24 @@ import time
 
 app = Flask(__name__)
 
+# No default API configuration - users must configure their own API
+# Check for common environment variables but don't set defaults
+deepseek_key = os.getenv('DEEPSEEK_API_KEY')
+openai_key = os.getenv('OPENAI_API_KEY')
+
+if deepseek_key:
+    print("DeepSeek API key found in environment variables")
+    client = OpenAI(api_key=deepseek_key, base_url=os.getenv('DEEPSEEK_BASE_URL', 'https://api.deepseek.com/v1'))
+    model = "deepseek-chat"
+elif openai_key:
+    print("OpenAI API key found in environment variables")
+    client = OpenAI(api_key=openai_key, base_url=os.getenv('OPENAI_BASE_URL', 'https://api.openai.com/v1'))
+    model = os.getenv('OPENAI_MODEL_NAME', 'gpt-4o-mini')
+else:
+    print("No API keys found in environment variables. Users must configure API settings in the web interface.")
+    client = None
+    model = None
+
 # Logs directory
 LOGS_DIR = "logs"
 
@@ -154,10 +172,12 @@ def evaluate():
             except Exception as e:
                 return jsonify({'error': f'Invalid API configuration: {str(e)}'}), 400
         else:
+            if client is None:
+                return jsonify({'error': 'No API configured. Please set environment variables (DEEPSEEK_API_KEY or OPENAI_API_KEY) or use custom API settings in the web interface.'}), 400
             chosen_client = client
             chosen_model = model
             chosen_temperature = 0.1
-            print("Using default API settings")
+            print("Using environment variable API settings")
 
         result_queue: Queue = Queue(maxsize=1)
 
