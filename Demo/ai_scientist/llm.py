@@ -3,15 +3,15 @@ import os
 import re
 import time
 # import threading
-
+ 
 import anthropic
 import backoff
 import openai
 import google.generativeai as genai
 from google.generativeai.types import GenerationConfig
-
+ 
 MAX_NUM_TOKENS = 4096
-
+ 
 AVAILABLE_LLMS = [
     # Anthropic models
     "claude-3-5-sonnet-20240620",
@@ -50,8 +50,8 @@ AVAILABLE_LLMS = [
     "gemini-1.5-flash",
     "gemini-1.5-pro",
 ]
-
-
+ 
+ 
 # Get N responses from a single message, used for ensembling.
 @backoff.on_exception(backoff.expo, (openai.RateLimitError, openai.APITimeoutError))
 def get_batch_responses_from_llm(
@@ -66,7 +66,7 @@ def get_batch_responses_from_llm(
 ):
     if msg_history is None:
         msg_history = []
-
+ 
     if model in [
         "gpt-4-1106-preview",
         "gpt-4o-mini-2024-07-18",
@@ -148,20 +148,29 @@ def get_batch_responses_from_llm(
             new_msg_history + [{"role": "assistant", "content": c}] for c in content
         ]
     else:
-        content, new_msg_history = [], []
-        for _ in range(n_responses):
-            c, hist = get_response_from_llm(
-                msg,
-                client,
-                model,
-                system_message,
-                print_debug=False,
-                msg_history=None,
+        # Default: use OpenAI-compatible API for custom/unknown models
+        print(f"Using OpenAI-compatible API with custom model {model}.")
+        new_msg_history = msg_history + [{"role": "user", "content": msg}]
+        try:
+            response = client.chat.completions.create(
+                model=model,
+                messages=[
+                    {"role": "system", "content": system_message},
+                    *new_msg_history,
+                ],
                 temperature=temperature,
+                max_tokens=MAX_NUM_TOKENS,
+                n=n_responses,
+                stop=None,
             )
-            content.append(c)
-            new_msg_history.append(hist)
-
+            content = [r.message.content for r in response.choices]
+            new_msg_history = [
+                new_msg_history + [{"role": "assistant", "content": c}] for c in content
+            ]
+        except Exception as e:
+            print(f"Error calling custom model {model}: {str(e)}")
+            raise
+ 
     if print_debug:
         print()
         print("*" * 20 + " LLM START " + "*" * 20)
@@ -170,11 +179,11 @@ def get_batch_responses_from_llm(
         print(content)
         print("*" * 21 + " LLM END " + "*" * 21)
         print()
-
+ 
     return content, new_msg_history
-
-
-
+ 
+ 
+ 
 def print_time_interval(start_time):
     return
     # while True:
@@ -182,8 +191,8 @@ def print_time_interval(start_time):
     #     elapsed_time = current_time - start_time
     #     print(f"")
     #     # time.sleep(60)
-
-
+ 
+ 
 @backoff.on_exception(backoff.expo, (openai.RateLimitError, openai.APITimeoutError))
 def get_response_from_llm(
         msg,
@@ -196,7 +205,7 @@ def get_response_from_llm(
 ):
     if msg_history is None:
         msg_history = []
-
+ 
     if "claude" in model:
         new_msg_history = msg_history + [
             {
@@ -295,7 +304,7 @@ def get_response_from_llm(
                 n=1,
                 stop=None
             )
-
+ 
             end_time = time.time()  
             elapsed_time = end_time - start_time
             print(f"")
@@ -336,8 +345,27 @@ def get_response_from_llm(
         content = response.text
         new_msg_history = new_msg_history + [{"role": "assistant", "content": content}]
     else:
-        raise ValueError(f"Model {model} not supported.")
-
+        # Default: use OpenAI-compatible API for custom/unknown models
+        print(f"Using OpenAI-compatible API with custom model {model}.")
+        new_msg_history = msg_history + [{"role": "user", "content": msg}]
+        try:
+            response = client.chat.completions.create(
+                model=model,
+                messages=[
+                    {"role": "system", "content": system_message},
+                    *new_msg_history,
+                ],
+                temperature=temperature,
+                max_tokens=MAX_NUM_TOKENS,
+                n=1,
+                stop=None,
+            )
+            content = response.choices[0].message.content
+            new_msg_history = new_msg_history + [{"role": "assistant", "content": content}]
+        except Exception as e:
+            print(f"Error calling custom model {model}: {str(e)}")
+            raise ValueError(f"Model {model} not supported or API call failed: {str(e)}")
+ 
     if print_debug:
         print()
         print("*" * 20 + " LLM START " + "*" * 20)
@@ -346,20 +374,20 @@ def get_response_from_llm(
         print(content)
         print("*" * 21 + " LLM END " + "*" * 21)
         print()
-
+ 
     return content, new_msg_history
-
-
+ 
+ 
 def extract_json_between_markers(llm_output):
     # Regular expression pattern to find JSON content between ```json and ```
     json_pattern = r"```json(.*?)```"
     matches = re.findall(json_pattern, llm_output, re.DOTALL)
-
+ 
     if not matches:
         # Fallback: Try to find any JSON-like content in the output
         json_pattern = r"\{.*?\}"
         matches = re.findall(json_pattern, llm_output, re.DOTALL)
-
+ 
     for json_string in matches:
         json_string = json_string.strip()
         try:
@@ -374,10 +402,10 @@ def extract_json_between_markers(llm_output):
                 return parsed_json
             except json.JSONDecodeError:
                 continue  # Try next match
-
+ 
     return None  # No valid JSON found
-
-
+ 
+ 
 def create_client(model):
     if model.startswith("claude-"):
         print(f"Using Anthropic API with model {model}.")
@@ -419,4 +447,9 @@ def create_client(model):
         client = genai.GenerativeModel(model)
         return client, model
     else:
-        raise ValueError(f"Model {model} not supported.")
+        # Default: create OpenAI-compatible client for custom/unknown models
+        print(f"Using OpenAI-compatible API with custom model {model}.")
+        # Try to get API key and base URL from environment variables
+        api_key = os.environ.get("OPENAI_API_KEY", "")
+        base_url = os.environ.get("OPENAI_BASE_URL", "")
+        return openai.OpenAI(api_key=api_key, base_url=base_url), model
