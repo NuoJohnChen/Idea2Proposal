@@ -1,5 +1,7 @@
 [Idea Generation](https://github.com/NuoJohnChen/Idea2Proposal/tree/main/MultiAgent_IdeaGen)   [Proposal Evaluation](https://github.com/NuoJohnChen/Idea2Proposal/tree/main/Proposal_Evaluation)   [Demo Deployment](https://github.com/NuoJohnChen/Idea2Proposal/tree/main/Demo)
 
+[Public Access: https://rateyourproposal.ai/](https://rateyourproposal.ai/)
+[NUS Intranet: https://rproposal.comp.nus.edu.sg/](https://rproposal.comp.nus.edu.sg/)
 
 <h1 align="center"> 🤝 Idea Geneation by Multi-Agent Collaboration 🎓 </h1>
 
